@@ -1,0 +1,191 @@
+export const metadata = {
+  title: 'JNTU-GV CEV — Official Institutional Web Platform & CMS',
+  description: 'Architecting and deploying the official web portal, multi-tenant Content Management System (CMS), HOD departmental administration portals, high-performance caching layer, and offline AI assistant for JNTU-GV College of Engineering.',
+  alternates: { canonical: '/projects/jntugvcev' }
+};
+
+# JNTU-GV CEV — Official Institutional Web Platform & Enterprise CMS
+
+<div className="text-zinc-400 text-sm mb-8 font-serif">
+  Institutional Case Study • Production Enterprise Portal • Multi-Role CMS & Dynamic Department Portals • Offline AI RAG Bot
+</div>
+
+<div className="space-y-8 text-[15.5px] text-zinc-300 leading-relaxed font-serif">
+
+<strong className="text-zinc-100 font-medium">JNTU-GV CEV Web Platform</strong> (<a href="https://jntugvcev.edu.in" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">jntugvcev.edu.in</a>) is the official web ecosystem and multi-tenant Content Management System engineered for the <strong className="text-zinc-100">Jawaharlal Nehru Technological University - Gurajada Vizianagaram (College of Engineering)</strong>. Built from the ground up to replace outdated legacy infrastructure, it serves thousands of daily students, faculty members, researchers, and administrative officers.
+
+<div className="flex flex-wrap gap-2 pt-1 font-sans text-xs">
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">Team Lead & Lead Architect</span>
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">TanStack • Vite • React</span>
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">Drizzle ORM • PostgreSQL</span>
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">Multi-Role RBAC Portals</span>
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">Offline Database RAG Bot</span>
+  <span className="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded border border-zinc-700">Stale-While-Revalidate Caching</span>
+</div>
+
+{/* PREVIEW IMAGE 1: HERO HOMEPAGE BANNER */}
+<div className="my-8 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 p-2 shadow-xl hover:border-zinc-700 transition-colors not-prose">
+  <img 
+    src="/projects/JNTU_GV.png" 
+    alt="JNTU-GV College of Engineering Official Homepage" 
+    className="w-full h-auto rounded-lg object-cover"
+    loading="lazy"
+  />
+  <div className="text-center text-xs text-zinc-400 font-sans mt-2.5">
+    Official JNTU-GV CEV Homepage — Modern Editorial Typography, Dynamic Campus Highlights, Live Notifications & Fast Navigation
+  </div>
+</div>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">1. The Problem: The Bottlenecks of Traditional University Websites</h2>
+
+Government and autonomous university portals historically suffer from severe architectural limitations:
+
+<ol className="space-y-3 text-zinc-300 pl-5 list-decimal">
+  <li>
+    <strong className="text-zinc-100">Centralized Admin Bottlenecks:</strong> Any change — from a departmental seminar circular to updating a professor's email or lab photo — required submitting manual paper requests to a single overburdened webmaster, creating weeks of delay.
+  </li>
+  <li>
+    <strong className="text-zinc-100">Exam-Time Traffic Spikes & Server Crashes:</strong> When semester timetables, hall tickets, or results were posted, thousands of concurrent student requests hit un-cached database queries, leading to server downtime.
+  </li>
+  <li>
+    <strong className="text-zinc-100">Fragmented Department Silos:</strong> Each department (IT, CSE, ECE, EEE, Mechanical, Civil, Metallurgy, Basic Sciences) lacked the ability to showcase its own vision, research labs, faculty publications, and student societies dynamically.
+  </li>
+  <li>
+    <strong className="text-zinc-100">Poor Mobile Accessibility & Student Discovery:</strong> Cluttered nested menus made finding syllabus regulations, academic calendars, and fee notices nearly impossible for students navigating on mobile devices.
+  </li>
+</ol>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">2. Architecture & Multi-Tenant Role-Based CMS</h2>
+
+We engineered an enterprise-grade, multi-tenant administrative architecture with granular <strong className="text-zinc-100">Role-Based Access Control (RBAC)</strong> that distributes content publishing authority safely across the institution:
+
+<ul className="space-y-4 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Super Admin Command Center:</strong> Full institutional governance. Controls global homepage announcements, urgent ticker banners, leadership messages (Vice-Chancellor, Principal, Vice-Principal), NBA / NIRF accreditation data, campus infrastructure showcases, and system-wide audit logging.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Dedicated HOD & Departmental Portals:</strong> Heads of Departments (HODs) and designated departmental coordinators receive dedicated login dashboards scoped strictly to their respective department. They can independently:
+      <ul className="space-y-1.5 text-zinc-400 pl-4 list-disc mt-2 text-sm font-sans">
+        <li>Update department vision, mission, PEOs, and Program Specific Outcomes (PSOs).</li>
+        <li>Manage faculty directories: designations, qualifications, research citations, emails, and office hours.</li>
+        <li>Upload laboratory specifications, equipment counts, and licensed software inventories.</li>
+        <li>Publish branch-specific notifications, student associations (e.g., ITYukta), and guest lectures.</li>
+      </ul>
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Examination Cell & Academic Section:</strong> Dedicated modules for publishing academic calendars, mid/end-semester timetables, grade cards, syllabus PDFs, and revaluation circulars with instant file indexing.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Training & Placement Cell (T&P):</strong> Real-time placement statistics, company drive calendars, recruitment galleries, and student eligibility checklists.
+    </div>
+  </li>
+</ul>
+
+{/* PREVIEW IMAGE 2: DEVELOPMENT TEAM & IT GROUP */}
+<div className="my-8 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 p-2 shadow-xl hover:border-zinc-700 transition-colors not-prose">
+  <img 
+    src="/projects/it-group.jpeg" 
+    alt="JNTU-GV IT Development Group & Engineering Team" 
+    className="w-full h-auto rounded-lg object-cover"
+    loading="lazy"
+  />
+  <div className="text-center text-xs text-zinc-400 font-sans mt-2.5">
+    The Development Squad — IT Group & Faculty Mentors behind the JNTU-GV College Platform & Engineering Infrastructure
+  </div>
+</div>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">3. High-Performance Caching & Media Pipeline</h2>
+
+To deliver instantaneous page loads even during peak traffic periods, the platform implements a layered caching and optimization strategy:
+
+<ul className="space-y-3 text-zinc-300 pl-4 list-disc">
+  <li>
+    <strong className="text-zinc-200">Stale-While-Revalidate (SWR) Query Caching:</strong> Frequently accessed public endpoints (circulars, departmental faculty rosters, and latest notices) are served instantly from memory cache while revalidating in the background, yielding <strong className="text-zinc-100">&lt;50ms response times</strong>.
+  </li>
+  <li>
+    <strong className="text-zinc-200">Optimized Local Asset Pipeline:</strong> Images and documents uploaded by HODs and staff are routed through an automated compression pipeline (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">/local-assets/uploads/</code>), converting bulky uploads into responsive, modern WebP and optimized JPEG formats.
+  </li>
+  <li>
+    <strong className="text-zinc-200">Edge Static Generation for Stable Pages:</strong> Academic regulations, campus history, administrative charts, and facilities pages are pre-rendered at the edge for sub-second global delivery.
+  </li>
+  <li>
+    <strong className="text-zinc-200">Zero-Downtime Database Architecture:</strong> High-efficiency queries constructed via Drizzle ORM over PostgreSQL with connection pooling prevent thread starvation during peak exam notice spikes.
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">4. Offline Database-Powered RAG AI Chatbot</h2>
+
+To assist students navigating complex college regulations, we integrated an intelligent conversational assistant:
+
+<ul className="space-y-2 text-zinc-300 pl-4 list-disc">
+  <li>
+    <strong className="text-zinc-200">Grounded Knowledge Base:</strong> Indexes university regulations, syllabus documents, department faculty directories, lab locations, fee structures, and bus route information.
+  </li>
+  <li>
+    <strong className="text-zinc-200">Natural Language Student Inquiries:</strong> Students can query <em>"When are the R20 3-2 mid exams?"</em>, <em>"Who is the HOD of IT department?"</em>, or <em>"How do I apply for a duplicate grade card?"</em> and receive instant, cited answers.
+  </li>
+  <li>
+    <strong className="text-zinc-200">Strict Factual Guardrails:</strong> Operates strictly over verified institutional database records without hallucinating false dates or policy changes.
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">5. Technical Stack Summary</h2>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 not-prose font-sans">
+  <div className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800">
+    <div className="text-xs font-mono uppercase tracking-wider text-blue-400 mb-1">Frontend Layer</div>
+    <div className="text-sm font-medium text-zinc-100 mb-2">React 18 • TanStack • Vite</div>
+    <div className="text-xs text-zinc-400 leading-relaxed">
+      Client-side routing with TanStack Router, responsive Tailwind CSS styling, Cormorant Garamond & Inter typography, and Framer Motion micro-interactions.
+    </div>
+  </div>
+  <div className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800">
+    <div className="text-xs font-mono uppercase tracking-wider text-blue-400 mb-1">Backend & Data</div>
+    <div className="text-sm font-medium text-zinc-100 mb-2">Node.js • TypeScript • Drizzle ORM</div>
+    <div className="text-xs text-zinc-400 leading-relaxed">
+      Type-safe database schemas with PostgreSQL, parameterized SQL queries, secure JWT sessions, and RBAC middleware.
+    </div>
+  </div>
+  <div className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800">
+    <div className="text-xs font-mono uppercase tracking-wider text-blue-400 mb-1">Performance & Media</div>
+    <div className="text-sm font-medium text-zinc-100 mb-2">Asset Pipeline & SWR Caching</div>
+    <div className="text-xs text-zinc-400 leading-relaxed">
+      Local asset optimization pipeline under <code className="text-[11px] text-zinc-300">/local-assets/</code>, cache headers, CDN routing, and sub-50ms static notice delivery.
+    </div>
+  </div>
+  <div className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800">
+    <div className="text-xs font-mono uppercase tracking-wider text-blue-400 mb-1">AI Intelligence</div>
+    <div className="text-sm font-medium text-zinc-100 mb-2">RAG Copilot & Vector Search</div>
+    <div className="text-xs text-zinc-400 leading-relaxed">
+      Database-grounded conversational search answering student academic queries with verified citations.
+    </div>
+  </div>
+</div>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">6. Key Takeaways & Impact</h2>
+
+<blockquote className="border-l-2 border-zinc-700 pl-4 italic text-zinc-200 my-4 text-base">
+  "Leading the development of the official JNTU-GV CEV platform allowed us to transform how an entire engineering college communicates. By decentralizing content updates into secure HOD and departmental domains while backing the platform with high-efficiency caching and offline RAG search, we built an institutional engine that is fast, resilient, and effortless to maintain."
+</blockquote>
+
+<div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
+  <a href="/projects" className="text-sm text-zinc-400 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors">
+    ← Back to Projects
+  </a>
+  <a href="https://jntugvcev.edu.in" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 underline underline-offset-4 decoration-zinc-600 transition-colors">
+    Visit Live Portal (jntugvcev.edu.in) →
+  </a>
+</div>
+
+</div>

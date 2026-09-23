@@ -73,11 +73,11 @@
     "id": "persona-echo",
     "category": "Projects",
     "title": "Echo — AI Communication Copilot (Chrome Extension)",
-    "summary": "Echo is a privacy-first Chrome Extension (MV3) that sits inside messaging apps (WhatsApp, Instagram, Telegram, Discord, X) and suggests 3 instant replies sounding authentically like you using NVIDIA NIM and an offline 'Own Mind' NLP engine.",
-    "text": "Echo is an AI communication copilot Chrome Extension (Manifest V3) that sits directly inside web messaging platforms (WhatsApp Web, Instagram DM, Telegram, Discord, X):\n• 1-Click Smart Replies: Generates 3 contextual response drafts in <180ms right above your active chat box.\n• Authentic Persona Engine: Learns your personal writing tone, favorite slang, emojis, greetings, and sentence structures.\n• Ghost Mode Tone Switcher: Switch instantly between Executive Formal, Casual Friendly, Short & Punchy, and Empathetic tones.\n• Hybrid Brain: Combines cloud NVIDIA NIM (Llama 3.3) with an offline 'Own Mind' NLP engine during internet outages with 100% local storage privacy.",
+    "summary": "Echo is a privacy-first Chrome Extension (MV3) that integrates directly into messaging apps (WhatsApp, Instagram, Telegram, Discord, X) and suggests 3 instant replies sounding authentically like you using local Ollama LLMs (llama3.2:1b) and SQLite vector memory.",
+    "text": "Echo is an intelligent browser extension (Manifest V3) and AI communication copilot that sits directly inside web messaging platforms (WhatsApp Web, Instagram DM, Telegram, Discord, X):\n• 1-Click Smart Replies: Generates 3 contextual response drafts in <500ms right above your active chat box with zero duplicate insertions.\n• Local AI-First Intelligence: Runs local Ollama LLMs (llama3.2:1b for fast generation, qwen3.5:4b for reasoning) and nomic-embed-text for SQLite vector memory recall.\n• Draggable & Foldable Toolbar: Alt+M to minimize into a compact bubble, freely draggable handle with persisted coordinates, and snap-to-input docking.\n• 1-Click Draft Polisher & Grammar Refiner: Alt+P to refine messy drafts into Grammar Fix, Professional, Short & Punchy, Casual, or Elaborate styles.\n• Catch Me Up Thread Summarizer: Alt+S to summarize 30 recent messages into Topics, Actions, and Decisions.\n• 3-Tier Resilient Engine: Sub-second local Ollama + SQLite Vector Memory, direct NVIDIA NIM API cloud fallback, and offline 'Own Mind' NLP rule engine.",
     "actionUrl": "/projects/echo",
     "actionLabel": "View Echo Case Study",
-    "keywords": ["echo", "chrome extension", "ai copilot", "whatsapp", "instagram", "telegram", "discord", "smart replies", "persona", "tone changer", "ghost mode", "nvidia nim", "offline nlp"]
+    "keywords": ["echo", "chrome extension", "ai copilot", "whatsapp", "instagram", "telegram", "discord", "x", "smart replies", "persona", "ollama", "llama 3.2", "qwen 3.5", "vector memory", "draft polisher", "thread summarizer", "offline nlp"]
   },
   {
     "id": "persona-awefill",
@@ -92,12 +92,12 @@
   {
     "id": "project-jntugv",
     "category": "Projects",
-    "title": "JNTU-GV Official College Website & CMS",
-    "summary": "Team lead of a 4-developer team for the official JNTU-GV CEV platform (jntugvcev.edu.in) featuring multi-role CMS, inline scripting, and an offline database-powered RAG AI chatbot built with TanStack, Vite, Drizzle ORM, and PostgreSQL.",
-    "text": "Likhith led a 4-developer engineering team to architect and deploy the official JNTU-GV College of Engineering website and CMS (jntugvcev.edu.in). Built with TanStack, Vite, Drizzle ORM, and PostgreSQL, it features multi-role admin controls, dynamic department portals, and an offline database-powered RAG AI chatbot for student query resolution.",
-    "actionUrl": "/projects",
-    "actionLabel": "View JNTU-GV Project",
-    "keywords": ["jntugv", "jntu gv", "official website", "jntugvcev.edu.in", "cms", "drizzle", "tanstack", "offline rag", "college website", "team lead"]
+    "title": "JNTU-GV Official College Website & Enterprise CMS",
+    "summary": "Team lead and architect of the official JNTU-GV CEV platform (jntugvcev.edu.in) featuring a multi-tenant CMS, dedicated HOD domain administration, SWR caching layer, and an offline database-powered RAG AI chatbot built with TanStack, Vite, Drizzle ORM, and PostgreSQL.",
+    "text": "Likhith led a 4-developer engineering team to architect and deploy the official JNTU-GV College of Engineering website and CMS (jntugvcev.edu.in). Built with TanStack, Vite, Drizzle ORM, and PostgreSQL, it features multi-role admin controls (Super Admin, HOD Departmental logins, Exam Cell, T&P), SWR caching for sub-50ms response times, an automated media optimization pipeline, and an offline database-powered RAG AI chatbot for student query resolution.",
+    "actionUrl": "/projects/jntugvcev",
+    "actionLabel": "View JNTU-GV Case Study",
+    "keywords": ["jntugv", "jntu gv", "jntugvcev", "official website", "jntugvcev.edu.in", "cms", "drizzle", "tanstack", "offline rag", "college website", "team lead", "hod portal", "caching"]
   },
   {
     "id": "project-unilms",

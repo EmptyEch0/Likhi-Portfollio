@@ -119,9 +119,9 @@ export default function ZigZagPolaroid({
               </div>
 
               {caption && (
-                <p className="text-center text-[11px] sm:text-xs font-serif italic text-zinc-700 dark:text-zinc-300 mt-2 px-1 truncate tracking-tight">
+                <div className="text-center text-[11px] sm:text-xs font-serif italic text-zinc-700 dark:text-zinc-300 mt-2 px-1 truncate tracking-tight">
                   {caption}
-                </p>
+                </div>
               )}
 
               {/* Dynamic glossy glare */}
@@ -169,9 +169,9 @@ export default function ZigZagPolaroid({
               />
             </div>
             {caption && (
-              <p className="text-center text-sm font-serif text-zinc-300 mt-3 italic">
+              <div className="text-center text-sm font-serif text-zinc-300 mt-3 italic">
                 {caption}
-              </p>
+              </div>
             )}
           </div>
         </div>

@@ -48,12 +48,9 @@ const components = {
   h4: (props: HeadingProps) => (
     <h4 className="font-medium mt-6 mb-2 text-gray-900 dark:text-zinc-100" {...props} />
   ),
-  p: ({ children, ...props }: ParagraphProps) => {
-    if (React.isValidElement(children) && (children.type === 'p' || (typeof children.type === 'function' && children.type.name === 'p'))) {
-      return children;
-    }
-    return <p className="text-gray-800 dark:text-zinc-300 leading-snug" {...props}>{children}</p>;
-  },
+  p: (props: ParagraphProps) => (
+    <p className="text-gray-800 dark:text-zinc-300 leading-snug" {...props} />
+  ),
   ol: (props: ListProps) => (
     <ol
       className="text-gray-800 dark:text-zinc-300 list-decimal pl-5 space-y-2"

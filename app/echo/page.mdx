@@ -7,130 +7,182 @@ export const metadata = {
 # Echo — AI Communication Copilot
 
 <div className="text-zinc-400 text-sm mb-8 font-serif">
-  Persona Case Study • Chrome Extension (Manifest V3) • Privacy-First NLP & Local Memory
+  Persona Case Study • Chrome Extension (Manifest V3) • Local LLMs (Ollama) & Privacy-First Vector Memory
 </div>
 
 <div className="space-y-8 text-[15.5px] text-zinc-300 leading-relaxed font-serif">
 
-<p>
-  <strong className="text-zinc-100 font-medium">Echo</strong> is a smart browser extension (an AI communication copilot) that integrates directly into your web messaging apps to help you reply to chats faster <em>while sounding authentically like you</em>, eliminating the robotic, stiff tone typical of standard AI chatbots.
-</p>
+<strong className="text-zinc-100 font-medium">Echo</strong> is an intelligent browser extension (an AI communication copilot) that integrates directly into your web messaging apps. It learns your personal writing style (favorite greetings, sentence length, vocabulary, and tone habits) and suggests instant, authentic replies right above your chat box — eliminating the stiff, robotic tone typical of standard AI chatbots.
 
 <h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">1. The Problem: Why Standard AI Fails in Messaging</h2>
 
-<p>
-  Most people communicating across professional and informal channels face two major frictions:
-</p>
+Most people communicating across personal, professional, and team channels face four critical frictions:
 
-<ul className="space-y-2 text-zinc-300 pl-4 list-disc">
+<ol className="space-y-3 text-zinc-300 pl-5 list-decimal">
   <li>
-    <strong className="text-zinc-200">The "Robotic AI" Syndrome:</strong> Standard cloud models generate verbose, overly formal paragraphs ("I hope this message finds you in good health") that sound completely unnatural in instant messaging.
+    <strong className="text-zinc-100">The "Robotic AI" Syndrome:</strong> Standard cloud chatbots generate verbose, overly formal paragraphs (<em>"I hope this message finds you well..."</em>) that sound completely unnatural in instant messaging.
   </li>
   <li>
-    <strong className="text-zinc-200">Context Switching Overhead:</strong> Copy-pasting conversation snippets back and forth into ChatGPT browser tabs breaks conversation flow and takes more time than typing manually.
+    <strong className="text-zinc-100">Context Switching & Latency Friction:</strong> Copy-pasting conversation threads between messaging apps and ChatGPT browser tabs breaks chat flow and takes more time than typing manually.
   </li>
   <li>
-    <strong className="text-zinc-200">Privacy & Data Leakage:</strong> Sending personal and professional chat histories to third-party cloud servers introduces significant privacy risks.
+    <strong className="text-zinc-100">Privacy & Corporate Data Leakage:</strong> Sending confidential work chats or personal conversations to third-party cloud servers introduces significant privacy and compliance risks.
   </li>
-</ul>
+  <li>
+    <strong className="text-zinc-100">Layout Obstruction & Editor Incompatibilities:</strong> Standard browser extensions frequently overlap chat buttons or cause duplicate text insertions inside modern React, Lexical, and Slate messaging editors.
+  </li>
+</ol>
 
 <h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">2. Supported Messaging Platforms</h2>
 
-<p>
-  Echo runs natively inside Google Chrome and Chromium browsers, injecting an isolated glassmorphic floating action dock directly above active chat boxes across:
-</p>
+Echo runs natively inside Google Chrome and Chromium browsers, injecting a floating, non-intrusive frosted glassmorphic dock directly into:
 
 <ul className="space-y-2 text-zinc-300 pl-4 list-disc">
-  <li><strong className="text-zinc-200">WhatsApp Web</strong> (web.whatsapp.com)</li>
-  <li><strong className="text-zinc-200">Instagram Direct Messages</strong> (instagram.com/direct)</li>
-  <li><strong className="text-zinc-200">Telegram Web</strong> (web.telegram.org)</li>
-  <li><strong className="text-zinc-200">Discord Web</strong> (discord.com/app)</li>
-  <li><strong className="text-zinc-200">X (Twitter) DMs</strong> (x.com/messages)</li>
+  <li><strong className="text-zinc-200">WhatsApp Web</strong> (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">web.whatsapp.com</code>)</li>
+  <li><strong className="text-zinc-200">Instagram Direct Messages</strong> (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">instagram.com/direct</code>)</li>
+  <li><strong className="text-zinc-200">Telegram Web</strong> (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">web.telegram.org</code>)</li>
+  <li><strong className="text-zinc-200">Discord Web</strong> (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">discord.com/app</code>)</li>
+  <li><strong className="text-zinc-200">X (Twitter) DMs</strong> (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">x.com/messages</code>)</li>
 </ul>
-
-<LifePhotoGrid photos={[
-  { src: '/projects/echo-preview-1.png', alt: 'Echo In-Chat Smart Reply Dock', title: 'Smart Reply Interface', caption: 'Echo In-Chat Floating Smart Reply Bar (WhatsApp & Instagram)' },
-  { src: '/projects/echo-preview-2.png', alt: 'Echo Persona Settings & Style Controls', title: 'Persona Settings', caption: 'Echo Persona Configuration & Local Memory Settings' }
-]} />
 
 <h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">3. Key Features & Capabilities</h2>
 
-<ul className="space-y-4 text-zinc-300 pl-2">
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">1-Click Smart Replies:</strong> When incoming messages arrive, Echo parses the last 5–10 chat bubbles and generates 3 contextual reply options in &lt;180ms. Clicking an option instantly populates the message input box.
-    </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">Adaptive Persona Learning:</strong> Echo analyzes your typical punctuation patterns, favorite colloquial phrases, customary greetings, and preferred sentence lengths so generated drafts feel genuinely personal.
-    </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">Ghost Mode / Multi-Tone Switcher:</strong> Switch message registers on the fly with a single click:
-      <ul className="space-y-1.5 pt-2 pl-4 text-sm text-zinc-400 list-disc">
-        <li><strong className="text-zinc-300">Executive / Formal:</strong> Tailored for professors, hiring managers, and corporate stakeholders.</li>
-        <li><strong className="text-zinc-300">Casual / Friendly:</strong> Natural, relaxed phrasing for peer groups and close friends.</li>
-        <li><strong className="text-zinc-300">Short & Punchy:</strong> Quick confirmations when time is limited.</li>
-        <li><strong className="text-zinc-300">Empathetic / Diplomatic:</strong> Thoughtful conflict resolution and collaborative responses.</li>
-      </ul>
-    </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">Draft Polisher & Mistake Corrector:</strong> Quick-type fragmented thoughts or rushed notes and let Echo clean up spelling, punctuation, and grammar without altering your authentic vocabulary.
-    </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">Resilient Hybrid Architecture:</strong> Combines ultra-fast cloud inference (NVIDIA NIM Llama 3.3) with an offline "Own Mind" NLP & Memory Corpus that maintains intelligent auto-replies even when internet connectivity drops.
-    </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">▪</span>
-    <div>
-      <strong className="text-zinc-100">Zero-Telemetry Privacy:</strong> Personal message history and persona configuration vectors are stored strictly inside local browser storage (<code className="text-xs bg-zinc-800 px-1 py-0.5 rounded">chrome.storage.local</code>), guaranteeing complete data isolation.
-    </div>
-  </li>
-</ul>
+<div className="space-y-6 pt-1">
 
-<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">4. Technical Architecture</h2>
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      1-Click Smart Replies (&lt;500ms Latency)
+    </h3>
+    <div className="text-zinc-300">
+      When messages arrive, Echo parses multi-turn dialogue context and generates 3 natural reply choices. Clicking an option or pressing <strong className="text-zinc-100 font-mono text-xs bg-zinc-800 px-1.5 py-0.5 rounded">Alt + 1 / 2 / 3</strong> instantly inserts it into the chat input box with <strong className="text-zinc-100">zero duplicate text repetitions</strong>.
+    </div>
+  </div>
 
-<p>
-  Echo is architected into three distinct decoupled layers:
-</p>
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      Foldable & Freely Draggable Floating Toolbar
+    </h3>
+    <ul className="space-y-2 text-zinc-300 pl-4 list-disc">
+      <li><strong className="text-zinc-200">Left-Aligned Fold & Minimize (<code>Alt + M</code>):</strong> Shrinks the entire toolbar into an ultra-compact floating pill on the left so it never blocks chat history or media controls.</li>
+      <li><strong className="text-zinc-200">Freely Draggable Anywhere:</strong> Click and drag the <code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded">⠿ Echo</code> handle to reposition the toolbar anywhere on your screen. Custom coordinates are persisted across page reloads.</li>
+      <li><strong className="text-zinc-200">Snap to Input (Dock):</strong> One-click button to snap the toolbar right back above the chat input.</li>
+    </ul>
+  </div>
 
-<ul className="space-y-3 text-zinc-300 pl-2">
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">1.</span>
-    <div>
-      <strong className="text-zinc-100">DOM Injection & UI Layer (React 18 & Manifest V3):</strong> Injects an isolated shadow root above chat input fields with zero page layout shift, mutation observers for real-time bubble detection, and keyboard shortcut listeners.
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      Local AI-First Intelligence (Ollama <code>llama3.2:1b</code> & <code>qwen3.5:4b</code>)
+    </h3>
+    <ul className="space-y-2 text-zinc-300 pl-4 list-disc">
+      <li><strong className="text-zinc-200">Primary Model (<code>llama3.2:1b</code>):</strong> Generates contextual suggestions in under 500ms on standard laptop CPU/GPU hardware.</li>
+      <li><strong className="text-zinc-200">Reasoning Model (<code>qwen3.5:4b</code>):</strong> Handles complex threads, long-form drafting, and executive summarization.</li>
+      <li><strong className="text-zinc-200">Local Embeddings (<code>nomic-embed-text</code>):</strong> Embeds sent messages into SQLite vector storage to recall your real past replies.</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      1-Click Draft Polisher & Grammar Refiner (<code>Alt + P</code>)
+    </h3>
+    <div className="text-zinc-300 mb-2">
+      Quickly draft messy thoughts with typos and refine them into 5 distinct communication styles:
     </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">2.</span>
-    <div>
-      <strong className="text-zinc-100">Context Analyzer & Persona Brain (Python FastAPI / NVIDIA NIM):</strong> Extracts multi-turn conversation context, applies style vector weighting, and generates 3 diverse response trajectories.
+    <ul className="space-y-1.5 text-zinc-300 pl-4 list-disc text-sm">
+      <li><strong className="text-zinc-200">Fix Grammar & Vocab:</strong> Corrects spelling, grammar, and phrasing while preserving your natural voice.</li>
+      <li><strong className="text-zinc-200">Professional:</strong> Converts casual text into crisp, articulate business English.</li>
+      <li><strong className="text-zinc-200">Short & Punchy:</strong> Tightens long paragraphs into direct, concise messages.</li>
+      <li><strong className="text-zinc-200">Casual:</strong> Relaxes tone for peer groups and friends.</li>
+      <li><strong className="text-zinc-200">Elaborate:</strong> Expands short bullet points into complete, well-formed thoughts.</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      "Catch Me Up" — Thread Summarizer (<code>Alt + S</code>)
+    </h3>
+    <div className="text-zinc-300 mb-2">
+      Summarizes up to 30 recent messages in active conversations into 3 clear, actionable sections:
     </div>
-  </li>
-  <li className="flex gap-2">
-    <span className="text-zinc-500 shrink-0">3.</span>
-    <div>
-      <strong className="text-zinc-100">Local Memory Engine (IndexedDB & Chrome Storage):</strong> Tracks frequency metrics, style preferences, and offline fallback dictionaries without sending data to external databases.
+    <ol className="space-y-1.5 text-zinc-300 pl-5 list-decimal text-sm">
+      <li><strong className="text-zinc-200">Discussion Topic:</strong> Core subject and context of the ongoing conversation.</li>
+      <li><strong className="text-zinc-200">Questions & Actions for You:</strong> Action items, deadlines, and pending questions requiring your response.</li>
+      <li><strong className="text-zinc-200">Decisions & Next Steps:</strong> Agreed-upon conclusions and scheduling.</li>
+    </ol>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      Voice-to-Text with AI Polish
+    </h3>
+    <div className="text-zinc-300">
+      Real-time voice dictation with automatic filler word removal ("um", "like", "you know") and grammar polishing before insertion.
     </div>
-  </li>
-</ul>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      Dynamic Glassmorphism Transparency
+    </h3>
+    <div className="text-zinc-300">
+      Interactive in-bar slider allowing users to adjust glass opacity from <strong className="text-zinc-100">10% (crystal clear)</strong> to <strong className="text-zinc-100">100% (solid frosted)</strong> to blend seamlessly with dark and light web themes.
+    </div>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      Contact-Specific Relationship Memory
+    </h3>
+    <div className="text-zinc-300">
+      Learns individual relationship preferences (such as casual tone for friends, formal for managers) and automatically switches tones when switching chat threads.
+    </div>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      3-Tier Resilient Architecture
+    </h3>
+    <ol className="space-y-1.5 text-zinc-300 pl-5 list-decimal text-sm">
+      <li><strong className="text-zinc-200">Tier 1 (Local Ollama + SQLite Vector Memory):</strong> Sub-second local inference with 100% data privacy.</li>
+      <li><strong className="text-zinc-200">Tier 2 (Direct NVIDIA NIM Cloud API):</strong> High-speed cloud fallback if local daemon is offline.</li>
+      <li><strong className="text-zinc-200">Tier 3 ("Own Mind" NLP Engine):</strong> Rule-based template & memory reasoning that functions completely offline without internet or an LLM.</li>
+    </ol>
+  </div>
+
+</div>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">4. Technical Architecture & Stack</h2>
+
+<div className="space-y-3 my-6 not-prose font-sans">
+  <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-1.5 md:gap-6 py-3 border-b border-zinc-800/40">
+    <div className="font-medium text-zinc-100 text-[15px]">Frontend / Extension UI</div>
+    <div className="text-zinc-300 text-sm leading-relaxed">
+      Chrome Extensions (Manifest V3), TypeScript, React 18, Vite, Tailwind CSS, Custom Frosted Glassmorphic CSS System, MutationObserver DOM lifecycle.
+    </div>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-1.5 md:gap-6 py-3 border-b border-zinc-800/40">
+    <div className="font-medium text-zinc-100 text-[15px]">Local AI & Backend</div>
+    <div className="text-zinc-300 text-sm leading-relaxed">
+      Python 3.11, FastAPI, Uvicorn, SQLite Vector Store (Cosine Similarity Search), Local Ollama Client (<code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200">llama3.2:1b</code>, <code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200">qwen3.5:4b</code>, <code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200">nomic-embed-text</code>).
+    </div>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-1.5 md:gap-6 py-3 border-b border-zinc-800/40">
+    <div className="font-medium text-zinc-100 text-[15px]">Cloud & Offline Resilience</div>
+    <div className="text-zinc-300 text-sm leading-relaxed">
+      NVIDIA NIM API (Llama 3.1 / 3.3), In-Memory Cache (45s TTL), Chrome Storage Local Persona Sync, "Own Mind" Rule-Based NLP Engine.
+    </div>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-1.5 md:gap-6 py-3">
+    <div className="font-medium text-zinc-100 text-[15px]">Editor Integration</div>
+    <div className="text-zinc-300 text-sm leading-relaxed">
+      Multi-platform DOM adapter supporting React, Lexical, Slate, Draft.js, contenteditable, and textarea inputs with zero duplication.
+    </div>
+  </div>
+</div>
 
 <h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">5. Summary in 30 Seconds</h2>
 
 <blockquote className="border-l-2 border-zinc-700 pl-4 italic text-zinc-200 my-4 text-base">
-  "Echo is a personal AI communication copilot for messaging apps like WhatsApp and Instagram. Instead of giving generic, robotic answers, it learns your authentic texting style and provides 3 instant reply suggestions directly above your chat box. It saves hours of typing, fixes typos on the fly, and lets you switch communication tones effortlessly while keeping all data 100% private."
+  "Echo is an AI communication copilot for messaging platforms like WhatsApp and Instagram. Instead of producing generic, robotic paragraphs, it runs ultra-fast local LLMs (Llama 3.2 via Ollama) and learns your authentic writing style to provide 3 instant reply options directly above your chat box. It includes a draggable and foldable floating toolbar, fixes typos in 1 click, summarizes long threads, and keeps all personal messages 100% private on your machine."
 </blockquote>
 
 <div className="pt-6 border-t border-zinc-800 flex items-center justify-between">

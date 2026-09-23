@@ -66,6 +66,13 @@ export const siteKnowledge: KnowledgeItem[] = [
     keywords: ['awefill', 'autofill', 'form', 'job application', 'zero llm', 'shadow dom', 'chrome extension', 'greenhouse', 'lever', 'workday']
   },
   {
+    id: 'jntugv',
+    category: 'Projects',
+    title: 'JNTU-GV Official College Website & Enterprise CMS',
+    content: "Official web platform and multi-tenant Content Management System for JNTU-GV College of Engineering (jntugvcev.edu.in). Built with TanStack, Vite, Drizzle ORM, and PostgreSQL. Features multi-role admin controls, dedicated HOD domain logins, SWR caching for sub-50ms responses, an automated asset compression pipeline, and an offline database-powered RAG AI chatbot for student academic notices.",
+    keywords: ['jntugv', 'jntugvcev', 'college website', 'jntu gv', 'cms', 'drizzle', 'tanstack', 'offline rag', 'hod portal', 'caching', 'official website']
+  },
+  {
     id: 'projects',
     category: 'Projects',
     title: 'Key Projects Overview',
@@ -147,6 +154,10 @@ export function searchSiteContent(query: string): string {
 
   if (/\b(family|father|mother|parents|dad|mom|sister)\b/.test(qClean)) {
     return siteKnowledge.find(k => k.id === 'family')!.content;
+  }
+
+  if (/\b(jntugvcev|jntugv website|college website|cms portal|jntu cms)\b/.test(qClean)) {
+    return siteKnowledge.find(k => k.id === 'jntugv')!.content;
   }
 
   if (/\b(college|jntu|university|btech|degree|study|education|school)\b/.test(qClean)) {
