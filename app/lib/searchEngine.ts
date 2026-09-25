@@ -45,6 +45,13 @@ export const siteKnowledge: KnowledgeItem[] = [
     keywords: ['skills', 'tech stack', 'languages', 'frameworks', 'python', 'typescript', 'react', 'nextjs', 'flutter', 'pytorch', 'fastapi', 'technologies', 'tools', 'dart']
   },
   {
+    id: 'itantra',
+    category: 'Projects',
+    title: 'iTantra — Offline Low-Bandwidth Multilingual Voice Mesh Platform',
+    content: "iTantra is an ultra-low-bandwidth, zero-cloud, 100% offline multilingual voice transceiver platform for disaster response and tactical off-grid mesh networks. It compresses raw audio into an 86-byte binary payload (99.92% bandwidth savings), supports 10 Indian Scheduled Languages + English, runs on-device Edge AI (Whisper/FastSpeech2/Sherpa-ONNX), delivers <180ms same-language and <950ms cross-language audio playback, and features Priority 0 Emergency SOS with STREAM_ALARM override and a 3-Stage ACK Matrix (RECEIVED, TTS_STARTED, HEARD) in an 18.8 MB standalone APK.",
+    keywords: ['itantra', 'voice mesh', 'disaster response', 'offline voice', 'stt', 'tts', 'whisper', 'sherpa onnx', 'piper', 'fastspeech2', 'ble mesh', 'wifi direct', 'p2p', 'multilingual', '10 indian languages', 'zero cloud', 'edge ai', 'ndrf', 'emergency alarm', 'stream alarm', 'ack matrix']
+  },
+  {
     id: 'serea',
     category: 'Projects',
     title: 'Serea — AI Document Workspace',
@@ -66,6 +73,13 @@ export const siteKnowledge: KnowledgeItem[] = [
     keywords: ['awefill', 'autofill', 'form', 'job application', 'zero llm', 'shadow dom', 'chrome extension', 'greenhouse', 'lever', 'workday']
   },
   {
+    id: 'maid',
+    category: 'Projects',
+    title: 'Maid — Personal Assistant & Obsidian-Style Mindmap Planner',
+    content: "Maid is an intelligent personal mobile assistant app built with Flutter and SQLite. It features Obsidian-style linked notes (//Topic, [[Topic]]), an interactive force-directed knowledge graph with spring physics, scheduled 9:00 AM Morning Plans and 8:00 PM Evening Reviews with screen-wake support (fullScreenIntent: true) to wake devices when locked/off, natural spoken voice briefings, hands-free 'Hey Maid' wake-up, and the Colombo cognitive scheduling engine.",
+    keywords: ['maid', 'colombo', 'flutter', 'obsidian', 'linked notes', 'mindmap', 'knowledge graph', 'spring physics', 'daily briefing', 'voice briefing', 'hey maid', 'wake word', 'planner', 'routine', 'sqlite']
+  },
+  {
     id: 'jntugv',
     category: 'Projects',
     title: 'JNTU-GV Official College Website & Enterprise CMS',
@@ -76,8 +90,8 @@ export const siteKnowledge: KnowledgeItem[] = [
     id: 'projects',
     category: 'Projects',
     title: 'Key Projects Overview',
-    content: "1. Serea — Cross-platform Flutter AI document workspace with local LLM brain (iLovePDF + ChatGPT + NotebookLM).\n2. JNTU-GV Official Website & CMS — Institutional platform with offline RAG AI bot (jntugvcev.edu.in).\n3. Uni-LMS — AI Learning Management Platform for 250+ students (ulms.qubitedge.in).\n4. Echo — AI communication copilot Chrome extension (NVIDIA NIM + offline NLP engine).\n5. AweFill — Zero-LLM deterministic smart form autofill extension (28/28 verified tests).\n6. SignBridge — Continuous sign language recognition research (94.7% accuracy, Elsevier preprint).\n7. VLMS — Virtual Lab Management System for 10+ technical domains (FastAPI, Docker, WebGL).\n8. ClimateChain — Quantum-secured climate platform (IJSREM published paper, Top 5 Finalist).",
-    keywords: ['projects', 'serea', 'unipdf', 'signbridge', 'vlms', 'climatechain', 'echo', 'awefill', 'unilms', 'jntugv', 'built', 'work', 'paper', 'research', 'elsevier']
+    content: "1. iTantra — Offline low-bandwidth multilingual voice mesh platform for disaster response (99.92% bandwidth savings, 10 Indian languages, Edge AI).\n2. Serea — Cross-platform Flutter AI document workspace with local LLM brain (iLovePDF + ChatGPT + NotebookLM).\n3. Maid — Flutter personal assistant with Obsidian linked notes, force-directed graph, & spoken voice briefings.\n4. JNTU-GV Official Website & CMS — Institutional platform with offline RAG AI bot (jntugvcev.edu.in).\n5. Uni-LMS — AI Learning Management Platform for 250+ students (ulms.qubitedge.in).\n6. Echo — AI communication copilot Chrome extension (NVIDIA NIM + offline NLP engine).\n7. AweFill — Zero-LLM deterministic smart form autofill extension (28/28 verified tests).\n8. SignBridge — Continuous sign language recognition research (94.7% accuracy, Elsevier preprint).\n9. VLMS — Virtual Lab Management System for 10+ technical domains (FastAPI, Docker, WebGL).\n10. ClimateChain — Quantum-secured climate platform (IJSREM published paper, Top 5 Finalist).",
+    keywords: ['projects', 'itantra', 'serea', 'maid', 'unipdf', 'signbridge', 'vlms', 'climatechain', 'echo', 'awefill', 'unilms', 'jntugv', 'built', 'work', 'paper', 'research', 'elsevier']
   },
   {
     id: 'achievements',
@@ -164,6 +178,10 @@ export function searchSiteContent(query: string): string {
     return siteKnowledge.find(k => k.id === 'education')!.content;
   }
 
+  if (/\b(itantra|voice mesh|disaster response|mesh platform|offline voice|offline stt|offline tts|86-byte|86 byte)\b/.test(qClean)) {
+    return siteKnowledge.find(k => k.id === 'itantra')!.content;
+  }
+
   if (/\b(serea|unipdf|pdf chat|question paper|study book|flutter|ilovepdf)\b/.test(qClean)) {
     return siteKnowledge.find(k => k.id === 'serea')!.content;
   }
@@ -174,6 +192,10 @@ export function searchSiteContent(query: string): string {
 
   if (/\b(awefill|autofill|shadow dom|zero llm|form filling)\b/.test(qClean)) {
     return siteKnowledge.find(k => k.id === 'awefill')!.content;
+  }
+
+  if (/\b(maid|colombo|obsidian|linked notes|mindmap|knowledge graph|voice briefing|hey maid|wake word|daily briefing)\b/.test(qClean)) {
+    return siteKnowledge.find(k => k.id === 'maid')!.content;
   }
 
   if (/\b(skills|tech|stack|languages|python|typescript|react|flutter|pytorch|fastapi|frameworks)\b/.test(qClean)) {

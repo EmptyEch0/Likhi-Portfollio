@@ -41,6 +41,8 @@ I am an **AI/ML Engineer and Full-Stack Developer** currently pursuing B.Tech in
 
 | Project | Description | Stack | Links |
 | :--- | :--- | :--- | :--- |
+| **iTantra** | Offline Low-Bandwidth Multilingual Voice Mesh Platform for disaster response (99.92% bandwidth savings, 10 Indian languages, Edge AI). | Quantized Whisper/Sherpa, FastSpeech2, Wi-Fi Direct/BLE Mesh, Android | [Case Study](/projects/itantra) • [GitHub](https://github.com/EmptyEch0/SIH-2026) |
+| **Maid** | Autonomous Personal AI Assistant with Obsidian-Style Linked Notes, Force-Directed Knowledge Graph, Spoken Voice Briefings & Screen-Wake. | Flutter, SQLite/drift, Sherpa-ONNX, Colombo Scheduler, D3/Canvas Physics | [Case Study](/projects/maid) |
 | **Serea** | Unified AI Document Workspace & on-device LLM Suite with offline RAG, Question Paper Generator, and study guides. | Flutter, Qwen 3.5, Llama 3.2, nomic-embed | [Case Study](/projects/serea) |
 | **Echo** | AI Communication Copilot Chrome Extension generating context-aware replies in <180ms with persona memory. | Chrome MV3, NVIDIA NIM, Offline NLP | [Case Study](/projects/echo) |
 | **AweFill** | Air-gapped, zero-LLM smart form autofill Chrome extension with deterministic fuzzy matching (28/28 verified tests). | React 19, TypeScript, Vite, Shadow DOM | [Case Study](/projects/awefill) |

@@ -1,0 +1,283 @@
+export const metadata = {
+  title: 'iTantra — Offline Low-Bandwidth Multilingual Voice Mesh Platform for Disaster Response',
+  description: 'Zero-cloud, 100% offline multilingual voice transceiver platform designed for off-grid disaster response mesh networks with 99.92% bandwidth savings, 10 Indian languages + English, and on-device Edge AI.',
+  alternates: { canonical: '/itantra' }
+};
+
+# iTantra — Offline Low-Bandwidth Multilingual Voice Mesh Platform for Disaster Response
+
+<div className="text-zinc-400 text-sm mb-8 font-serif">
+  Disaster Response & Tactical Mesh Platform • Zero-Cloud Edge AI • 10 Indian Scheduled Languages + English • Quantized On-Device STT/TTS
+</div>
+
+<div className="space-y-8 text-[15.5px] text-zinc-300 leading-relaxed font-serif">
+
+<strong className="text-zinc-100 font-medium">iTantra</strong> is an ultra-low-bandwidth, zero-cloud, 100% offline multilingual voice transceiver platform engineered to maintain uninterrupted voice-in / voice-out communications during catastrophic telecom blackouts, extreme natural disasters, and tactical off-grid missions.
+
+By transforming heavy audio streams into compressed semantic neural tokens and binary payloads as small as <strong className="text-zinc-100">86 Bytes</strong> (achieving <strong className="text-zinc-100">99.92% bandwidth savings</strong>), iTantra eliminates network congestion over peer-to-peer Wi-Fi Direct and BLE 5.0 RFCOMM mesh links while translating speech across 10 Indian Scheduled Languages and English entirely on-device.
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">1. Problem Context & Critical Challenges</h2>
+
+During severe natural disasters (cyclones, earthquakes, flash floods, landslides) and remote tactical missions (ISRO remote launches, deep forest search & rescue, border defense), commercial telecommunications, cellular towers, fiber backbones, and power grids suffer total failure. In such high-stress scenarios, first responders (NDRF, SDRF, defense units) and affected citizens face two fatal bottlenecks:
+
+<ol className="space-y-3 text-zinc-300 pl-5 list-decimal">
+  <li>
+    <strong className="text-zinc-100">Severe Bandwidth & Network Collapse:</strong> Standard VoIP or raw voice streaming consumes 24–128 kbps (~112,000 Bytes for a brief 3.5-second clip). Over congested, ad-hoc, or low-bitrate tactical radio and mesh networks, this produces massive packet drops and immediate communication breakdown.
+  </li>
+  <li>
+    <strong className="text-zinc-100">Language & Literacy Barriers:</strong> India's linguistic landscape (22 official scheduled languages, hundreds of regional dialects) causes critical miscommunication during joint disaster operations involving multi-state response forces. Furthermore, panicked, non-literate, or visually impaired citizens cannot type or read text-based SMS/chat alerts during life-threatening crises.
+  </li>
+</ol>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">2. Proposed Innovation & Core Edge AI Pipeline</h2>
+
+Instead of transmitting heavy raw voice waveforms, iTantra executes an end-to-end on-device Edge AI transformation pipeline:
+
+<div className="my-6 p-4 rounded-xl border border-zinc-800 bg-zinc-900/60 not-prose">
+  <div className="text-[11px] font-mono text-zinc-400 uppercase tracking-wider mb-2">Architectural Data Flow Pipeline</div>
+  <div className="font-mono text-xs text-zinc-200 bg-zinc-950 p-3.5 rounded-lg border border-zinc-800/80 leading-relaxed overflow-x-auto">
+    [Speech Capture] ➔ [Offline Edge STT (Quantized Whisper / Sherpa-ONNX)] ➔ [Neural Text Serialization & Deflate Compression] ➔ [86-Byte Binary Mesh Transmission (Wi-Fi Direct P2P / BLE 5.0 RFCOMM)] ➔ [Edge Receiver Decompression] ➔ [Offline Translation Engine] ➔ [Offline Fast Neural TTS (FastSpeech2 / Piper)] ➔ [Natural Regional Audio Playback]
+  </div>
+</div>
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">1.</span>
+    <div>
+      <strong className="text-zinc-100">On-Device Speech-to-Text:</strong> Real-time audio capture converted to normalized textual representations via quantized INT8 Whisper and Sherpa-ONNX runtimes running locally on device CPU.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">2.</span>
+    <div>
+      <strong className="text-zinc-100">Neural Serialization & Compression:</strong> Text tokens, priority flags, dialect headers, and error-check CRC32 bytes are packed into a compact binary frame and Deflate-compressed down to a mere 86 bytes.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">3.</span>
+    <div>
+      <strong className="text-zinc-100">Zero-Infrastructure Mesh Hop:</strong> Packets travel over hop-by-hop Wi-Fi Direct (P2P) and Bluetooth Low Energy 5.0 (RFCOMM / L2CAP) ad-hoc mesh topologies with zero reliance on cellular towers or routers.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">4.</span>
+    <div>
+      <strong className="text-zinc-100">Offline Multilingual Translation:</strong> Receiving nodes decompress the payload and instantly translate the semantic intent into the responder's or citizen's selected native regional language.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">5.</span>
+    <div>
+      <strong className="text-zinc-100">Fast Neural Speech Synthesis (TTS):</strong> High-fidelity offline neural acoustic models (FastSpeech2 and Piper ONNX) render natural human speech in the target language for immediate ear-level playback.
+    </div>
+  </li>
+</ul>
+
+{/* VISUAL SHOWCASE SLOTS */}
+<ProjectImageShowcase
+  images={[
+    {
+      src: '/projects/itantra-preview-1.png',
+      alt: 'iTantra Tactical Mesh Dashboard & Live Operational Node Topology',
+      placeholderTitle: 'Tactical Mesh Dashboard & Node Topology',
+      placeholderSubtitle: 'Real-time P2P mesh network topology, signal strength indicator, and 3-stage delivery ACK tracker',
+      caption: 'Figure 1: iTantra Tactical Field Dashboard — Mesh Routing, Channel Health, & Multilingual Voice Logs'
+    },
+    {
+      src: '/projects/itantra-preview-2.png',
+      alt: 'iTantra Emergency SOS Broadcast & Multilingual Speech Synthesis Pipeline',
+      placeholderTitle: 'Emergency SOS Broadcast & Translation Pipeline',
+      placeholderSubtitle: 'Priority 0 SOS dispatch, STREAM_ALARM override trigger, and cross-language STT-to-TTS synthesis flow',
+      caption: 'Figure 2: iTantra Emergency Dispatcher — SOS Queue Bypass & 10 Indian Language Voice-In/Voice-Out Matrix'
+    }
+  ]}
+  title="Tactical Interface & Hardware Deployment"
+  badge="Field Engineering & Hardware"
+/>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">3. Key Technical Highlights & Validated Benchmarks</h2>
+
+<div className="space-y-6 pt-1">
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      1. 99.92% Bandwidth Savings (112,000 Bytes ➔ 86 Bytes)
+    </h3>
+    <div className="text-zinc-300">
+      Traditional VoIP transmissions require 24–128 kbps streaming bandwidth (~112 KB per 3.5s phrase). By transmitting compressed semantic representations rather than acoustic waveforms, iTantra condenses the transmission payload into an ultra-compact <strong className="text-zinc-100">86-byte binary payload frame</strong>. This achieves a <strong className="text-zinc-100">99.92% reduction in data volume</strong>, allowing hundreds of concurrent voice channels to coexist on low-bitrate tactical radio frequencies and saturated BLE links without packet collisions.
+    </div>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      2. 10 Indian Scheduled Languages + English Matrix
+    </h3>
+    <div className="text-zinc-300 mb-3">
+      Full bidirectional offline cross-translation and speech synthesis matrix supported natively:
+    </div>
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 not-prose font-sans text-xs">
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">HI • HINDI</span>
+        हिन्दी (Devanagari)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">TE • TELUGU</span>
+        తెలుగు (Telugu)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">TA • TAMIL</span>
+        தமிழ் (Tamil)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">KN • KANNADA</span>
+        ಕನ್ನಡ (Kannada)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">ML • MALAYALAM</span>
+        മലയാളം (Malayalam)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">MR • MARATHI</span>
+        मराठी (Marathi)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">BN • BENGALI</span>
+        বাংলা (Bengali)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">OR • ODIA</span>
+        ଓଡ଼ିଆ (Odia)
+      </div>
+      <div className="p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200">
+        <span className="font-mono text-zinc-400 block text-[10px]">GU • GUJARATI</span>
+        ગુજરાતી (Gujarati)
+      </div>
+      <div className="col-span-2 sm:col-span-3 p-2.5 rounded-lg bg-zinc-900/70 border border-zinc-800 text-zinc-200 flex items-center justify-between">
+        <div>
+          <span className="font-mono text-zinc-400 block text-[10px]">EN • ENGLISH</span>
+          Indian & Global English Matrix
+        </div>
+        <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40">100% Offline Models</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      3. True Zero-Cloud & 100% On-Device Execution
+    </h3>
+    <div className="text-zinc-300">
+      Operates with zero remote servers, zero cloud APIs, and zero internet connectivity. All speech parsing, machine translation, and speech generation run entirely on local smartphone microprocessors, ensuring strict operational data privacy, mission confidentiality, and total immunity against telecom grid blackouts.
+    </div>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      4. Sub-Second Ultra-Low Latency Profile
+    </h3>
+    <ul className="space-y-2 text-zinc-300 pl-4 list-disc">
+      <li>
+        <strong className="text-zinc-200">Same-Language Processing:</strong> Direct capture, mesh transmission, and local replay delivers speech in <strong className="text-zinc-100">under 180ms</strong>.
+      </li>
+      <li>
+        <strong className="text-zinc-200">Cross-Language Pipeline:</strong> Full STT ➔ translation ➔ neural TTS playback completes in <strong className="text-zinc-100">under 950ms</strong> on standard commodity ARM quad-core mobile processors.
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-medium text-zinc-100 mb-2 font-sans">
+      5. Dynamic LRU Memory Manager (&lt; 120 MB Active RAM)
+    </h3>
+    <div className="text-zinc-300">
+      To maintain compatibility with entry-level budget hardware used across rural disaster zones (Android 8.0+ / API 26–35 with 2GB–4GB RAM), iTantra implements a custom Dynamic Least-Recently-Used (LRU) Memory Manager. Quantized acoustic weights and translation dictionaries are paged in on demand, capping the active working memory footprint to strictly <strong className="text-zinc-100">under 120 MB RAM</strong> without triggering Android OS low-memory garbage collection pauses.
+    </div>
+  </div>
+
+</div>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">4. Tactical Emergency Mode & Multi-Stage Acknowledgment Matrix</h2>
+
+iTantra introduces a purpose-built tactical protocol tailored for life-or-death missions:
+
+<ul className="space-y-4 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Priority 0 SOS Queue Bypass & Non-Interruptible Alarms:</strong> Emergency distress beacons bypass standard messaging queues instantly. Upon receipt, the node forces device audio output to maximum volume on the hardware <code className="text-xs bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">STREAM_ALARM</code> channel, overriding Do-Not-Disturb (DND), silent mode, or active media sessions.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">3-Stage Real-Time ACK Verification Matrix:</strong> To eliminate life-critical uncertainty regarding whether a message was received and understood in hazardous disaster zones, the sender's tactical console tracks delivery progression across 3 deterministic stages:
+      
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-3 not-prose font-sans text-xs">
+        <div className="p-3 rounded-lg bg-zinc-900 border border-zinc-800">
+          <div className="text-emerald-400 font-mono font-semibold text-sm mb-1 flex items-center gap-1.5">
+            <span>✓</span> RECEIVED
+          </div>
+          <p className="text-zinc-400 text-[11px] leading-relaxed">
+            Binary frame CRC32 validated and stored in receiver transport buffer.
+          </p>
+        </div>
+        <div className="p-3 rounded-lg bg-zinc-900 border border-zinc-800">
+          <div className="text-emerald-400 font-mono font-semibold text-sm mb-1 flex items-center gap-1.5">
+            <span>✓✓</span> TTS_STARTED
+          </div>
+          <p className="text-zinc-400 text-[11px] leading-relaxed">
+            Local receiver neural engine has begun voice generation in target language.
+          </p>
+        </div>
+        <div className="p-3 rounded-lg bg-zinc-900 border border-zinc-800">
+          <div className="text-emerald-400 font-mono font-semibold text-sm mb-1 flex items-center gap-1.5">
+            <span>✓✓✓</span> HEARD
+          </div>
+          <p className="text-zinc-400 text-[11px] leading-relaxed">
+            Audio playback completed through speaker or responder tapped physical ACK.
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">5. Feasibility, Scalability & Social Impact</h2>
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">1.</span>
+    <div>
+      <strong className="text-zinc-100">Tested & Validated Standalone Prototype:</strong> Packaged as a self-contained <strong className="text-zinc-100">18.8 MB Android APK</strong> containing all quantized neural weights, language lookup tables, and RFCOMM/P2P mesh drivers. Rigorously verified across live disaster simulation drills and 18+ automated unit/integration test suites.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">2.</span>
+    <div>
+      <strong className="text-zinc-100">Universal Social Inclusion (Voice-In, Voice-Out):</strong> Bridges the digital and literacy divide during emergencies. Non-literate, elderly, and visually impaired citizens can speak freely in their native tongue and hear crystal-clear instructions without needing to read or type complex mobile screens.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">3.</span>
+    <div>
+      <strong className="text-zinc-100">Zero Recurring Infrastructure Cost:</strong> Operates entirely on existing consumer mobile devices and off-the-shelf tactical hardware without requiring costly recurring satellite subscriptions, private radio towers, or cellular service contracts.
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">6. Summary in 30 Seconds</h2>
+
+<blockquote className="border-l-2 border-zinc-700 pl-4 italic text-zinc-200 my-4 text-base">
+  "iTantra is an offline, zero-cloud multilingual voice transceiver platform designed for disaster response and tactical operations. By converting speech into an 86-byte compressed semantic frame transmitted over peer-to-peer mesh networks, it delivers 99.92% bandwidth savings, real-time voice translation across 10 Indian languages and English, and non-interruptible emergency SOS alerts without requiring cell towers, internet access, or cloud servers."
+</blockquote>
+
+<div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
+  <a href="/projects" className="text-sm text-zinc-400 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors">
+    ← Back to Projects
+  </a>
+  <a href="https://github.com/EmptyEch0/SIH-2026" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-300 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors">
+    View Repository on GitHub →
+  </a>
+</div>
+
+</div>

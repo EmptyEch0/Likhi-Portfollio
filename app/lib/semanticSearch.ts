@@ -175,6 +175,16 @@ export function performSemanticSearch(query: string): SearchResponse {
     };
   }
 
+  if (/\b(itantra|voice mesh|disaster response|mesh platform|offline voice|offline stt|offline tts|86-byte|86 byte|sherpa|piper|fastspeech2)\b/.test(qClean)) {
+    const d = docs.find(doc => doc.id === 'project-itantra')!;
+    return {
+      answer: d.text,
+      actionUrl: d.actionUrl,
+      actionLabel: d.actionLabel,
+      matchedTitle: d.title
+    };
+  }
+
   if (/\b(serea|unipdf|pdf|document workspace|notebooklm|question paper|study book|flutter)\b/.test(qClean)) {
     const d = docs.find(doc => doc.id === 'persona-serea')!;
     return {
@@ -197,6 +207,16 @@ export function performSemanticSearch(query: string): SearchResponse {
 
   if (/\b(awefill|autofill|shadow dom|zero llm extension|forms|greenhouse|lever|workday)\b/.test(qClean)) {
     const d = docs.find(doc => doc.id === 'persona-awefill')!;
+    return {
+      answer: d.text,
+      actionUrl: d.actionUrl,
+      actionLabel: d.actionLabel,
+      matchedTitle: d.title
+    };
+  }
+
+  if (/\b(maid|colombo|obsidian|linked notes|mindmap|knowledge graph|voice briefing|hey maid|wake word|daily briefing)\b/.test(qClean)) {
+    const d = docs.find(doc => doc.id === 'persona-maid')!;
     return {
       answer: d.text,
       actionUrl: d.actionUrl,

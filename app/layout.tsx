@@ -112,6 +112,7 @@ import ConsoleGreeting from './components/ConsoleGreeting';
 const FloatingContactWidget = dynamic(() => import('./components/FloatingContactWidget'));
 const OfflineDetector = dynamic(() => import('./components/OfflineDetector'));
 const SignatureIntro = dynamic(() => import('./components/SignatureIntro'));
+import SpidermanCompanion from './components/SpidermanCompanion';
 
 export default function RootLayout({
   children
@@ -240,6 +241,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <SpidermanCompanion />
         <FloatingContactWidget />
         <OfflineDetector />
         <Analytics />

@@ -1,0 +1,208 @@
+export const metadata = {
+  title: 'Maid — Personal Assistant & Obsidian-Style Mindmap Planner',
+  description: 'Intelligent personal mobile assistant and productivity ecosystem built with Flutter, featuring Obsidian-style linked notes, force-directed mindmap graph, spoken voice briefings, and "Hey Maid" wake-up.',
+  alternates: { canonical: '/maid' }
+};
+
+# Maid — Personal Assistant & Obsidian-Style Mindmap Planner
+
+<div className="text-zinc-400 text-sm mb-8 font-serif">
+  Persona Case Study • Flutter & Dart • Obsidian-Style Linked Notes • Force-Directed Knowledge Graph • Spoken Voice Briefings • SQLite
+</div>
+
+<div className="space-y-8 text-[15.5px] text-zinc-300 leading-relaxed font-serif">
+
+<strong className="text-zinc-100 font-medium">Maid</strong> is an intelligent personal mobile assistant and cognitive daily productivity ecosystem built with Flutter and Dart. It unifies <strong className="text-zinc-100">Obsidian-style bidirectional linked notes</strong>, a real-time <strong className="text-zinc-100">force-directed knowledge graph</strong>, automated <strong className="text-zinc-100">morning and evening spoken voice briefings</strong>, hands-free <strong className="text-zinc-100">"Hey Maid" voice wake-up</strong>, and the <strong className="text-zinc-100">Colombo cognitive scheduling engine</strong> into a unified private application.
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">1. 🧠 Obsidian-Style Linked Notes & Mindmap Knowledge Graph</h2>
+
+Maid transforms traditional flat notes into a deeply interconnected personal second brain:
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Inline Link Triggers (<code>//Topic</code> & <code>[[Topic]]</code>):</strong> Typing <code>//Topic</code> or <code>[[Topic]]</code> automatically highlights inline text into an interactive, clickable chip linking related notes, tasks, and ideas.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Smart Autocomplete Strip:</strong> Typing <code>//</code> or <code>[[</code> instantly summons a contextual autocomplete drawer listing matching notes, tasks, and DSA topics for friction-free linking.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Click-to-Redirect & 1-Tap Creation:</strong> Tapping any link chip instantly redirects to the target note. If the destination does not exist yet, Maid presents a 1-tap <em>"Create Note"</em> prompt.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Interactive Force-Directed Graph Canvas (🕸️):</strong>
+      <ul className="space-y-1.5 pt-2 pl-4 text-sm text-zinc-400 list-disc">
+        <li><strong className="text-zinc-300">Live Spring Physics:</strong> Full-screen interactive canvas visualizing your entire knowledge network with dynamic node repulsion and spring forces.</li>
+        <li><strong className="text-zinc-300">Lone Notes vs. Connected Hubs:</strong> Standalone notes float in a neat outer orbit ring, while interconnected notes form dynamic clusters and central concept hubs.</li>
+        <li><strong className="text-zinc-300">Category Filters & Search:</strong> Real-time filtering across Study, Work, Ideas, Shopping, and Personal categories, with instant text search and physics play/pause controls.</li>
+      </ul>
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Local Knowledge Map (🧠):</strong> In-note mini-graph modal to inspect immediate 1st-degree neighbors, incoming backlinks, and outgoing references without leaving your editing flow.
+    </div>
+  </li>
+</ul>
+
+{/* VISUAL SHOWCASE SLOTS */}
+<ProjectImageShowcase
+  images={[
+    {
+      src: '/projects/maid-preview-1.png',
+      alt: 'Maid Force-Directed Knowledge Graph & Obsidian Linked Notes',
+      placeholderTitle: 'Interactive Force-Directed Knowledge Graph',
+      placeholderSubtitle: 'Full-screen canvas with live spring physics, node clusters, category filters, and [[bidirectional]] note linking',
+      caption: 'Figure 1: Maid Knowledge Graph — Force-Directed Spring Physics, Hub Clusters, & In-Note Local Map'
+    },
+    {
+      src: '/projects/maid-preview-2.png',
+      alt: 'Maid Spoken Voice Briefing Dialog & Colombo Daily Schedule',
+      placeholderTitle: 'Daily Voice Briefing & Voice Wake-Up',
+      placeholderSubtitle: 'Morning 9:00 AM plan & evening 8:00 PM review with live soundwaves, checklist, and "Hey Maid" voice wake-up',
+      caption: 'Figure 2: Maid Spoken Briefing Engine — Screen-Wake Notifications, Audio Synthesis & Colombo Routine Engine'
+    }
+  ]}
+  title="Maid Knowledge Graph & Spoken Briefing UI"
+  badge="Mobile Application Gallery"
+/>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">2. ☀️ Scheduled Morning Plan (9:00 AM) & 🌙 Evening Review (8:00 PM)</h2>
+
+Maid keeps you accountable with automated, proactive routine synchronization:
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">9:00 AM Morning Plan:</strong> Greets you personally by name, outlines high-priority items, and presents a clear summary of scheduled routines for the day.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">8:00 PM Evening Review:</strong> A structured wrap-up displaying completed accomplishments and rolling over unfinished tasks with reflection prompts.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Screen-Wake Support (<code>fullScreenIntent: true</code>):</strong> Configured with exact alarm permissions to wake the device screen even when locked or turned off, ensuring high-priority morning routines are never missed.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">1-Tap Direct Launch:</strong> Tapping the briefing notification opens the Daily Briefing screen directly and triggers the natural spoken voice readout automatically.
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">3. 🎙️ Natural Spoken Voice Briefing Engine</h2>
+
+Maid turns daily plans into an interactive, natural audio experience:
+
+<blockquote className="border-l-2 border-blue-500/60 pl-4 py-1 italic text-zinc-200 my-4 text-sm bg-blue-950/20 rounded-r-lg">
+  "Hey Likhith, good morning! Here is your daily plan from Maid. You have 2 high-priority tasks: Project Review and Architecture Sync. Overall, you have 5 pending tasks today, and 2 scheduled routines: DSA Practice at 4 PM. Let's stay focused and make today productive!"
+</blockquote>
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Interactive Briefing Dialog:</strong> Features real-time animated audio sound waves while speaking.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Integrated Tasks Checklist:</strong> Mark pending items complete or adjust schedules directly inside the briefing dialog while audio plays.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Audio Playback Controls:</strong> Dedicated controls to Play Aloud, Stop Voice, or Replay briefings at any time.
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">4. 🤖 "Hey Maid" Hands-Free Voice Wake-Up</h2>
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Continuous Wake-Word Detection:</strong> Maid listens for customizable wake phrases: <em>"Hey Maid"</em>, <em>"Maid"</em>, or <em>"Ok Maid"</em>.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Automatic Activation:</strong> Instantly wakes the assistant, presents your current plan, and opens the voice command console for hands-free task entry while working or cooking.
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">5. ⚙️ Customization Card & Colombo Routine Brain</h2>
+
+<ul className="space-y-3 text-zinc-300 pl-2">
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Personalized User Name:</strong> Set your preferred name (default: "Likhith") so Maid addresses you by name across all voice and text interactions.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Granular Time Pickers:</strong> Customize your morning briefing hour (default 09:00) and evening wrap-up schedule (default 20:00).
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Auto-Speak & Wake-Word Toggles:</strong> Enable or disable automatic voice readout and continuous wake-word listening on demand.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">Instant Test Buttons:</strong> Preview morning and evening voice briefings anytime with 1-tap ☀️ <em>Test Morning</em> and 🌙 <em>Test Evening</em> triggers.
+    </div>
+  </li>
+  <li className="flex gap-2">
+    <span className="text-zinc-500 shrink-0">▪</span>
+    <div>
+      <strong className="text-zinc-100">"Colombo" Cognitive Scheduling Brain:</strong> Analyzes historical task completion velocities, flags habit drop-offs, and recommends optimal scheduling adjustments with zero cloud data sharing.
+    </div>
+  </li>
+</ul>
+
+<h2 className="font-cormorant text-2xl text-zinc-100 font-semibold pt-4 mb-2">6. Summary in 30 Seconds</h2>
+
+<blockquote className="border-l-2 border-zinc-700 pl-4 italic text-zinc-200 my-4 text-base">
+  "Maid is a private, all-in-one Flutter mobile assistant combining Obsidian-style bidirectional linked notes, an interactive force-directed mindmap graph with live spring physics, natural spoken voice briefings, hands-free 'Hey Maid' wake-word activation, and the Colombo routine engine for total daily productivity."
+</blockquote>
+
+<div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
+  <a href="/projects" className="text-sm text-zinc-400 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors">
+    ← Back to Projects
+  </a>
+  <a href="https://github.com/EmptyEch0" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-300 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors">
+    View on GitHub →
+  </a>
+</div>
+
+</div>

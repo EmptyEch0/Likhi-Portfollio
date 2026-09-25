@@ -26,6 +26,40 @@ export const metadata = {
 
   <div className="space-y-10">
 
+    {/* ITANTRA (OFFLINE VOICE MESH PLATFORM) */}
+    <div>
+      <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+        <h3 className="text-lg font-medium text-zinc-100">
+          <a href="/projects/itantra" className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200 text-zinc-100 hover:text-white transition-colors">
+            iTantra — Offline Multilingual Voice Mesh Platform
+          </a>
+        </h3>
+        <span className="text-xs text-zinc-400 font-sans shrink-0">Edge AI • 99.92% Bandwidth Savings • 10 Indian Languages • Wi-Fi Direct / BLE Mesh • 86-Byte Frame</span>
+      </div>
+      <ul className="space-y-2 text-[15px] text-zinc-300 leading-relaxed">
+        <li className="flex gap-2">
+          <span className="text-zinc-500 shrink-0">▪</span>
+          <span>Architected iTantra, an ultra-low-bandwidth, zero-cloud, 100% offline voice transceiver platform designed to maintain uninterrupted voice-in / voice-out communications during telecom blackouts, natural disasters, and tactical off-grid operations.</span>
+        </li>
+        <li className="flex gap-2">
+          <span className="text-zinc-500 shrink-0">▪</span>
+          <span>Engineered an on-device Edge AI pipeline: quantized Whisper/Sherpa-ONNX STT ➔ neural text serialization ➔ 86-byte binary mesh frame (99.92% bandwidth savings over raw 112KB audio) over Wi-Fi Direct P2P & BLE 5.0 RFCOMM ➔ offline multilingual translation ➔ fast neural TTS (FastSpeech2/Piper) delivering &lt;180ms same-language and &lt;950ms cross-language audio playback.</span>
+        </li>
+        <li className="flex gap-2">
+          <span className="text-zinc-500 shrink-0">▪</span>
+          <span>Implemented full bidirectional translation across 10 Indian Scheduled Languages + English, Priority 0 Emergency SOS with non-interruptible <code className="text-xs bg-zinc-800 px-1 py-0.5 rounded text-zinc-200">STREAM_ALARM</code> override, a 3-Stage ACK Matrix (<code className="text-xs text-emerald-400 font-mono">RECEIVED</code>, <code className="text-xs text-emerald-400 font-mono">TTS_STARTED</code>, <code className="text-xs text-emerald-400 font-mono">HEARD</code>), and an 18.8 MB standalone APK operating under 120 MB RAM via dynamic LRU paging.</span>
+        </li>
+      </ul>
+      <div className="mt-3 pl-4 flex flex-wrap items-center gap-3">
+        <a href="/projects/itantra" className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 px-3 py-1 rounded border border-zinc-700/80 transition-colors">
+          Read iTantra Case Study & Architecture →
+        </a>
+        <a href="https://github.com/EmptyEch0/SIH-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 bg-emerald-950/30 hover:bg-emerald-900/40 px-2.5 py-1 rounded border border-emerald-800/50 transition-colors">
+          GitHub Repo ↗
+        </a>
+      </div>
+    </div>
+
     {/* JNTU GV OFFICIAL WEBSITE */}
     <div>
       <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
@@ -295,19 +329,32 @@ export const metadata = {
     {/* MAID */}
     <div>
       <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
-        <h3 className="text-lg font-medium text-zinc-100">Maid — Personal Assistant & Colombo Daily Planner App</h3>
-        <span className="text-xs text-zinc-400 font-sans shrink-0">Flutter • Dart • Local Intelligence Engine • Calendar & Scheduling • SQLite</span>
+        <h3 className="text-lg font-medium text-zinc-100">
+          <a href="/projects/maid" className="underline underline-offset-4 decoration-zinc-500 hover:decoration-zinc-200 text-zinc-100 hover:text-white transition-colors">
+            Maid — Personal Assistant & Obsidian-Style Mindmap Planner
+          </a>
+        </h3>
+        <span className="text-xs text-zinc-400 font-sans shrink-0">Flutter • Dart • Force-Directed Graph • Obsidian [[Links]] • Voice Briefing • "Hey Maid"</span>
       </div>
       <ul className="space-y-2 text-[15px] text-zinc-300 leading-relaxed">
         <li className="flex gap-2">
           <span className="text-zinc-500 shrink-0">▪</span>
-          <span>Developed Maid, a personalized mobile assistant app built with Flutter to automate daily routine tracking, smart alarms, scheduled reminders, quick notes, and calendar management.</span>
+          <span>Developed Maid, a personalized mobile assistant app built with Flutter combining Obsidian-style linked notes (<code className="text-xs bg-zinc-800 px-1 py-0.5 rounded text-zinc-200">//Topic</code> & <code className="text-xs bg-zinc-800 px-1 py-0.5 rounded text-zinc-200">[[Topic]]</code>), an interactive force-directed knowledge graph with live spring physics (lone notes outer orbit, connected clusters, category filters), and local in-note knowledge maps.</span>
         </li>
         <li className="flex gap-2">
           <span className="text-zinc-500 shrink-0">▪</span>
-          <span>Integrated an internal cognitive scheduling brain ("Colombo") that analyzes personal productivity patterns, recommends schedule adjustments, tracks active habits, and ensures zero missed deadlines.</span>
+          <span>Engineered a Natural Spoken Voice Briefing Engine delivering scheduled 9:00 AM Morning Plans and 8:00 PM Evening Reviews with screen-wake support (<code className="text-xs bg-zinc-800 px-1 py-0.5 rounded text-zinc-200">fullScreenIntent: true</code>) to wake devices when locked/off, animated sound waves, and in-dialog task checklists.</span>
+        </li>
+        <li className="flex gap-2">
+          <span className="text-zinc-500 shrink-0">▪</span>
+          <span>Integrated hands-free <em>"Hey Maid"</em> continuous wake-word listening, custom time pickers, and the "Colombo" cognitive scheduling engine that analyzes habit velocities for proactive routine optimization.</span>
         </li>
       </ul>
+      <div className="mt-3 pl-4 flex flex-wrap items-center gap-3">
+        <a href="/projects/maid" className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 px-3 py-1 rounded border border-zinc-700/80 transition-colors">
+          Read Maid Case Study & Breakdown →
+        </a>
+      </div>
     </div>
 
     {/* AWEFILL */}

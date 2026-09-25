@@ -60,6 +60,16 @@
     "keywords": ["why ai", "chose ai", "v0", "lovable", "scaler", "machine learning", "journey", "llm", "rag", "agents", "vector"]
   },
   {
+    "id": "project-itantra",
+    "category": "Projects",
+    "title": "iTantra — Offline Low-Bandwidth Multilingual Voice Mesh Platform",
+    "summary": "iTantra is an ultra-low-bandwidth, zero-cloud, 100% offline multilingual voice transceiver platform for disaster response and tactical off-grid mesh networks. Achieves 99.92% bandwidth savings (86-byte frames), supports 10 Indian languages + English, and runs on-device Edge AI (Whisper/FastSpeech2/Sherpa-ONNX).",
+    "text": "iTantra is a zero-cloud, 100% offline multilingual voice transceiver platform designed for disaster response operations during telecom and power collapse:\n• 99.92% Bandwidth Savings: Replaces raw 112KB voice audio with an 86-byte compressed semantic binary frame for congestion-free Wi-Fi Direct P2P and BLE 5.0 RFCOMM mesh transmission.\n• 10 Indian Languages + English: Full bidirectional offline speech recognition, neural translation, and voice synthesis across Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Odia, Gujarati, and English.\n• Edge AI Pipeline: Quantized INT8 Whisper/Sherpa-ONNX STT ➔ Neural Serialization ➔ 86B Mesh Frame ➔ Offline Translation ➔ Fast Neural TTS (FastSpeech2/Piper).\n• Ultra-Low Latency: <180ms same-language and <950ms cross-language audio playback on ARM quad-core mobile processors.\n• Tactical Emergency Mode: Priority 0 SOS queue bypass with non-interruptible STREAM_ALARM override for silent/DND devices, and a 3-Stage ACK Matrix (RECEIVED, TTS_STARTED, HEARD).\n• Standalone 18.8 MB APK: Low memory footprint (<120 MB RAM) via dynamic LRU model paging with zero recurring server/satellite costs.",
+    "actionUrl": "/projects/itantra",
+    "actionLabel": "View iTantra Case Study",
+    "keywords": ["itantra", "voice mesh", "disaster response", "offline stt", "offline tts", "whisper", "sherpa onnx", "piper", "fastspeech2", "ble mesh", "wifi direct", "p2p", "multilingual", "10 indian languages", "zero cloud", "edge ai", "ndrf", "tactical emergency", "stream alarm", "ack matrix"]
+  },
+  {
     "id": "persona-serea",
     "category": "Projects",
     "title": "Serea — Unified AI Document Workspace & Local LLM Suite",
@@ -88,6 +98,16 @@
     "actionUrl": "/projects/awefill",
     "actionLabel": "View AweFill Case Study",
     "keywords": ["awefill", "form autofill", "chrome extension", "job application", "internship forms", "zero llm", "shadow dom", "offline", "privacy", "greenhouse", "lever", "workday", "fuzzy matching"]
+  },
+  {
+    "id": "persona-maid",
+    "category": "Projects",
+    "title": "Maid — Personal Assistant & Obsidian-Style Mindmap Planner",
+    "summary": "Maid is an intelligent personal mobile assistant and productivity ecosystem built with Flutter, featuring Obsidian-style bidirectional linked notes (//Topic, [[Topic]]), force-directed knowledge graph with spring physics, scheduled 9 AM / 8 PM spoken voice briefings, hands-free 'Hey Maid' wake-up, and the Colombo routine engine.",
+    "text": "Maid is a personal AI assistant and daily planner mobile app built with Flutter and SQLite:\n• Obsidian-Style Linked Notes: Inline link triggers (//Topic, [[Topic]]) with smart autocomplete strip and 1-tap note creation.\n• Force-Directed Knowledge Graph: Full-screen interactive canvas with live spring physics, standalone note orbits, dynamic clusters, category filters, and in-note local knowledge maps.\n• Spoken Voice Briefings: Scheduled 9:00 AM Morning Plans and 8:00 PM Evening Reviews with screen-wake support (fullScreenIntent: true) to wake devices when locked/off, animated sound waves, and interactive checklist.\n• 'Hey Maid' Voice Wake-Up: Hands-free continuous wake-word detection ('Hey Maid', 'Maid', 'Ok Maid') to activate the voice assistant.\n• Colombo Scheduling Engine: Analyzes productivity patterns, habits, and task completion velocities with zero cloud data sharing.",
+    "actionUrl": "/projects/maid",
+    "actionLabel": "View Maid Case Study",
+    "keywords": ["maid", "colombo", "flutter", "mobile assistant", "obsidian", "linked notes", "mindmap", "knowledge graph", "spring physics", "daily briefing", "voice briefing", "hey maid", "wake word", "routine", "planner", "sqlite"]
   },
   {
     "id": "project-jntugv",
