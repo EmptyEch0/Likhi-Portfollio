@@ -112,7 +112,8 @@ import ConsoleGreeting from './components/ConsoleGreeting';
 const FloatingContactWidget = dynamic(() => import('./components/FloatingContactWidget'));
 const OfflineDetector = dynamic(() => import('./components/OfflineDetector'));
 const SignatureIntro = dynamic(() => import('./components/SignatureIntro'));
-import SpidermanCompanion from './components/SpidermanCompanion';
+const SpidermanCompanion = dynamic(() => import('./components/SpidermanCompanion'));
+import BackButton from './components/BackButton';
 
 export default function RootLayout({
   children
@@ -238,6 +239,7 @@ export default function RootLayout({
 
           {/* Main Content Area */}
           <main className="flex-1 max-w-[80ch]">
+            <BackButton />
             {children}
           </main>
         </div>
