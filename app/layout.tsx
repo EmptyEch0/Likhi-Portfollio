@@ -102,7 +102,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png']
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'xrvSEZHwDI_dfCj9w_zS8OT2MwTH-lNY9UQyhPR1yWc'
   },
   robots: {
     index: true,
