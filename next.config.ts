@@ -5,24 +5,40 @@ import postgres from 'postgres';
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   async redirects() {
+    const projectRedirects = [
+      { source: '/serea', destination: '/projects/serea', permanent: true },
+      { source: '/echo', destination: '/projects/echo', permanent: true },
+      { source: '/awefill', destination: '/projects/awefill', permanent: true },
+      { source: '/jntugvcev', destination: '/projects/jntugvcev', permanent: true },
+      { source: '/itantra', destination: '/projects/itantra', permanent: true },
+      { source: '/maid', destination: '/projects/maid', permanent: true }
+    ];
+
     if (!process.env.POSTGRES_URL) {
-      return [];
+      return projectRedirects;
     }
 
-    const sql = postgres(process.env.POSTGRES_URL, {
-      ssl: 'allow'
-    });
+    try {
+      const sql = postgres(process.env.POSTGRES_URL, {
+        ssl: 'allow'
+      });
 
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
+      let redirects = await sql`
+        SELECT source, destination, permanent
+        FROM redirects;
+      `;
 
-    return redirects.map(({ source, destination, permanent }) => ({
-      source,
-      destination,
-      permanent: !!permanent
-    }));
+      return [
+        ...projectRedirects,
+        ...redirects.map(({ source, destination, permanent }) => ({
+          source,
+          destination,
+          permanent: !!permanent
+        }))
+      ];
+    } catch {
+      return projectRedirects;
+    }
   },
   async headers() {
     return [

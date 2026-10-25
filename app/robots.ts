@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/']
     },
-    sitemap: 'https://next-mdx-blog.vercel.app/sitemap.xml'
+    sitemap: 'https://likhith.online/sitemap.xml',
+    host: 'https://likhith.online'
   };
 }
