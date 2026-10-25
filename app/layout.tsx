@@ -76,8 +76,16 @@ export const metadata: Metadata = {
   creator: 'Likhith Kumar Mankala',
   publisher: 'Likhith Kumar Mankala',
   icons: {
-    icon: '/icon.png',
-    apple: '/icon.png'
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: '/favicon.ico'
   },
   openGraph: {
     type: 'website',
