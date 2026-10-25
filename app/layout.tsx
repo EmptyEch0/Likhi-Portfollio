@@ -39,10 +39,10 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Likhith Kumar Mankala | AI Engineer & Full-Stack Developer | JNTU GV',
-    template: '%s | Likhith Kumar Mankala'
+    default: 'Likhith — AI Engineer & Full-Stack Developer | Likhith Kumar Mankala',
+    template: '%s | Likhith'
   },
-  description: 'Official portfolio of Likhith Kumar Mankala (also known as Likhith Mankala / EmptyEch0) — AI Engineer and IT student at JNTU GV Vizianagaram. Specializing in LLMs, Agentic AI, RAG pipelines, FastAPI, Next.js, and Deep Learning.',
+  description: 'Official portfolio of Likhith (Likhith Kumar Mankala) — AI Engineer and IT student at JNTU GV Vizianagaram. Specializing in LLMs, Agentic AI, RAG pipelines, FastAPI, Next.js, and Deep Learning.',
   keywords: [
     'Likhith Kumar Mankala',
     'Likhith Kumar',
@@ -258,6 +258,36 @@ export default function RootLayout({
         mainEntity: {
           '@id': 'https://likhith.online/#person'
         }
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://likhith.online/#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Who is Likhith (Likhith Kumar Mankala)?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Likhith (Likhith Kumar Mankala) is an AI Engineer and Full-Stack Developer studying Information Technology at JNTU-GV College of Engineering Vizianagaram. He specializes in LLMs, Agentic AI, RAG architectures, and scalable full-stack applications.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What projects has Likhith built?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Likhith has architected iTantra (an offline low-bandwidth voice mesh platform for disaster response), Serea (unified AI document workspace with local LLMs), AweFill (zero-LLM deterministic form autofill browser extension), and the official JNTU-GV CEV institutional web platform and CMS.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What is Likhith\'s technical background?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Likhith specializes in Python, TypeScript, FastAPI, Next.js, PyTorch, LangChain, local LLM inference (Ollama/GGUF), and computer vision. He has served as an AI Full-Stack Intern at Qubitedge Global Services and University Student SPOC for the Smart India Hackathon (SIH 2026).'
+            }
+          }
+        ]
       }
     ]
   };
