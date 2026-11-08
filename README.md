@@ -37,7 +37,7 @@ This isn't just a portfolio. It's a fully interactive experience with an **in-br
 
 | Feature | Description |
 |:---|:---|
-| 🧠 **AI Portfolio Assistant** | A fully offline semantic search chatbot that answers questions about my background, projects, and skills — no API keys, no LLM costs. Powered by TF-IDF + cosine similarity over a curated knowledge base. |
+| 🧠 **AI Portfolio Assistant** | A fully offline chatbot that answers questions from every page of the site — no API keys, no LLM costs. Curated answers for common questions, BM25 search over all page sections for everything else, follow-up suggestions, and "what's on this page?" summaries. |
 | 🕷️ **Spider-Man Companion** | A pixel-art Spidey that follows your cursor, shoots webs on click, performs acrobatic swings on double-click, and does entrance stunts on page navigation. 632 lines of pure vanilla JS animation. |
 | 🎬 **Cinematic Intro** | A split-curtain signature animation with randomized inspirational quotes shown once per session. Click to skip. |
 | 📸 **Polaroid Galleries** | Retro-styled photo grids and zig-zag polaroid layouts with hover tilt effects for life stories and project showcases. |
@@ -87,10 +87,10 @@ next-mdx-blog/
 │   │   ├── CollegePhotoGallery.tsx    # Landscape/portrait photo layouts
 │   │   └── ConsoleGreeting.tsx        # DevTools console easter egg
 │   ├── lib/
-│   │   ├── semanticSearch.ts   # TF-IDF vectorizer + cosine similarity engine
-│   │   └── knowledgeBase.ts    # Keyword-matched Q&A pairs
+│   │   └── semanticSearch.ts   # Chatbot: curated answers + BM25 over every page section
 │   ├── data/
-│   │   └── knowledgeBase.json  # 25+ indexed knowledge documents
+│   │   ├── knowledgeBase.json  # Curated answers for common questions
+│   │   └── siteIndex.json      # Generated from every page.mdx (scripts/build-site-index.mjs, runs on dev/build)
 │   ├── api/contact/route.ts    # Resend email API route
 │   ├── life/page.mdx           # "Where Curiosity Began" — childhood story
 │   ├── why-ai/page.mdx         # "Why I Chose AI" — career transition
@@ -117,7 +117,7 @@ next-mdx-blog/
 
 - **Server Components by default** — Layout is a Server Component; interactive widgets are lazy-loaded via `next/dynamic` to keep the initial HTML payload lean.
 - **MDX for content** — All pages are `.mdx` files with custom component injection (Polaroids, carousels, photo grids) via `mdx-components.tsx`.
-- **Zero-dependency AI** — The chatbot runs entirely in-browser with no external API calls. A TF-IDF vectorizer with bigram boosting and cosine similarity ranks 25+ knowledge documents, with regex intent rules for high-priority queries.
+- **Zero-dependency AI** — The chatbot runs entirely in-browser with no external API calls. Curated answers handle common questions; anything else is answered by BM25 search over every section of every page (`siteIndex.json`, regenerated on each `dev`/`build`), so new page content is answerable automatically. The search chunk lazy-loads on the first question. Regression check: `node scripts/check-chatbot.mjs`.
 - **Conditional database** — Postgres connection is only established when `POSTGRES_URL` is configured, avoiding crashes in local dev.
 
 ---

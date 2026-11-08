@@ -35,12 +35,9 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://likhith.online'),
-  alternates: {
-    canonical: '/'
-  },
   title: {
-    default: 'Likhith — AI Engineer & Full-Stack Developer | Likhith Kumar Mankala',
-    template: '%s | Likhith'
+    default: 'Likhith Kumar Mankala — AI Engineer & Full-Stack Developer | JNTUGV',
+    template: '%s | Likhith Kumar Mankala'
   },
   description: 'Official portfolio of Likhith (Likhith Kumar Mankala) — AI Engineer and IT student at JNTU GV Vizianagaram. Specializing in LLMs, Agentic AI, RAG pipelines, FastAPI, Next.js, and Deep Learning.',
   keywords: [
@@ -52,6 +49,15 @@ export const metadata: Metadata = {
     'Likhith',
     'Mankala',
     'Mankala Likhith Kumar',
+    'Mankala Likhith',
+    'M Likhith Kumar',
+    'Likhith JNTUGV',
+    'Likhith JNTU GV',
+    'Likhith Kumar JNTUGV',
+    'Likhith Mankala JNTUGV',
+    'Likhith Vizianagaram',
+    'Likhith Portfolio',
+    'likhith.online',
     'AI Engineer',
     'AI Engineer Portfolio',
     'JNTU GV',
@@ -70,6 +76,9 @@ export const metadata: Metadata = {
     'Serea Document Workspace',
     'iTantra',
     'AweFill',
+    'Echo AI Copilot',
+    'Maid AI Assistant',
+    'JNTUGV CEV Website',
     'UniPDF AI'
   ],
   authors: [{ name: 'Likhith Kumar Mankala', url: 'https://github.com/EmptyEch0' }],
@@ -90,10 +99,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://likhith.online',
     siteName: 'Likhith Kumar Mankala Portfolio',
-    title: 'Likhith Kumar Mankala | AI Engineer & Full-Stack Developer | JNTU GV',
-    description: 'AI Engineer & Full-Stack Developer at JNTU GV specializing in LLMs, Agentic AI, RAG pipelines, FastAPI, and Next.js.',
     images: [
       {
         url: '/og-image.png',
@@ -104,10 +110,7 @@ export const metadata: Metadata = {
     ]
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Likhith Kumar Mankala | AI Engineer & Full-Stack Developer | JNTU GV',
-    description: 'AI Engineer & Full-Stack Developer at JNTU GV specializing in LLMs, Agentic AI, RAG pipelines, FastAPI, and Next.js.',
-    images: ['/og-image.png']
+    card: 'summary_large_image'
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'xrvSEZHwDI_dfCj9w_zS8OT2MwTH-lNY9UQyhPR1yWc'
@@ -188,12 +191,20 @@ export default function RootLayout({
           'Likhith',
           'Mankala',
           'Mankala Likhith Kumar',
+          'Mankala Likhith',
+          'M Likhith Kumar',
           'EmptyEch0',
           'Likhith AI Engineer'
         ],
         url: 'https://likhith.online',
         image: 'https://likhith.online/og-image.png',
         jobTitle: 'AI Engineer & Full-Stack Developer',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Vizianagaram',
+          addressRegion: 'Andhra Pradesh',
+          addressCountry: 'IN'
+        },
         worksFor: {
           '@type': 'Organization',
           name: 'Qubitedge Global Services'
@@ -343,6 +354,10 @@ export default function RootLayout({
           <main className="flex-1 max-w-[80ch]">
             <BackButton />
             {children}
+            <footer className="mt-20 pt-6 border-t border-zinc-200 dark:border-zinc-800/80 text-xs text-zinc-500 font-sans leading-relaxed">
+              © {new Date().getFullYear()} Likhith Kumar Mankala (Mankala Likhith Kumar) · B.Tech IT, JNTUGV — JNTU-GV
+              College of Engineering, Vizianagaram
+            </footer>
           </main>
         </div>
         <SpidermanCompanion />

@@ -17,7 +17,7 @@
     "text": "Likhith grew up in Peddamadi, a small village near the Odisha border in Andhra Pradesh. For nearly fifteen years, his entire schooling from primary to intermediate took place there. His father is an RMP doctor treating patients across neighboring rural villages, and his mother runs a small neighborhood shop. He has two supportive elder sisters.",
     "actionUrl": "/life",
     "actionLabel": "Read Full Life Story",
-    "keywords": ["born", "birthplace", "hometown", "peddamadi", "village", "native", "grew", "childhood", "origin", "where", "father", "mother", "doctor", "shop", "family", "sister", "sisters", "odisha"]
+    "keywords": ["born", "birthplace", "hometown", "peddamadi", "village", "native", "grew", "childhood", "origin", "where", "father", "mother", "doctor", "shop", "family", "sister", "sisters", "odisha", "where from", "parents", "school", "schooling", "intermediate", "andhra pradesh"]
   },
   {
     "id": "early-curiosity",
@@ -27,7 +27,17 @@
     "text": "Likhith loved taking apart toy cars, remote-control gadgets, and robots to examine motors, wires, and gears. His earliest digital memories include gaming on his father's Celkon keypad phone, stretching his arm out of windows to capture weak 3G signals in Peddamadi, exploring his uncle's touchscreen phone from Mumbai, and encountering the first desktop computer at his school.",
     "actionUrl": "/life",
     "actionLabel": "Read Curiosity Story",
-    "keywords": ["toys", "car", "remote", "curious", "curiosity", "took apart", "celkon", "phone", "keypad", "3g", "internet", "touchscreen", "mumbai", "uncle", "games", "computer"]
+    "keywords": ["toys", "car", "remote", "curious", "curiosity", "took apart", "celkon", "keypad phone", "keypad", "first phone", "first computer", "kid", "3g", "internet", "touchscreen", "mumbai", "uncle", "games", "computer"]
+  },
+  {
+    "id": "hobbies",
+    "category": "Life",
+    "title": "Life Outside Engineering — Films, Marvel & Side Projects",
+    "summary": "Outside engineering Likhith explores new AI models, reads research papers, watches films (a big Marvel and Christopher Nolan fan), and builds side projects.",
+    "text": "Outside of engineering, Likhith is usually:\n• Exploring the latest AI models and reading research papers\n• Watching films — he loves the Marvel universe, and Christopher Nolan's films changed the way he looks at storytelling, imagination, and technology\n• Experimenting with side projects and learning something new just for fun\n• Taking spontaneous trips with friends to Araku, Puri, and Vizag",
+    "actionUrl": "/life",
+    "actionLabel": "Read Life & Stories",
+    "keywords": ["hobby", "hobbies", "free time", "spare time", "outside work", "outside engineering", "interests", "fun", "film", "favorite movie", "favorite film", "watch", "nolan", "christopher nolan", "marvel", "entertainment", "weekend"]
   },
   {
     "id": "college-jntugv",
@@ -37,7 +47,7 @@
     "text": "Likhith is pursuing his B.Tech in Information Technology at JNTU-GV (Jawaharlal Nehru Technological University), Vizianagaram. Starting code at age 18 with C language, he rapidly grew from debugging syntax errors to architecting university-wide platforms and leading campus dev teams.",
     "actionUrl": "/beyond-classroom",
     "actionLabel": "Read College Story",
-    "keywords": ["college", "jntu", "jntugv", "vizianagaram", "btech", "degree", "university", "education", "study", "c", "programming", "first year"]
+    "keywords": ["college", "jntu", "jntugv", "vizianagaram", "btech", "degree", "university", "education", "study", "studying", "programming", "first year", "jntu gv", "information technology", "branch", "engineering", "qualification", "graduation"]
   },
   {
     "id": "college-people",
@@ -47,7 +57,7 @@
     "text": "Key mentors and friends during college:\n• Pravallika: Introduced Likhith to web development in first year and co-built an Amazon clone in 13 days.\n• Prof. G. Jaya Suma: Mentored him in AI research, sign language recognition, and LLM development.\n• Mohan Pradeep: Senior mentor who guided his early development fundamentals.\n• Das & Saroj: Hostel roommates and travel companions for spontaneous trips across Araku, Puri, and Vizag.",
     "actionUrl": "/beyond-classroom",
     "actionLabel": "View Mentors & Friends",
-    "keywords": ["pravallika", "amazon", "clone", "jayasuma", "jaya suma", "professor", "mentor", "mohan pradeep", "das", "saroj", "araku", "puri", "vizag", "trips", "friends"]
+    "keywords": ["pravallika", "amazon", "clone", "jayasuma", "jaya suma", "professor", "mentor", "mohan pradeep", "das", "saroj", "araku", "puri", "vizag", "trips", "friends", "mentors", "hostel", "roommates", "travel", "guide"]
   },
   {
     "id": "why-ai",
@@ -57,7 +67,7 @@
     "text": "Watching AI tools like v0 and Lovable construct complete user interfaces in seconds showed Likhith that static web development alone wasn't enough. He spent a year mastering machine learning fundamentals via Scaler, progressing into RAG architectures, local LLMs (Llama, Qwen), vector databases (ChromaDB, Pinecone), and agentic workflows under Prof. Jaya Suma's mentorship.",
     "actionUrl": "/why-ai",
     "actionLabel": "Read Why AI Story",
-    "keywords": ["why ai", "chose ai", "v0", "lovable", "scaler", "machine learning", "journey", "llm", "rag", "agents", "vector"]
+    "keywords": ["why ai", "chose ai", "choose ai", "interest ai", "switch ai", "web dev ai", "v0", "lovable", "scaler", "machine learning", "journey", "llm", "rag", "agents", "vector"]
   },
   {
     "id": "project-itantra",
@@ -117,7 +127,7 @@
     "text": "Likhith led a 4-developer engineering team to architect and deploy the official JNTU-GV College of Engineering website and CMS (jntugvcev.edu.in). Built with TanStack, Vite, Drizzle ORM, and PostgreSQL, it features multi-role admin controls (Super Admin, HOD Departmental logins, Exam Cell, T&P), SWR caching for sub-50ms response times, an automated media optimization pipeline, and an offline database-powered RAG AI chatbot for student query resolution.",
     "actionUrl": "/projects/jntugvcev",
     "actionLabel": "View JNTU-GV Case Study",
-    "keywords": ["jntugv", "jntu gv", "jntugvcev", "official website", "jntugvcev.edu.in", "cms", "drizzle", "tanstack", "offline rag", "college website", "team lead", "hod portal", "caching"]
+    "keywords": ["jntugv", "jntu gv", "jntu", "website", "jntugvcev", "official website", "jntugvcev.edu.in", "cms", "drizzle", "tanstack", "offline rag", "college website", "team lead", "hod portal", "caching"]
   },
   {
     "id": "project-unilms",
@@ -167,7 +177,7 @@
     "text": "Key Achievements & Leadership:\n• University Student SPOC: Selected by university administration as Student SPOC for Smart India Hackathon (SIH 2K26) at JNTU-GV Vizianagaram.\n• RTIH Future Founders: Project selected for the prestigious Ratan Tata Innovation Hub (RTIH) Future Founders Program.\n• Top 5 Finalist: AP Quantum Valley Internal Hackathon (ClimateChain, 20+ teams).\n• SIH 2025 Participant: Built Offline Healthcare AI Assistant with localized RAG.\n• 1st Published Research Paper: ClimateChain in IJSREM Journal.\n• Elsevier Preprint Author: SignBridge Continuous Sign Language Recognition.\n• ITYukta 2K26 Tech Coordinator: Managed technical platform, 12-member dev squad, and 6+ campus websites.",
     "actionUrl": "/blog",
     "actionLabel": "View Journey & Achievements",
-    "keywords": ["hackathons", "sih", "sih 2k26", "spoc", "student spoc", "jntu gv", "rtih", "future founders", "ratan tata", "quantum valley", "miracle", "genai", "ityukta", "achievements", "milestones", "awards", "leadership"]
+    "keywords": ["hackathons", "sih", "sih 2k26", "spoc", "student spoc", "smart india", "rtih", "future founders", "ratan tata", "quantum valley", "miracle", "genai", "ityukta", "achievements", "milestones", "awards", "leadership"]
   },
   {
     "id": "certifications-learning",
@@ -177,7 +187,7 @@
     "text": "Professional Certifications:\n• NPTEL Elite+Silver: Database Management Systems & Python Programming (IIT Kharagpur / IIT Madras).\n• Scaler: Machine Learning & Deep Learning specializations.\n• Great Learning: Data Science, Cloud Computing, and Artificial Intelligence foundations.\n• LeetCode: 50-Day and 100-Day Problem Solving Badges.\n• LinkedIn Learning, HP LIFE, edX: Software engineering, cloud architecture, and startup management.",
     "actionUrl": "/blog",
     "actionLabel": "View Certifications",
-    "keywords": ["certifications", "nptel", "scaler", "great learning", "leetcode", "badges", "linkedin learning", "hp life", "edx", "dbms", "python"]
+    "keywords": ["certifications", "nptel", "scaler", "great learning", "leetcode", "badges", "linkedin learning", "hp life", "edx", "certificate", "certified", "courses", "online courses"]
   },
   {
     "id": "qubitedge-internship",
@@ -197,7 +207,7 @@
     "text": "At Jawaharlal Nehru Technological University (May–Jun 2026, Paid), Likhith joined a 4-member dev team to redesign university web portals in Next.js and build an AI RAG campus assistant for official notices and admissions.",
     "actionUrl": "/experience",
     "actionLabel": "View JNTU-GV Internship",
-    "keywords": ["jntugv intern", "redesign", "drizzle", "postgresql", "campus assistant", "university portal"]
+    "keywords": ["jntugv intern", "jntu", "jntugv", "university intern", "full stack intern", "redesign", "drizzle", "postgresql", "campus assistant", "university portal"]
   },
   {
     "id": "other-internships",
@@ -217,7 +227,17 @@
     "text": "Tech Stack:\n• Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C\n• AI/ML: PyTorch, TensorFlow, LangChain, OpenAI, Gemini, Ollama, Local GGUF LLMs (Qwen, Llama), RAG, Vector DBs (ChromaDB, Pinecone)\n• Web & Mobile: React, Next.js, Flutter, FastAPI, NestJS, Flask, Django, Tailwind CSS\n• DevOps & Databases: Docker, AWS, PostgreSQL, Supabase, Redis, Drizzle ORM",
     "actionUrl": "/skills",
     "actionLabel": "View Skills Page",
-    "keywords": ["skills", "tech stack", "languages", "frameworks", "python", "typescript", "react", "nextjs", "flutter", "pytorch", "fastapi", "technologies", "tools", "dart"]
+    "keywords": ["skills", "tech stack", "languages", "frameworks", "python", "typescript", "react", "nextjs", "flutter", "pytorch", "fastapi", "technologies", "tools", "dart", "java", "kotlin", "sql", "docker", "aws", "postgresql", "redis", "supabase", "langchain", "tensorflow", "django", "flask", "nestjs", "tailwind", "ollama", "pinecone", "chromadb", "drizzle"]
+  },
+  {
+    "id": "availability",
+    "category": "Contact",
+    "title": "Open to Roles & Collaborations",
+    "summary": "Likhith is open to AI engineering roles, LLM systems development, full-stack positions, research collaborations, and consulting.",
+    "text": "Yes — Likhith is open to opportunities:\n• AI / ML engineering and LLM systems roles\n• Full-stack development positions\n• Research collaborations\n• Consulting and freelance projects\nThe fastest way to reach him is likhithmanakala@gmail.com or the Contact page.",
+    "actionUrl": "/contact",
+    "actionLabel": "Contact Likhith",
+    "keywords": ["open to work", "open to", "available", "availability", "opportunity", "opportunities", "freelance", "consulting", "hire him", "hiring", "recruit", "recruiter", "job offer", "full time", "full-time", "roles", "collaborate", "collaboration"]
   },
   {
     "id": "contact-resume",
@@ -227,6 +247,6 @@
     "text": "Contact Details:\n• Email: likhithmanakala@gmail.com\n• Phone: +91 9392995909\n• Resume: Google Drive (https://drive.google.com/file/d/1C6aulUklRXZL8GlUx2F6Wiy39h_6TPQz/view)\n• GitHub: github.com/EmptyEch0\n• LinkedIn: linkedin.com/in/likhithmankala",
     "actionUrl": "/contact",
     "actionLabel": "Open Contact Page",
-    "keywords": ["contact", "email", "phone", "reach", "resume", "cv", "github", "linkedin", "hire", "message"]
+    "keywords": ["contact", "email", "mail", "phone", "phone number", "number", "mobile", "call", "reach", "reach out", "connect", "resume", "cv", "github", "linkedin", "hire", "hiring", "message", "social"]
   }
 ]

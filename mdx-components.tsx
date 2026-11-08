@@ -18,6 +18,7 @@ import { LandscapePhotoCard, PortraitPhotoRow } from './app/components/CollegePh
 import ProjectImageShowcase from './app/components/ProjectImageShowcase';
 import BehindTheWorkGrid from './app/components/BehindTheWorkGrid';
 import ZigZagPolaroid from './app/components/ZigZagPolaroid';
+import ProjectSchema from './app/components/ProjectSchema';
 
 const components = {
   ProjectMonitorCarousel,
@@ -30,6 +31,7 @@ const components = {
   ProjectImageShowcase,
   BehindTheWorkGrid,
   ZigZagPolaroid,
+  ProjectSchema,
   h1: (props: HeadingProps) => (
     <h1 className="font-medium pt-12 mb-0" {...props} />
   ),

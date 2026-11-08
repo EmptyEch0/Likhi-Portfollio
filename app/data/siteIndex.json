@@ -1,0 +1,890 @@
+[
+ {
+  "url": "/",
+  "page": "Likhith Kumar Mankala — AI Engineer & Full-Stack Developer",
+  "heading": "Likhith Kumar Mankala",
+  "text": "Official portfolio of Likhith Kumar Mankala (Mankala Likhith) — AI Engineer & Full-Stack Developer studying IT at JNTUGV Vizianagaram. Builder of iTantra, Serea, Echo, AweFill and the official JNTU-GV website. I'm Likhith (Likhith Kumar Mankala), an AI engineer and software developer driven by curiosity. I enjoy building intelligent applications, exploring new technologies, and turning ideas into products that solve meaningful problems. I'm currently studying Information Technology at JNTU-GV Vizianagaram. Along the way, I've had the opportunity to work on AI-powered applications, full-stack platforms, research projects, and developer tools through internships, hackathons, and collaborations with startups and universities. My interests span Large Language Models, AI agents, Retrieval-Augmented Generation (RAG), computer vision, machine learning, and modern web engineering. What excites me most isn't a particular technology—it's the challenge of learning something new and using it to build something useful. At heart, I'm the same curious kid who once took apart toys just to see how they worked. Outside of engineering, I'm usually exploring the latest AI models, reading research papers, watching films, experimenting with side projects, or learning something completely new just for the fun of it. I'm still learning, still building, and still asking questions. I hope that never changes. Email: likhithmanakala@gmail.com Phone: +91 9392995909"
+ },
+ {
+  "url": "/about",
+  "page": "About — AI Engineer & IT Student at JNTUGV",
+  "heading": "About Likhith Kumar Mankala",
+  "text": "About Likhith Kumar Mankala (Likhith Mankala / EmptyEch0) — AI/ML Engineer, Full-Stack Developer, and IT student at JNTU GV Vizianagaram. Published research author and AI mentor. I am an AI/ML Engineer and Full-Stack Developer passionate about building production-grade AI platforms, LLM-powered applications, RAG pipelines, and real-time intelligent systems. As the first author of a published research paper in IJSREM (ClimateChain: A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring) and research co-author on sign language recognition (SignBridge Elsevier preprint achieving 94.7% word accuracy), I thrive at the intersection of deep learning research and practical software engineering. I have also mentored over 250+ students across AI bootcamps and workshops, leading hands-on training in LLMs, computer vision, and web application deployment."
+ },
+ {
+  "url": "/about",
+  "page": "About — AI Engineer & IT Student at JNTUGV",
+  "heading": "Education",
+  "text": "- B.Tech in Information Technology — JNTUGV Vizianagaram - Oct 2023 – Apr 2027 | CGPA: 8.30"
+ },
+ {
+  "url": "/about",
+  "page": "About — AI Engineer & IT Student at JNTUGV",
+  "heading": "Technical Skills Overview",
+  "text": "- LLMs & AI: OpenAI API, Gemini, LangChain, RAG Pipelines, Llama 3.1 (Ollama), Agentic AI Frameworks, Prompt Engineering, Fine-tuning, Vector DBs - ML / DL: PyTorch, TensorFlow, Keras, CNN, BiLSTM, Transformers, Multi-Head Attention, YOLOv8, MediaPipe, DeepFace, Scikit-learn, OpenCV - Languages: Python, TypeScript, JavaScript, Java, SQL, C, Dart (Flutter) - Web / Backend: Next.js, React, NestJS, FastAPI, Flask, Django, REST APIs, WebSockets, SSR, React Native, Flutter - Databases & DevOps: PostgreSQL (Neon), MySQL, MongoDB, Supabase, Docker, Jenkins, Git, GitHub Actions, Vercel, Figma, System Design"
+ },
+ {
+  "url": "/about",
+  "page": "About — AI Engineer & IT Student at JNTUGV",
+  "heading": "Professional Experience",
+  "text": "#### AI Full-Stack Intern — Qubitedge Global Services Apr 2026 – May 2026 - Built and deployed multiple AI/LLM-powered full-stack applications including a RAG-based document Q&A system, an agentic task automation tool, and an LLM chatbot integrated into the company LMS portal. - Developed production REST APIs with FastAPI and Next.js SSR front-ends; integrated OpenAI and Llama 3.1 models with LangChain for intelligent response generation and retrieval pipelines. - Led AI bootcamp sessions and mentored 250+ students across Applied AI & Data Science programs; created hands-on project modules covering LLMs, computer vision, and full-stack AI deployment. #### AI/ML Intern — UptoSkills Feb 2026 – May 2026 - Built and deployed classification and prediction ML models using Python, TensorFlow, and Scikit-learn; integrated model outputs into Flask REST API endpoints for real-time inference. - Developed data pipelines for preprocessing and feature engineering, improving model accuracy across multiple projects; contributed to NLP and computer vision modules. #### AI & Data Analytics Intern — Edunet Foundation – Skill4Future Jun 2025 – Aug 2025 - Built AI e-waste classification system (TensorFlow/PyTorch) achieving 92% accuracy; deployed Flask web interface for live inference. - Developed EV demand forecasting model on 50K+ sales records with 87% accuracy; reduced ML deployment time by 40%; optimized deep learning inference 35% via quantization and pruning. #### Software Development Intern — NTS Nihon Global Jul 2025 – Aug 2025 - Built 12+ PostgreSQL-backed REST APIs supporting 10K+ daily users; improved engagement 28% via UI/UX enhancements; reduced load time 45% by debugging and optimizing legacy codebase. #### Python & Web Developer Intern — YoungBot Academy Oct 2024 – Dec 2024 - Automated data pipelines (Pandas/Scrapy) processing 100K+ records; designed React UI components lifting engagement by 42%; reduced page load times 55% via code splitting and lazy loading."
+ },
+ {
+  "url": "/about",
+  "page": "About — AI Engineer & IT Student at JNTUGV",
+  "heading": "Achievements & Leadership",
+  "text": "- Published Research Author — ClimateChain (IJSREM Paper) | Research Co-author on SignBridge (Elsevier Preprint). - Top 5 Finalist — AP Quantum Valley Internal Hackathon (20+ teams) | Participated in SIH 2025, Miracle Citizen Hack 2025, GenAI 24-Hr Hackathon. - Tech Lead — Yukta Dev Squad: Led 8-member team delivering 5+ production apps; mentored 6 junior developers (↑35% team productivity). - Founder — Qubitedge Global Services: Built and operated AI bootcamp programs; mentored 250+ students in AI, LLMs, and full-stack development. - Certifications & Badges: Scaler Certified (Data Science, JS, React, ML) | LeetCode 100-Day & 50-Day Badges | Runner-up WWF State Quiz 2018 (1,000+ participants)."
+ },
+ {
+  "url": "/beyond-classroom",
+  "page": "Beyond the Classroom — College Life at JNTU GV",
+  "heading": "Beyond the Classroom",
+  "text": "Personal college journey, engineering growth, community building, and hackathons at JNTU-GV Vizianagaram by Likhith Kumar Mankala. The four years that shaped far more than my career."
+ },
+ {
+  "url": "/beyond-classroom",
+  "page": "Beyond the Classroom — College Life at JNTU GV",
+  "heading": "A Different World",
+  "text": "Leaving Peddamadi for Vizianagaram was the first major turning point in my life. For nearly fifteen years, my world had been bounded by the same quiet village roads, the same school, and the same familiar faces. Engineering changed all of that overnight. I enrolled at JNTU-GV, Vizianagaram, as an Information Technology student. To be completely honest, I had no real idea what Information Technology actually meant. Programming. Algorithms. Software engineering. Artificial Intelligence. They were abstract concepts I had never encountered before. Like most first-year students, my worldview was modest: attend lectures, clear exams, and head back home. I assumed college was simply a four-year bridge to a degree. I couldn't have been more wrong. Programming entered my life at eighteen, starting with C. At first, nothing clicked. Compiler errors felt terrifying, every missing semicolon was a mystery, and practical sessions left me bewildered. I wasn't the student who picked up syntax instantly; I was just trying to survive the learning curve. Yet those confusing first programs slowly became the foundation for everything I engineer today."
+ },
+ {
+  "url": "/beyond-classroom",
+  "page": "Beyond the Classroom — College Life at JNTU GV",
+  "heading": "One Friendship Changed Everything",
+  "text": "Towards the end of my first year, I met Pravallika. Looking back, that single friendship redirected my entire trajectory. While I was still wrestling with basic syntax, she introduced me to web development and pushed me to build real projects rather than just memorize textbook theory. Together, we decided to tackle something ambitious: building an Amazon clone. We followed a five-hour tutorial line by line—pausing every few seconds, debugging obscure errors, and Googling endlessly until we understood why each function worked. It took us thirteen intense days. What seemed like a modest tutorial back then gave me something infinitely more valuable than code: it gave me confidence. After that first breakthrough, learning became infectious. We moved from web development to machine learning, and eventually to Artificial Intelligence. Soon, our evenings were spent dissecting Large Language Models, computer vision, modern web frameworks, and emerging research papers. Every hackathon, every failed prototype, every internship rejection, and every late-night terminal session quietly pushed us further. Curiosity was no longer just a childhood trait—it was becoming a career."
+ },
+ {
+  "url": "/beyond-classroom",
+  "page": "Beyond the Classroom — College Life at JNTU GV",
+  "heading": "Mentorship & The People I'll Remember",
+  "text": "One door opened another. Through Pravallika, I was introduced to Professor G. Jaya Suma—a meeting that became another pivotal turning point. She challenged me to look beyond syllabus requirements: to ask deeper questions, to publish research, and to explore advanced technologies most undergraduates never touched. Many of the research papers, internships, and AI platforms I've built exist because a professor chose to believe in a curious student. Sometimes, all it takes is one person giving you an opportunity to prove yourself. When I first arrived on campus, I was a quiet introvert who found starting conversations difficult. Thankfully, college introduced me to people who transformed those four years. My senior Mohan Pradeep mentored me through tricky crossroads, while hostel life introduced me to Das and Saroj—friends who quickly became brothers. Our favorite memories weren't scheduled in calendars. A random evening conversation would spontaneously turn into a midnight ride. A free weekend would turn into an unplanned journey to Araku, Puri, or the Vizag coast. No itinerary, no plan—just shared laughter, freedom, and the simple willingness to say, \"Let's go.\""
+ },
+ {
+  "url": "/beyond-classroom",
+  "page": "Beyond the Classroom — College Life at JNTU GV",
+  "heading": "Looking Back",
+  "text": "When I first walked through the gates of JNTU-GV, I was just a village kid trying to understand what engineering meant. Four years later, I walked out with far more than a degree. I found mentors who guided me, friends who became family, a lifelong passion for Artificial Intelligence, and the conviction to build systems that once felt impossible. Looking back, my engineering journey was never defined by exam scores or lecture halls. It was defined by the people who challenged me, supported me, and walked beside me. Those four years didn't just launch a career—they shaped who I am."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "ACHIEVEMENTS & JOURNEY",
+  "text": "Hackathons, SIH 2026 University SPOC leadership at JNTU GV, ClimateChain IJSREM research paper, and technical milestones of Likhith Kumar Mankala. By Likhith Kumar Mankala Building ideas, solving problems, and growing through every experience. A collection of competitions, leadership experiences, research, and continuous learning that have shaped my journey as an engineer."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "Building Under Pressure",
+  "text": "Hackathons have been some of the most intense parts of my journey — bringing together problem-solving, technology, teamwork, and the ability to turn an idea into something tangible within limited time."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "🏆 TOP 5 FINALIST",
+  "text": "AP Quantum Valley Internal Hackathon July 2025 · 20+ Teams ClimateChain Developed ClimateChain , a concept combining Artificial Intelligence, Blockchain, and Quantum Computing to create a secure architecture for immutable environmental monitoring. Selected among the Top 5 finalist teams from 20+ participating teams. Research work subsequently developed into a published paper: ClimateChain: A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring (IJSREM) → Focus AI Blockchain Quantum Computing"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "🇮🇳 SMART INDIA HACKATHON 2025",
+  "text": "Participant August 2025 Worked with a multidisciplinary team to develop an offline Retrieval-Augmented Generation system and AI healthcare assistant aimed at improving access to intelligent healthcare support in low-connectivity environments. Architected offline AI pipelines ensuring zero continuous cloud dependency. Implemented Retrieval-Augmented Generation (RAG) for localized healthcare intelligence. Designed for constrained and low-bandwidth rural clinical environments. RAG LLMs Healthcare AI Social Impact"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "⭐ TOP 15 TEAM",
+  "text": "Miracle Citizen Hackathon December 2025 Collaborated with a multidisciplinary team to transform an initial problem statement into a working solution under tight deadlines. Strengthened agility moving quickly from ideation → prototyping → solution development → presentation . Finished among the Top 15 teams across all competing tracks. Rapid Prototyping Product Design Teamwork"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "⚡ GENAI 24-HOUR HACKATHON",
+  "text": "Participant December 2025 Participated in an intensive 24-hour development sprint focused on practical applications of generative AI. Worked with Large Language Models, automation workflows, and rapid AI application development . Turned concepts into functioning prototypes within a highly compressed timeframe. Generative AI LLMs Automation Rapid Development"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "🚀 RTIH FUTURE FOUNDERS PROGRAM",
+  "text": "Project Selected 2026 Our AI innovation project was selected for the RTIH Future Founders Program , providing direct mentorship from startup founders and venture builders. Expanded perspective beyond pure development into product validation, market thinking, startup strategy, and deployment planning . Focused on end-to-end AI product development and market rollout strategies. AI Product Strategy Innovation Entrepreneurship"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "Creating With Others",
+  "text": "My journey has also been about taking responsibility, working with teams, mentoring others, and helping create technical communities around me."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "UNIVERSITY STUDENT SPOC & LEAD ORGANIZER",
+  "text": "Smart India Hackathon (SIH 2026) · Internal Hackathon JNTU-GV College of Engineering Vizianagaram · 2026 Appointed as the official University Student Single Point of Contact (SPOC) & Lead Coordinator for the Smart India Hackathon (SIH 2026) at JNTU-GV. Organized and executed the university-wide SIH Internal Screening Hackathon at JNTU-GV CEV, mobilizing, coordinating, and mentoring nearly 18 competing student teams across all engineering departments. Mentored teams through problem-statement selection, architecture validation, and prototype readiness reviews before final evaluation. Awarded the Coordinator Recognition Certificate on the Gurajada Kalavedika stage by university dignitaries and faculty for successful organization and execution. Administered campus-wide shortlisting and official nominations on the national SIH portal. SIH University SPOC 18+ Teams Organized Coordinator Certificate Gurajada Kalavedika"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "MENTOR & ADVISER",
+  "text": "Qubitedge Global Services 2026 Mentored 250+ students through AI bootcamps and internship programs. Guided 10+ AI project teams from initial ideation through development and production deployment. Designed and delivered practical learning experiences covering LLMs, Computer Vision, Full-Stack AI, and applied AI development ."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "TECH COORDINATOR",
+  "text": "ITYukta 2K26 2026 Coordinated the technical development team for one of the college's premier technical symposiums. Led a 12-member development team , overseeing the creation of 6+ official event websites , registration systems, and digital event infrastructure. Organized and coordinated the CodeCrack Programming Challenge , engaging 500+ participants ."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "TECH LEAD",
+  "text": "Yukta Dev Squad 2025 Led an 8-member engineering team responsible for developing and maintaining 5+ production applications . Worked closely with developers on architecture, code reviews, technical problem-solving, and hands-on workshops. Streamlined development workflows and established continuous delivery practices."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "CAMPUS AMBASSADOR",
+  "text": "Harvinn Technologies 2025 Represented Harvinn Technologies within the university campus community. Connected students with technical opportunities, workshops, and innovation initiatives. Contributed to expanding awareness and student participation in cutting-edge tech programs."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "From Ideas to Research",
+  "text": "Beyond competitions, some projects became opportunities to explore technology more deeply and communicate those ideas through technical research."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "CLIMATECHAIN",
+  "text": "A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring ClimateChain explores how Artificial Intelligence, Blockchain, and Quantum Computing can be combined to create a more secure and trustworthy architecture for environmental monitoring. Originated during the AP Quantum Valley Internal Hackathon , where it was selected among the Top 5 finalist teams . Published as a research paper in IJSREM Journal : Read Paper on IJSREM → Technologies Artificial Intelligence Blockchain Quantum Computing"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "OFFLINE AI HEALTHCARE ASSISTANT",
+  "text": "An AI healthcare concept designed for environments where reliable internet connectivity cannot be assumed. Explored an offline RAG architecture capable of providing intelligent assistance while eliminating dependence on continuous cloud connectivity. Optimized local embeddings and lightweight inference for low-resource hardware. RAG LLMs Offline AI Healthcare Technology"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "AI & FULL-STACK DEVELOPMENT",
+  "text": "A growing collection of applications and experiments combining modern software engineering with artificial intelligence. Projects explore areas including AI agents, LLM applications, automation, computer vision, APIs, and full-stack web development . AI Engineering Full Stack Automation Computer Vision"
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "Always Learning",
+  "text": "Technology moves quickly, and continuous learning has remained an important part of my development as an engineer."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "NPTEL CERTIFIED",
+  "text": "Social Networks — Graph Theory & Network Algorithms Explored graph-based systems, network structures, and algorithmic approaches to analyzing social networks."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "GREAT LEARNING",
+  "text": "Artificial Intelligence · Machine Learning · Python Focused on the fundamentals of AI, machine learning concepts, and Python-based development."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "SCALER CERTIFIED",
+  "text": "Data Science · JavaScript · React.js · ML Engineering Expanded knowledge across software development, data science, frontend engineering, and machine-learning workflows."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "LEETCODE ACHIEVEMENTS",
+  "text": "SQL · React · Python Completed skill assessments across multiple technical domains and maintained 50-Day and 100-Day coding streak achievements ."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "LINKEDIN LEARNING",
+  "text": "Introduction to Career Skills in Data Analytics (by Robin Hunt ) Focused on foundational skills for working with data and analytics."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "HP LIFE & edX",
+  "text": "AI for Beginners (HP LIFE) · Python Basics (edX) Built foundational knowledge in artificial intelligence and Python programming through structured online learning."
+ },
+ {
+  "url": "/blog",
+  "page": "Achievements & Journey — SIH SPOC, Research & Hackathons at JNTU GV",
+  "heading": "The People & Moments",
+  "text": "Every achievement has a story behind it — the workshops, late-night development sessions, mentoring conversations, hackathons, team discussions, and people who made the experience meaningful. Empowering 250+ student developers across bootcamps, community hackathons, and engineering collectives."
+ },
+ {
+  "url": "/contact",
+  "page": "Contact — Hire an AI Engineer",
+  "heading": "Contact",
+  "text": "Get in touch with Likhith Kumar Mankala for AI engineering roles, LLM systems development, research collaborations, and consulting. Get in touch for projects, collaborations, or questions. Whether you have a question about my work, an AI/full-stack project, research collaboration, or just want to connect, feel free to drop a message below. I'll get back to you as soon as possible. Email: likhithmanakala@gmail.com Phone: +91 9392995909 GitHub: github.com/EmptyEch0 LinkedIn: linkedin.com/in/likhithmankala"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "Professional Experience",
+  "text": "Career timeline, software engineering internships, AI research at Elsevier, Qubitedge Global Services, and technical mentorship by Likhith Kumar Mankala. Work & Internship History"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "AI Full-Stack Engineer Intern (Paid)",
+  "text": "Qubitedge Global Services May 2026 — Jun 2026 Overview At Qubitedge, I engineered end-to-end production AI applications that bridged complex machine learning capabilities with intuitive user interfaces. I designed a RAG-powered document intelligence platform capable of parsing dense PDFs, constructed multi-agent workflow automation systems using LangChain, and integrated an enterprise LLM chatbot into the company's internal LMS. Alongside core engineering, I led practical AI bootcamps, guiding over 250 aspiring developers through hands-on model deployment, prompt engineering, and full-stack integration. Impact 3 AI Products Deployed • 250+ Students Mentored • Agentic Workflows • FastAPI Microservices Tech Stack Next.js • FastAPI • LangChain • OpenAI GPT • Llama 3.1 • Ollama • Embeddings • Vector DBs"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "Full-Stack Developer Intern (Paid)",
+  "text": "JNTU-GV (Jawaharlal Nehru Technological University) May 2026 — Jun 2026 Overview Joining a high-output 4-member engineering team at Jawaharlal Nehru Technological University, I contributed to a complete overhaul of the university's web infrastructure. We modernized legacy portals into responsive Next.js applications backed by Drizzle ORM and PostgreSQL. To transform how students and faculty interact with university information, I developed an intelligent RAG campus assistant that instantly answers queries about official notices, admissions, examination schedules, and academic regulations in natural language. Impact University Web Redesign • AI RAG Campus Assistant • 4-Member Dev Team Tech Stack Next.js • TanStack Query • Drizzle ORM • PostgreSQL • REST APIs • RAG Assistant Read JNTU-GV CEV Case Study & Architecture → Live Portal ↗"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "AI/ML Intern",
+  "text": "UptoSkills Feb 2026 — May 2026 Overview My work at UptoSkills centered on bridging statistical machine learning models with live production web services. I built predictive and classification pipelines utilizing TensorFlow and Scikit-learn, optimizing data preprocessing and feature extraction to handle noisy datasets. To make model outputs accessible to downstream frontend platforms, I wrapped the machine learning logic into lightweight, high-performance Flask REST API endpoints capable of real-time inference. Impact Real-time ML Inference • Flask REST APIs • NLP & Vision Pipelines Tech Stack Python • TensorFlow • Scikit-learn • Flask • Pandas • Computer Vision Career Growth & Internship Progression Timeline"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "AI & Data Analytics Intern",
+  "text": "Edunet Foundation – Skill4Future Jun 2025 — Aug 2025 Overview During this internship focused on sustainable technology solutions, I built deep learning computer vision models to classify electronic waste with 92% accuracy, aiding automated recycling sorting. Additionally, I conducted predictive modeling on a 50,000+ record dataset to forecast electric vehicle (EV) adoption trends with 87% accuracy. By applying post-training quantization and model pruning, I streamlined deep learning model weights, reducing deployment overhead by 40% and drastically boosting inference speed. Impact 92% Image Classifier • 50K+ EV Records (87% Acc) • 40% Faster Deployment Tech Stack Python • TensorFlow • PyTorch • Scikit-learn • Quantization • Pruning"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "Software Development Intern",
+  "text": "NTS Nihon Global Jul 2025 — Aug 2025 Overview At NTS Nihon Global, I focused on high-concurrency backend architecture and legacy codebase modernization. I architected 12+ robust PostgreSQL-backed REST APIs designed to support more than 10,000 daily active users securely and efficiently. By diagnosing performance bottlenecks, refactoring database queries, and implementing backend caching strategies, I helped reduce application load times by 45%, driving a 28% increase in overall user session retention. Impact 12+ PostgreSQL APIs • 10,000+ Daily Users • 45% Faster Load Time Tech Stack Python • PostgreSQL • REST APIs • Linux • UI/UX Optimization"
+ },
+ {
+  "url": "/experience",
+  "page": "Experience — AI & Full-Stack Internships",
+  "heading": "Python & Web Developer Intern",
+  "text": "YoungBot Academy Oct 2024 — Dec 2024 Overview Starting my internship journey at YoungBot Academy, I automated large-scale data ingestion by building robust web scraping and ETL pipelines using Scrapy and Pandas, processing over 100,000 raw data records effortlessly. On the frontend, I modularized the React codebase using reusable component architecture, dynamic code splitting, and lazy loading, cutting initial page bundle sizes and accelerating load times by 55%. Impact 100K+ Data Pipelines • +42% Engagement • 55% Faster Page Load Tech Stack React • Python • Pandas • Scrapy • Lazy Loading • Code Splitting"
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "Where Curiosity Began",
+  "text": "Personal stories, growing up in Peddamadi, childhood curiosity, films, and life outside engineering by Likhith Kumar Mankala. My Life in Five Minutes I wasn't born in a big city surrounded by technology. I was born in a small village called Peddamadi, near the Odisha border in Andhra Pradesh. It's such a small place that, for many years, you couldn't even find it properly on Google Maps. Almost my entire childhood was spent there. From primary school to intermediate, nearly fifteen years of my education happened in the same village. It wasn't a place filled with opportunities or the latest technology, but it gave me something much more valuable—a childhood full of curiosity. My father is an RMP doctor who has spent years travelling between nearby villages, treating patients and helping families with basic medical care. My mother runs a small neighborhood shop, where almost everyone in the village knows her by name. Growing up, I also had my two sisters, who were always incredibly supportive and looked after me, especially when I was busy creating chaos. And yes... I was definitely a handful. I wasn't the quiet kid who sat still. I was always running around, climbing things, asking endless questions, and usually finding new ways to test my parents' patience. Looking back, I'm pretty sure I gave them more headaches than peaceful days."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "Toys never stayed toys",
+  "text": "Some kids played with toys. I wanted to know how they worked. Whenever I received a remote-control car, a robot, or even a small toy airplane, I would happily play with it for a while. But eventually curiosity always won. I'd take it apart piece by piece, spread all the components across the floor, and try to understand what every gear, motor, and wire actually did. Sometimes I'd even combine pieces from different broken toys to build something completely new. It rarely worked—but that didn't matter. Without realizing it, I was already thinking like an engineer."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "Falling in love with technology",
+  "text": "Technology fascinated me long before I knew what programming was. My first mobile phone experience wasn't even my own phone. It belonged to my father—a small Celkon keypad phone. I spent hours playing the built-in games and pressing every button just to see what would happen. Later, when 3G internet finally arrived, it felt like magic. The signal in our village wasn't exactly reliable. Whenever I wanted a webpage to load, I'd walk outside, stretch my arm into the air while holding the phone, and hope those tiny network bars would become just strong enough to open a website. Sometimes it worked. Sometimes it didn't. Back then, waiting several minutes for a single webpage felt completely normal. Yet every successful page felt like discovering something new."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "The phone everyone wanted",
+  "text": "One of my favorite childhood memories happened whenever my uncle visited from Mumbai. He owned our family's very first touchscreen smartphone. For us, it wasn't just a phone—it was the most exciting gadget we'd ever seen. All my cousins would gather around at my grandmother's house, passing the phone from one person to another, carefully taking turns to play games before handing it over to the next person. We laughed, argued over whose turn it was, and somehow managed to spend an entire afternoon with a single phone. Those moments are still some of my happiest childhood memories."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "The first computer",
+  "text": "The first computer I ever touched wasn't at home. It was at my school. I still remember staring at the monitor, fascinated by how clicking a mouse could make things happen instantly. Everything about computers felt magical. That curiosity only grew stronger over time. Whenever I had free time, I found myself exploring phones, computers, software, or anything electronic I could get my hands on. My teachers noticed that curiosity and encouraged me to keep learning, even when I spent more time experimenting than following the usual path."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "Growing up with changing dreams",
+  "text": "Like many children, my dream job changed almost every year. Sometimes I wanted to become a doctor like my father. Then I dreamed about becoming an astronaut. Later it was the civil services. Then software engineering. Then medicine again. My childhood was a constant cycle of discovering something new and imagining myself doing it one day. Looking back, none of those dreams were really about the job itself. They all came from the same place: I simply loved learning how things worked."
+ },
+ {
+  "url": "/life",
+  "page": "Where Curiosity Began — Life & Stories",
+  "heading": "A Bigger World Than My Village",
+  "text": "Outside school, I spent countless hours exploring the digital world. Temple Run • Subway Surfers • Angry Birds • Free Fire. Those games introduced me to technology, but the internet opened an even bigger world. I watched funny videos, explored places I'd never seen before, followed food channels, learned random facts, and slowly became fascinated by how people built things online. As I grew older, movies became another source of inspiration. I loved the Marvel universe, and Christopher Nolan's films completely changed the way I looked at storytelling, imagination, and technology. Looking back now, I realize none of those moments seemed important at the time. A broken toy car. A Celkon phone struggling to load a webpage. Waiting for my uncle to bring a touchscreen phone from Mumbai. The first computer in my school. Countless evenings spent exploring the internet. They all looked like ordinary childhood memories. But together, they quietly shaped the person I would become. They gave me something far more valuable than technical skills. They gave me curiosity. And that curiosity eventually led me beyond my village—to engineering, software, and later, artificial intelligence."
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "text": "A lightning-round of command-line nuggets to level-up your dev workflow."
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "1. history | grep + fzf = instant recall",
+  "text": "Fish out that elusive command you ran last Tuesday: Hit Enter and it pastes right back to your prompt like magic. ---"
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "2. Reverse-search a Git log by file content",
+  "text": "Combine git log with -S (search diff) to find when a string first appeared: ---"
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "3. JSON-pretty print … with zero dependencies",
+  "text": "Mac & Linux already ship with python3: ---"
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "4. One-liner port-forwarding for quick demos",
+  "text": "Need to expose localhost:3000? Use SSH—no ngrok token needed. Now share the generated URL on Slack and watch eyebrows rise. ---"
+ },
+ {
+  "url": "/n/1",
+  "page": "5 Tiny CLI Tricks You (Probably) Didn’t Know",
+  "heading": "5. Measure anything with time + subshell",
+  "text": "How long does your linter actually take? > 💡 Pro-tip: wrap this in a pre-push hook so slow commands get caught early."
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "text": "Micro-optimizations and quality-of-life hacks to keep your scripts lean, readable, and bug-resistant."
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "1. Optional Chaining ?. + Nullish Coalescing ??",
+  "text": "Stop writing five nested guards: Fewer lines, same safety. ---"
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "2. Barrel Files for One-Line Imports",
+  "text": "Aggregate related exports into a single “barrel” file: Kill import clutter without sacrificing tree-shaking. ---"
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "3. Memoize Pure Functions with a WeakMap",
+  "text": "Cache heavy computations tied to objects—no leaks: Results follow the object’s lifetime—GC does the cleanup. ---"
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "4. Tagged Template Literals for Safe HTML",
+  "text": "Prevent XSS without a third-party lib: Zero dependencies, maximum safety. ---"
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "5. AbortController for Cancellable fetch",
+  "text": "Stop orphaning network calls on route changes: No more “state update on unmounted component” warnings. ---"
+ },
+ {
+  "url": "/n/2",
+  "page": "6 Sneaky JavaScript Patterns to Cut Boilerplate",
+  "heading": "6. Format Like a Native with Intl",
+  "text": "Forget custom helpers—use the built-ins: Locale-aware, performant, and zero bloat."
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "6 CSS Patterns to Cut Boilerplate",
+  "text": "Micro-optimizations and quality-of-life hacks to keep your styles tight, maintainable, and future-proof."
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "1. :where() for Zero-Specificity Resets",
+  "text": "Stop fighting cascade weight—wrap base rules in :where(): Selectors inside :where() weigh 0, so your utility classes still win. ---"
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "2. Logical Properties > Four-Direction Madness",
+  "text": "Goodbye padding-left vs. padding-right. One line covers LTR and RTL: No more media-query hacks when direction changes. ---"
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "3. Style Parent Elements with :has()",
+  "text": "JavaScript who? Let CSS drive state: Parent-aware styling—finally native. ---"
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "4. Container Queries for Truly Responsive Components",
+  "text": "Skip breakpoint soup; size to context instead of viewport: Components that adapt wherever you drop them. ---"
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "5. accent-color & color-scheme → Native Theming",
+  "text": "Theme form controls and scrollbars with one property: Instant brand vibes, zero third-party widgets. ---"
+ },
+ {
+  "url": "/n/3",
+  "page": "6 CSS Patterns to Cut Boilerplate",
+  "heading": "6. @layer to Tame the Cascade",
+  "text": "Group utilities, components, and overrides—predictably: No more “why is Tailwind beating my button styles?”."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Projects & Persona",
+  "text": "Explore AI systems, Agentic applications, Production platforms, Research systems, and Personal AI Ecosystem tools by Likhith Kumar Mankala. Enterprise Applications, Institutional Systems, AI Research & Personal Ecosystem SECTION ONE"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Institutional & Production Projects",
+  "text": "Enterprise systems, university platforms, production SaaS, and applied AI research"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "text": "Edge AI • 99.92% Bandwidth Savings • 10 Indian Languages • Wi-Fi Direct / BLE Mesh • 86-Byte Frame ▪ Architected iTantra, an ultra-low-bandwidth, zero-cloud, 100% offline voice transceiver platform designed to maintain uninterrupted voice-in / voice-out communications during telecom blackouts, natural disasters, and tactical off-grid operations. ▪ Engineered an on-device Edge AI pipeline: quantized Whisper/Sherpa-ONNX STT ➔ neural text serialization ➔ 86-byte binary mesh frame (99.92% bandwidth savings over raw 112KB audio) over Wi-Fi Direct P2P & BLE 5.0 RFCOMM ➔ offline multilingual translation ➔ fast neural TTS (FastSpeech2/Piper) delivering <180ms same-language and <950ms cross-language audio playback. ▪ Implemented full bidirectional translation across 10 Indian Scheduled Languages + English, Priority 0 Emergency SOS with non-interruptible STREAM_ALARM override, a 3-Stage ACK Matrix ( RECEIVED , TTS_STARTED , HEARD ), and an 18.8 MB standalone APK operating under 120 MB RAM via dynamic LRU paging. Read iTantra Case Study & Architecture → GitHub Repo ↗"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "JNTU-GV Official College Website & CMS",
+  "text": "Team Lead • TanStack • Vite • Drizzle ORM • PostgreSQL • Offline RAG Bot ▪ Led a team of 4 developers to architect, design, and deploy the official website and comprehensive Content Management System (CMS) for JNTU-GV College of Engineering ( jntugvcev.edu.in ). ▪ Engineered a robust multi-role, multi-user administrative architecture with granular permissions, inline content scripting, dynamic department portals, examination notices, syllabus repositories, and student service workflows. ▪ Integrated an offline database-powered RAG AI chatbot that helps students instantly retrieve academic notices, department info, admissions details, and exam updates in natural language with high UI/UX polish. Read JNTU-GV CEV Case Study & Architecture → Live Portal ↗"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Uni-LMS — AI-Powered Learning Management Platform",
+  "text": "Next.js • Capacitor • PostgreSQL • Tailwind CSS • REST APIs • AI Grading ▪ Architected and built a complete AI-enabled enterprise Learning Management System ( ulms.qubitedge.in ) for Qubitedge, supporting end-to-end management of internships, workshops, bootcamps, certifications, assessments, structured learning paths, and course cohorts. ▪ Built cross-platform responsive web and mobile applications using Next.js and Capacitor; deployed across live bootcamps powering automated AI grading, submission evaluation, and personalized study recommendations for 250+ active students . ▪ Implemented complete ERP capabilities: instructor course creation, bulk student onboarding, interactive assignments, analytics dashboards, and automated certificate generation."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Virtual Lab Management System (VLMS)",
+  "text": "React • Next.js • Docker • AI Tutors • WebGL • Python • FastAPI • PostgreSQL ▪ Designed and co-developed an interactive Virtual Laboratory Platform ( vlms.qubitedge.in ) spanning 10+ technical domains including Artificial Intelligence, Machine Learning, DBMS, Cloud Computing, Web Development, Mathematics, Data Visualization, and Quantum Computing. ▪ Built browser-based isolated sandboxes and WebGL simulations for executing Python, C, Java, and Machine Learning libraries without requiring local environment setup or physical laboratory hardware. ▪ Integrated AI tutors, interactive coding notebooks, Dockerized execution runtimes, progress analytics, and automated grading scaling to 1,000+ student learning sessions ."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Qubitedge Official Corporate Website",
+  "text": "Next.js • React • Custom CMS • SEO • Tailwind CSS • Framer Motion ▪ Completely redesigned and developed the official corporate website ( qubitedge.in ) with a custom CMS featuring WordPress-style inline editing, reusable content blocks, case studies, and dynamic service pages. ▪ Optimized performance and Core Web Vitals, achieving a 98/100 Lighthouse score and 40% faster load times with smooth animations and enterprise-grade SEO."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "SignBridge — Continuous Sign Language Recognition",
+  "text": "Elsevier Preprint • MediaPipe • CNN-BiLSTM • Attention • DeepFace • Llama 3.1 ▪ End-to-end SLR framework: MediaPipe Holistic (1,662-dim landmarks) → CNN spatial encoder → BiLSTM-Attention temporal model → CTC decoding; achieved 94.7% word accuracy and 12.3% WER on ISL-50 dataset. ▪ Integrated DeepFace emotion recognition + local Llama 3.1 LLM for emotionally-nuanced sentence generation with offline speech synthesis at 28ms/frame (35 FPS) real-time GPU inference."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "DSNLU Official Website & ITYukta 2K26 Tech Platforms",
+  "text": "Next.js • NestJS • TypeScript • PostgreSQL • Drizzle ORM • Tailwind CSS ▪ Lead designer & full-stack developer of two official institutional platforms; built scalable NestJS APIs with RBAC, PostgreSQL CMS, admissions workflows, dynamic event modules, and admin dashboards. ▪ Handled event registration flows, live notifications, schedules, and technical competitions for 500+ participants with high responsiveness across desktop and mobile."
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "ClimateChain — Quantum-Secured Environmental Monitoring Platform",
+  "text": "1st Published Research Paper (IJSREM) • Next.js • Qiskit • Python • TensorFlow ▪ Developed ClimateChain ( aqvh-2025.vercel.app ), a quantum-secured environmental intelligence platform integrating AI, Blockchain security principles, and Quantum Computing algorithms (Qiskit) for tamper-proof data verification. ▪ Engineered AI drought prediction models achieving 89% accuracy while processing 10,000+ climate transactions for 1,000+ researchers. Recognized as Top 5 Finalist among 20+ teams at the AP Quantum Valley Hackathon. ▪ First Published Research Paper: Authored and published ClimateChain: A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring in the International Journal of Scientific Research in Engineering and Management (IJSREM). [ Download Published Paper (PDF) → ]"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "University Medical Assistant (LLM-Powered RAG Portal)",
+  "text": "Python • FastAPI / Flask • LangChain • PostgreSQL • OpenAI • ChromaDB ▪ Developed an AI-powered medical assistance platform leveraging Retrieval-Augmented Generation (RAG) to provide students with context-aware health guidance, university medical triage, and symptom classification. ▪ Delivered sub-second document retrieval latency and 85% symptom classification accuracy supporting 5,000+ students with instant emergency guidance. SECTION TWO"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Persona — Personal Projects & AI Ecosystem",
+  "text": "Autonomous personal agents, productivity copilots, document workspaces, and local AI extensions"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "text": "Flutter • Dart • On-Device LLM Brain • iLovePDF + ChatGPT + NotebookLM • Python ▪ Architected and built Serea, an all-in-one cross-platform AI document workspace for mobile and laptop (Flutter) uniting full PDF utilities (iLovePDF) with intelligent conversational RAG (ChatGPT & NotebookLM). ▪ Features an embedded on-device self-LLM brain (running local Ollama & GGUF quantized models including Qwen 3.5 & Llama 3.2), concept-driven semantic search, multi-doc vector chat with exact page citations, and zero cloud telemetry. ▪ Integrated an academic powerhouse: automated Question Paper Generator (syllabus-to-exam with marks distribution), Study Book Compiler, MCQ Quiz creator, scanned neural OCR extractor, and visual PDF page organizer. Read Serea Case Study & Breakdown →"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Echo — AI Communication Copilot (Chrome Extension)",
+  "text": "Manifest V3 • React 18 • TypeScript • Local Ollama (Llama 3.2 1B & Qwen 3.5 4B) • Vector Memory ▪ Created Echo, an intelligent browser extension that integrates directly into web messaging apps (WhatsApp, Instagram, Telegram, Discord, X) to learn your authentic texting style and suggest instant, authentic replies right above your chat box with zero duplicate text insertions. ▪ Engineered a 3-tier resilient architecture: sub-second local Ollama inference ( llama3.2:1b , nomic-embed-text ) with SQLite vector memory, cloud NVIDIA NIM fallback, and an offline \"Own Mind\" rule-based NLP engine. ▪ Built a foldable & freely draggable glassmorphic floating toolbar ( Alt+M minimize, custom coordinate persistence), 1-click draft polisher ( Alt+P ), thread summarizer ( Alt+S ), and real-time voice dictation. Read Echo Case Study & Breakdown →"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Maid — Personal Assistant & Obsidian-Style Mindmap Planner",
+  "text": "Flutter • Dart • Force-Directed Graph • Obsidian [[Links]] • Voice Briefing • \"Hey Maid\" ▪ Developed Maid, a personalized mobile assistant app built with Flutter combining Obsidian-style linked notes ( //Topic & [[Topic]] ), an interactive force-directed knowledge graph with live spring physics (lone notes outer orbit, connected clusters, category filters), and local in-note knowledge maps. ▪ Engineered a Natural Spoken Voice Briefing Engine delivering scheduled 9:00 AM Morning Plans and 8:00 PM Evening Reviews with screen-wake support ( fullScreenIntent: true ) to wake devices when locked/off, animated sound waves, and in-dialog task checklists. ▪ Integrated hands-free \"Hey Maid\" continuous wake-word listening, custom time pickers, and the \"Colombo\" cognitive scheduling engine that analyzes habit velocities for proactive routine optimization. Read Maid Case Study & Breakdown →"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "AweFill — Privacy-First Zero-LLM Smart Form Autofill Extension",
+  "text": "Chrome Extension Manifest V3 • React 19 • TypeScript 5.7 • Isolated Shadow DOM • Vite 6 ▪ Engineered AweFill, a 100% offline, air-gapped Chrome extension (Manifest V3) designed to intelligently autofill complex job, university, and scholarship application forms with zero cloud dependencies or token costs. ▪ Built a deterministic multi-layer matching engine combining 200+ semantic alias taxonomies, typo-tolerant fuzzy algorithms (Levenshtein, Jaro-Winkler, Sørensen-Dice, Jaccard coefficients), and DOM heading context heuristics with 28/28 verified test scenarios (100% accuracy) . ▪ Designed an isolated Shadow DOM review drawer ( #awefill-overlay-root ) to preview and override values before filling, with a Local Correction Memory achieving 98%+ accuracy , automatic credential blacklisting, and a strict zero auto-submit guarantee. Read AweFill Case Study & Breakdown →"
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "AweFill — Intelligent Form Autofill & Learning Extension",
+  "text": "Air-gapped smart browser extension engineered by Likhith Kumar Mankala to autofill repetitive forms with zero LLM costs and 100% offline data privacy. Persona Case Study • Chrome Extension (Manifest V3) • Zero-LLM Deterministic Matching Engine AweFill is an intelligent, air-gapped browser extension built with React 19, TypeScript, and Chrome Manifest V3. It automatically autofills repetitive online applications (job portals, university admissions, and scholarship forms) in 1 click using a deterministic matching engine with zero LLM costs and 100% offline data privacy ."
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "1. The Problem: Application Fatigue & Privacy Risks",
+  "text": "Job seekers and students applying to dozens of opportunities face enormous repetitive friction: Exhausting Manual Re-Entry: Entering identical contact details, graduation years, GPA, addresses, work histories, and portfolio URLs 50+ times across different ATS systems. The Flaw of Standard Autofillers: Traditional browser autofill only handles basic fields (name and email) and breaks completely on complex job questionnaires or dropdowns. Why LLMs Are the Wrong Tool for Autofill: Cloud LLM-based autofillers take 2–5 seconds per page, cost money on every API call, and leak sensitive identity records to third-party AI APIs."
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "2. Target Use Cases & Supported Portals",
+  "text": "AweFill works seamlessly across modern web forms, dynamic single-page applications, and multi-step modal wizards: Job & Internship ATS Portals: LinkedIn Easy Apply, Greenhouse, Lever, Workday, Internshala, and Unstop. University & College Admission Desks: State university admission portals, scholarship intake sheets, and research grant registrations. Dynamic Google Forms & Typeforms: Event registrations, feedback questionnaires, and hackathon sign-ups."
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "3. Key Features & Deterministic Capabilities",
+  "text": "▪ Zero-LLM Deterministic Matching Engine: Leverages a taxonomy of 200+ field aliases combined with fuzzy matching algorithms (Levenshtein distance, Jaro-Winkler, Sørensen-Dice, and Jaccard similarity) to achieve sub-15ms field detection with zero API costs. ▪ Isolated Shadow DOM Review Drawer: Renders a sleek sliding panel ( #awefill-overlay-root ) inside the webpage via Shadow DOM, preventing CSS conflicts with the host site. Lets you preview and adjust mapped data before clicking apply. ▪ Self-Correcting Local Memory (98%+ Accuracy): When a website uses an unconventional label and you manually select the correct value, AweFill records the association locally. Future encounters on that domain are filled automatically with high confidence. ▪ Hardened Security & Safety Architecture: Automatic Credential Blacklisting: Strictly ignores password, PIN, OTP, and credit card inputs. Zero Auto-Submit Guarantee: Never clicks the final submit button automatically—the user always reviews and triggers the final submission. 100% Air-Gapped Local Storage: All profile records, essays, and credentials remain encrypted in Chrome local storage with zero cloud sync. ▪ Verified Test Suite (28/28 Passing): Validated against 28 automated test scenarios covering complex nested frames, shadow roots, dynamic React select dropdowns, and radio groups."
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "4. Technical Architecture",
+  "text": "AweFill is engineered with a modular, lightweight extension pipeline: 1. Content Script & DOM Scanner (TypeScript 5.7 & MutationObserver): Continuously monitors page DOM mutations to identify input tags, textareas, custom select widgets, and ARIA labels without consuming idle CPU cycles. 2. Deterministic Classifier (Fuzzy Matcher & Rule Engine): Resolves ambiguous field names using parent heading hierarchy, placeholder heuristics, and string distance algorithms in <15ms. 3. UI Overlay & State Layer (React 19 & Vite 6): Mounts inside an isolated Shadow DOM container with zero host-page CSS contamination, managing local drafts, application history logs, and profile settings."
+ },
+ {
+  "url": "/projects/awefill",
+  "page": "AweFill — Intelligent Form Autofill Extension",
+  "heading": "5. Summary in 30 Seconds",
+  "text": "\"AweFill is a private, zero-LLM browser extension that ends the exhausting pain of repetitive job and university applications. It fills complex forms in milliseconds with deterministic accuracy, lets you preview every field in an isolated side drawer, and keeps 100% of your personal data securely on your own device.\" ← Back to Projects View on GitHub →"
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Echo — AI Communication Copilot",
+  "text": "Smart browser extension and AI assistant engineered by Likhith Kumar Mankala to generate fast, authentic message replies using local LLMs and vector memory. Persona Case Study • Chrome Extension (Manifest V3) • Local LLMs (Ollama) & Privacy-First Vector Memory Echo is an intelligent browser extension (an AI communication copilot) that integrates directly into your web messaging apps. It learns your personal writing style (favorite greetings, sentence length, vocabulary, and tone habits) and suggests instant, authentic replies right above your chat box — eliminating the stiff, robotic tone typical of standard AI chatbots."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "1. The Problem: Why Standard AI Fails in Messaging",
+  "text": "Most people communicating across personal, professional, and team channels face four critical frictions: The \"Robotic AI\" Syndrome: Standard cloud chatbots generate verbose, overly formal paragraphs ( \"I hope this message finds you well...\" ) that sound completely unnatural in instant messaging. Context Switching & Latency Friction: Copy-pasting conversation threads between messaging apps and ChatGPT browser tabs breaks chat flow and takes more time than typing manually. Privacy & Corporate Data Leakage: Sending confidential work chats or personal conversations to third-party cloud servers introduces significant privacy and compliance risks. Layout Obstruction & Editor Incompatibilities: Standard browser extensions frequently overlap chat buttons or cause duplicate text insertions inside modern React, Lexical, and Slate messaging editors."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "2. Supported Messaging Platforms",
+  "text": "Echo runs natively inside Google Chrome and Chromium browsers, injecting a floating, non-intrusive frosted glassmorphic dock directly into: WhatsApp Web ( web.whatsapp.com ) Instagram Direct Messages ( instagram.com/direct ) Telegram Web ( web.telegram.org ) Discord Web ( discord.com/app ) X (Twitter) DMs ( x.com/messages )"
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "1-Click Smart Replies (<500ms Latency)",
+  "text": "When messages arrive, Echo parses multi-turn dialogue context and generates 3 natural reply choices. Clicking an option or pressing Alt + 1 / 2 / 3 instantly inserts it into the chat input box with zero duplicate text repetitions ."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Foldable & Freely Draggable Floating Toolbar",
+  "text": "Left-Aligned Fold & Minimize ( Alt + M ): Shrinks the entire toolbar into an ultra-compact floating pill on the left so it never blocks chat history or media controls. Freely Draggable Anywhere: Click and drag the ⠿ Echo handle to reposition the toolbar anywhere on your screen. Custom coordinates are persisted across page reloads. Snap to Input (Dock): One-click button to snap the toolbar right back above the chat input."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Local AI-First Intelligence (Ollama llama3.2:1b & qwen3.5:4b )",
+  "text": "Primary Model ( llama3.2:1b ): Generates contextual suggestions in under 500ms on standard laptop CPU/GPU hardware. Reasoning Model ( qwen3.5:4b ): Handles complex threads, long-form drafting, and executive summarization. Local Embeddings ( nomic-embed-text ): Embeds sent messages into SQLite vector storage to recall your real past replies."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "1-Click Draft Polisher & Grammar Refiner ( Alt + P )",
+  "text": "Quickly draft messy thoughts with typos and refine them into 5 distinct communication styles: Fix Grammar & Vocab: Corrects spelling, grammar, and phrasing while preserving your natural voice. Professional: Converts casual text into crisp, articulate business English. Short & Punchy: Tightens long paragraphs into direct, concise messages. Casual: Relaxes tone for peer groups and friends. Elaborate: Expands short bullet points into complete, well-formed thoughts."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "\"Catch Me Up\" — Thread Summarizer ( Alt + S )",
+  "text": "Summarizes up to 30 recent messages in active conversations into 3 clear, actionable sections: Discussion Topic: Core subject and context of the ongoing conversation. Questions & Actions for You: Action items, deadlines, and pending questions requiring your response. Decisions & Next Steps: Agreed-upon conclusions and scheduling."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Voice-to-Text with AI Polish",
+  "text": "Real-time voice dictation with automatic filler word removal (\"um\", \"like\", \"you know\") and grammar polishing before insertion."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Dynamic Glassmorphism Transparency",
+  "text": "Interactive in-bar slider allowing users to adjust glass opacity from 10% (crystal clear) to 100% (solid frosted) to blend seamlessly with dark and light web themes."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "Contact-Specific Relationship Memory",
+  "text": "Learns individual relationship preferences (such as casual tone for friends, formal for managers) and automatically switches tones when switching chat threads."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "3-Tier Resilient Architecture",
+  "text": "Tier 1 (Local Ollama + SQLite Vector Memory): Sub-second local inference with 100% data privacy. Tier 2 (Direct NVIDIA NIM Cloud API): High-speed cloud fallback if local daemon is offline. Tier 3 (\"Own Mind\" NLP Engine): Rule-based template & memory reasoning that functions completely offline without internet or an LLM."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "4. Technical Architecture & Stack",
+  "text": "Frontend / Extension UI Chrome Extensions (Manifest V3), TypeScript, React 18, Vite, Tailwind CSS, Custom Frosted Glassmorphic CSS System, MutationObserver DOM lifecycle. Local AI & Backend Python 3.11, FastAPI, Uvicorn, SQLite Vector Store (Cosine Similarity Search), Local Ollama Client ( llama3.2:1b , qwen3.5:4b , nomic-embed-text ). Cloud & Offline Resilience NVIDIA NIM API (Llama 3.1 / 3.3), In-Memory Cache (45s TTL), Chrome Storage Local Persona Sync, \"Own Mind\" Rule-Based NLP Engine. Editor Integration Multi-platform DOM adapter supporting React, Lexical, Slate, Draft.js, contenteditable, and textarea inputs with zero duplication."
+ },
+ {
+  "url": "/projects/echo",
+  "page": "Echo — AI Communication Copilot",
+  "heading": "5. Summary in 30 Seconds",
+  "text": "\"Echo is an AI communication copilot for messaging platforms like WhatsApp and Instagram. Instead of producing generic, robotic paragraphs, it runs ultra-fast local LLMs (Llama 3.2 via Ollama) and learns your authentic writing style to provide 3 instant reply options directly above your chat box. It includes a draggable and foldable floating toolbar, fixes typos in 1 click, summarizes long threads, and keeps all personal messages 100% private on your machine.\" ← Back to Projects View on GitHub →"
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "iTantra — Offline Low-Bandwidth Multilingual Voice Mesh Platform for Disaster Response",
+  "text": "Zero-cloud, 100% offline multilingual voice transceiver platform designed by Likhith Kumar Mankala for off-grid disaster response with 99.92% bandwidth savings, 10 Indian languages, and on-device Edge AI. Disaster Response & Tactical Mesh Platform • Zero-Cloud Edge AI • 10 Indian Scheduled Languages + English • Quantized On-Device STT/TTS iTantra is an ultra-low-bandwidth, zero-cloud, 100% offline multilingual voice transceiver platform engineered to maintain uninterrupted voice-in / voice-out communications during catastrophic telecom blackouts, extreme natural disasters, and tactical off-grid missions. By transforming heavy audio streams into compressed semantic neural tokens and binary payloads as small as 86 Bytes (achieving 99.92% bandwidth savings ), iTantra eliminates network congestion over peer-to-peer Wi-Fi Direct and BLE 5.0 RFCOMM mesh links while translating speech across 10 Indian Scheduled Languages and English entirely on-device."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "1. Problem Context & Critical Challenges",
+  "text": "During severe natural disasters (cyclones, earthquakes, flash floods, landslides) and remote tactical missions (ISRO remote launches, deep forest search & rescue, border defense), commercial telecommunications, cellular towers, fiber backbones, and power grids suffer total failure. In such high-stress scenarios, first responders (NDRF, SDRF, defense units) and affected citizens face two fatal bottlenecks: Severe Bandwidth & Network Collapse: Standard VoIP or raw voice streaming consumes 24–128 kbps (~112,000 Bytes for a brief 3.5-second clip). Over congested, ad-hoc, or low-bitrate tactical radio and mesh networks, this produces massive packet drops and immediate communication breakdown. Language & Literacy Barriers: India's linguistic landscape (22 official scheduled languages, hundreds of regional dialects) causes critical miscommunication during joint disaster operations involving multi-state response forces. Furthermore, panicked, non-literate, or visually impaired citizens cannot type or read text-based SMS/chat alerts during life-threatening crises."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "2. Proposed Innovation & Core Edge AI Pipeline",
+  "text": "Instead of transmitting heavy raw voice waveforms, iTantra executes an end-to-end on-device Edge AI transformation pipeline: Architectural Data Flow Pipeline [Speech Capture] ➔ [Offline Edge STT (Quantized Whisper / Sherpa-ONNX)] ➔ [Neural Text Serialization & Deflate Compression] ➔ [86-Byte Binary Mesh Transmission (Wi-Fi Direct P2P / BLE 5.0 RFCOMM)] ➔ [Edge Receiver Decompression] ➔ [Offline Translation Engine] ➔ [Offline Fast Neural TTS (FastSpeech2 / Piper)] ➔ [Natural Regional Audio Playback] 1. On-Device Speech-to-Text: Real-time audio capture converted to normalized textual representations via quantized INT8 Whisper and Sherpa-ONNX runtimes running locally on device CPU. 2. Neural Serialization & Compression: Text tokens, priority flags, dialect headers, and error-check CRC32 bytes are packed into a compact binary frame and Deflate-compressed down to a mere 86 bytes. 3. Zero-Infrastructure Mesh Hop: Packets travel over hop-by-hop Wi-Fi Direct (P2P) and Bluetooth Low Energy 5.0 (RFCOMM / L2CAP) ad-hoc mesh topologies with zero reliance on cellular towers or routers. 4. Offline Multilingual Translation: Receiving nodes decompress the payload and instantly translate the semantic intent into the responder's or citizen's selected native regional language. 5. Fast Neural Speech Synthesis (TTS): High-fidelity offline neural acoustic models (FastSpeech2 and Piper ONNX) render natural human speech in the target language for immediate ear-level playback."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "1. 99.92% Bandwidth Savings (112,000 Bytes ➔ 86 Bytes)",
+  "text": "Traditional VoIP transmissions require 24–128 kbps streaming bandwidth (~112 KB per 3.5s phrase). By transmitting compressed semantic representations rather than acoustic waveforms, iTantra condenses the transmission payload into an ultra-compact 86-byte binary payload frame . This achieves a 99.92% reduction in data volume , allowing hundreds of concurrent voice channels to coexist on low-bitrate tactical radio frequencies and saturated BLE links without packet collisions."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "2. 10 Indian Scheduled Languages + English Matrix",
+  "text": "Full bidirectional offline cross-translation and speech synthesis matrix supported natively: HI • HINDI हिन्दी (Devanagari) TE • TELUGU తెలుగు (Telugu) TA • TAMIL தமிழ் (Tamil) KN • KANNADA ಕನ್ನಡ (Kannada) ML • MALAYALAM മലയാളം (Malayalam) MR • MARATHI मराठी (Marathi) BN • BENGALI বাংলা (Bengali) OR • ODIA ଓଡ଼ିଆ (Odia) GU • GUJARATI ગુજરાતી (Gujarati) EN • ENGLISH Indian & Global English Matrix 100% Offline Models"
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "3. True Zero-Cloud & 100% On-Device Execution",
+  "text": "Operates with zero remote servers, zero cloud APIs, and zero internet connectivity. All speech parsing, machine translation, and speech generation run entirely on local smartphone microprocessors, ensuring strict operational data privacy, mission confidentiality, and total immunity against telecom grid blackouts."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "4. Sub-Second Ultra-Low Latency Profile",
+  "text": "Same-Language Processing: Direct capture, mesh transmission, and local replay delivers speech in under 180ms . Cross-Language Pipeline: Full STT ➔ translation ➔ neural TTS playback completes in under 950ms on standard commodity ARM quad-core mobile processors."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "5. Dynamic LRU Memory Manager (< 120 MB Active RAM)",
+  "text": "To maintain compatibility with entry-level budget hardware used across rural disaster zones (Android 8.0+ / API 26–35 with 2GB–4GB RAM), iTantra implements a custom Dynamic Least-Recently-Used (LRU) Memory Manager. Quantized acoustic weights and translation dictionaries are paged in on demand, capping the active working memory footprint to strictly under 120 MB RAM without triggering Android OS low-memory garbage collection pauses."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "4. Tactical Emergency Mode & Multi-Stage Acknowledgment Matrix",
+  "text": "iTantra introduces a purpose-built tactical protocol tailored for life-or-death missions: ▪ Priority 0 SOS Queue Bypass & Non-Interruptible Alarms: Emergency distress beacons bypass standard messaging queues instantly. Upon receipt, the node forces device audio output to maximum volume on the hardware STREAM_ALARM channel, overriding Do-Not-Disturb (DND), silent mode, or active media sessions. ▪ 3-Stage Real-Time ACK Verification Matrix: To eliminate life-critical uncertainty regarding whether a message was received and understood in hazardous disaster zones, the sender's tactical console tracks delivery progression across 3 deterministic stages: ✓ RECEIVED Binary frame CRC32 validated and stored in receiver transport buffer. ✓✓ TTS_STARTED Local receiver neural engine has begun voice generation in target language. ✓✓✓ HEARD Audio playback completed through speaker or responder tapped physical ACK."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "5. Feasibility, Scalability & Social Impact",
+  "text": "1. Tested & Validated Standalone Prototype: Packaged as a self-contained 18.8 MB Android APK containing all quantized neural weights, language lookup tables, and RFCOMM/P2P mesh drivers. Rigorously verified across live disaster simulation drills and 18+ automated unit/integration test suites. 2. Universal Social Inclusion (Voice-In, Voice-Out): Bridges the digital and literacy divide during emergencies. Non-literate, elderly, and visually impaired citizens can speak freely in their native tongue and hear crystal-clear instructions without needing to read or type complex mobile screens. 3. Zero Recurring Infrastructure Cost: Operates entirely on existing consumer mobile devices and off-the-shelf tactical hardware without requiring costly recurring satellite subscriptions, private radio towers, or cellular service contracts."
+ },
+ {
+  "url": "/projects/itantra",
+  "page": "iTantra — Offline Multilingual Voice Mesh Platform",
+  "heading": "6. Summary in 30 Seconds",
+  "text": "\"iTantra is an offline, zero-cloud multilingual voice transceiver platform designed for disaster response and tactical operations. By converting speech into an 86-byte compressed semantic frame transmitted over peer-to-peer mesh networks, it delivers 99.92% bandwidth savings, real-time voice translation across 10 Indian languages and English, and non-interruptible emergency SOS alerts without requiring cell towers, internet access, or cloud servers.\" ← Back to Projects View Repository on GitHub →"
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "JNTU-GV CEV — Official Institutional Web Platform & Enterprise CMS",
+  "text": "Production institutional web portal, multi-tenant CMS, and offline database RAG system architected by Likhith Kumar Mankala for JNTU-GV College of Engineering Vizianagaram. Institutional Case Study • Production Enterprise Portal • Multi-Role CMS & Dynamic Department Portals • Offline AI RAG Bot JNTU-GV CEV Web Platform ( jntugvcev.edu.in ) is the official web ecosystem and multi-tenant Content Management System engineered for the Jawaharlal Nehru Technological University - Gurajada Vizianagaram (College of Engineering) . Built from the ground up to replace outdated legacy infrastructure, it serves thousands of daily students, faculty members, researchers, and administrative officers. Team Lead & Lead Architect TanStack • Vite • React Drizzle ORM • PostgreSQL Multi-Role RBAC Portals Offline Database RAG Bot Stale-While-Revalidate Caching Official JNTU-GV CEV Homepage — Modern Editorial Typography, Dynamic Campus Highlights, Live Notifications & Fast Navigation"
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "1. The Problem: The Bottlenecks of Traditional University Websites",
+  "text": "Government and autonomous university portals historically suffer from severe architectural limitations: Centralized Admin Bottlenecks: Any change — from a departmental seminar circular to updating a professor's email or lab photo — required submitting manual paper requests to a single overburdened webmaster, creating weeks of delay. Exam-Time Traffic Spikes & Server Crashes: When semester timetables, hall tickets, or results were posted, thousands of concurrent student requests hit un-cached database queries, leading to server downtime. Fragmented Department Silos: Each department (IT, CSE, ECE, EEE, Mechanical, Civil, Metallurgy, Basic Sciences) lacked the ability to showcase its own vision, research labs, faculty publications, and student societies dynamically. Poor Mobile Accessibility & Student Discovery: Cluttered nested menus made finding syllabus regulations, academic calendars, and fee notices nearly impossible for students navigating on mobile devices."
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "2. Architecture & Multi-Tenant Role-Based CMS",
+  "text": "We engineered an enterprise-grade, multi-tenant administrative architecture with granular Role-Based Access Control (RBAC) that distributes content publishing authority safely across the institution: ▪ Super Admin Command Center: Full institutional governance. Controls global homepage announcements, urgent ticker banners, leadership messages (Vice-Chancellor, Principal, Vice-Principal), NBA / NIRF accreditation data, campus infrastructure showcases, and system-wide audit logging. ▪ Dedicated HOD & Departmental Portals: Heads of Departments (HODs) and designated departmental coordinators receive dedicated login dashboards scoped strictly to their respective department. They can independently: Update department vision, mission, PEOs, and Program Specific Outcomes (PSOs). Manage faculty directories: designations, qualifications, research citations, emails, and office hours. Upload laboratory specifications, equipment counts, and licensed software inventories. Publish branch-specific notifications, student associations (e.g., ITYukta), and guest lectures. ▪ Examination Cell & Academic Section: Dedicated modules for publishing academic calendars, mid/end-semester timetables, grade cards, syllabus PDFs, and revaluation circulars with instant file indexing. ▪ Training & Placement Cell (T&P): Real-time placement statistics, company drive calendars, recruitment galleries, and student eligibility checklists. The Development Squad — IT Group & Faculty Mentors behind the JNTU-GV College Platform & Engineering Infrastructure"
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "3. High-Performance Caching & Media Pipeline",
+  "text": "To deliver instantaneous page loads even during peak traffic periods, the platform implements a layered caching and optimization strategy: Stale-While-Revalidate (SWR) Query Caching: Frequently accessed public endpoints (circulars, departmental faculty rosters, and latest notices) are served instantly from memory cache while revalidating in the background, yielding <50ms response times . Optimized Local Asset Pipeline: Images and documents uploaded by HODs and staff are routed through an automated compression pipeline ( /local-assets/uploads/ ), converting bulky uploads into responsive, modern WebP and optimized JPEG formats. Edge Static Generation for Stable Pages: Academic regulations, campus history, administrative charts, and facilities pages are pre-rendered at the edge for sub-second global delivery. Zero-Downtime Database Architecture: High-efficiency queries constructed via Drizzle ORM over PostgreSQL with connection pooling prevent thread starvation during peak exam notice spikes."
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "4. Offline Database-Powered RAG AI Chatbot",
+  "text": "To assist students navigating complex college regulations, we integrated an intelligent conversational assistant: Grounded Knowledge Base: Indexes university regulations, syllabus documents, department faculty directories, lab locations, fee structures, and bus route information. Natural Language Student Inquiries: Students can query \"When are the R20 3-2 mid exams?\" , \"Who is the HOD of IT department?\" , or \"How do I apply for a duplicate grade card?\" and receive instant, cited answers. Strict Factual Guardrails: Operates strictly over verified institutional database records without hallucinating false dates or policy changes."
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "5. Technical Stack Summary",
+  "text": "Frontend Layer React 18 • TanStack • Vite Client-side routing with TanStack Router, responsive Tailwind CSS styling, Cormorant Garamond & Inter typography, and Framer Motion micro-interactions. Backend & Data Node.js • TypeScript • Drizzle ORM Type-safe database schemas with PostgreSQL, parameterized SQL queries, secure JWT sessions, and RBAC middleware. Performance & Media Asset Pipeline & SWR Caching Local asset optimization pipeline under /local-assets/ , cache headers, CDN routing, and sub-50ms static notice delivery. AI Intelligence RAG Copilot & Vector Search Database-grounded conversational search answering student academic queries with verified citations."
+ },
+ {
+  "url": "/projects/jntugvcev",
+  "page": "JNTU-GV CEV — Official Institutional Web Platform & CMS",
+  "heading": "6. Key Takeaways & Impact",
+  "text": "\"Leading the development of the official JNTU-GV CEV platform allowed us to transform how an entire engineering college communicates. By decentralizing content updates into secure HOD and departmental domains while backing the platform with high-efficiency caching and offline RAG search, we built an institutional engine that is fast, resilient, and effortless to maintain.\" ← Back to Projects Visit Live Portal (jntugvcev.edu.in) →"
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "Maid — Personal Assistant & Obsidian-Style Mindmap Planner",
+  "text": "Intelligent personal mobile assistant and cognitive productivity app built with Flutter by Likhith Kumar Mankala, featuring Obsidian-style notes, force-directed graph, and voice briefings. Persona Case Study • Flutter & Dart • Obsidian-Style Linked Notes • Force-Directed Knowledge Graph • Spoken Voice Briefings • SQLite Maid is an intelligent personal mobile assistant and cognitive daily productivity ecosystem built with Flutter and Dart. It unifies Obsidian-style bidirectional linked notes , a real-time force-directed knowledge graph , automated morning and evening spoken voice briefings , hands-free \"Hey Maid\" voice wake-up , and the Colombo cognitive scheduling engine into a unified private application."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "1. 🧠 Obsidian-Style Linked Notes & Mindmap Knowledge Graph",
+  "text": "Maid transforms traditional flat notes into a deeply interconnected personal second brain: ▪ Inline Link Triggers ( //Topic & [[Topic]] ): Typing //Topic or [[Topic]] automatically highlights inline text into an interactive, clickable chip linking related notes, tasks, and ideas. ▪ Smart Autocomplete Strip: Typing // or [[ instantly summons a contextual autocomplete drawer listing matching notes, tasks, and DSA topics for friction-free linking. ▪ Click-to-Redirect & 1-Tap Creation: Tapping any link chip instantly redirects to the target note. If the destination does not exist yet, Maid presents a 1-tap \"Create Note\" prompt. ▪ Interactive Force-Directed Graph Canvas (🕸️): Live Spring Physics: Full-screen interactive canvas visualizing your entire knowledge network with dynamic node repulsion and spring forces. Lone Notes vs. Connected Hubs: Standalone notes float in a neat outer orbit ring, while interconnected notes form dynamic clusters and central concept hubs. Category Filters & Search: Real-time filtering across Study, Work, Ideas, Shopping, and Personal categories, with instant text search and physics play/pause controls. ▪ Local Knowledge Map (🧠): In-note mini-graph modal to inspect immediate 1st-degree neighbors, incoming backlinks, and outgoing references without leaving your editing flow."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "2. ☀️ Scheduled Morning Plan (9:00 AM) & 🌙 Evening Review (8:00 PM)",
+  "text": "Maid keeps you accountable with automated, proactive routine synchronization: ▪ 9:00 AM Morning Plan: Greets you personally by name, outlines high-priority items, and presents a clear summary of scheduled routines for the day. ▪ 8:00 PM Evening Review: A structured wrap-up displaying completed accomplishments and rolling over unfinished tasks with reflection prompts. ▪ Screen-Wake Support ( fullScreenIntent: true ): Configured with exact alarm permissions to wake the device screen even when locked or turned off, ensuring high-priority morning routines are never missed. ▪ 1-Tap Direct Launch: Tapping the briefing notification opens the Daily Briefing screen directly and triggers the natural spoken voice readout automatically."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "3. 🎙️ Natural Spoken Voice Briefing Engine",
+  "text": "Maid turns daily plans into an interactive, natural audio experience: \"Hey Likhith, good morning! Here is your daily plan from Maid. You have 2 high-priority tasks: Project Review and Architecture Sync. Overall, you have 5 pending tasks today, and 2 scheduled routines: DSA Practice at 4 PM. Let's stay focused and make today productive!\" ▪ Interactive Briefing Dialog: Features real-time animated audio sound waves while speaking. ▪ Integrated Tasks Checklist: Mark pending items complete or adjust schedules directly inside the briefing dialog while audio plays. ▪ Audio Playback Controls: Dedicated controls to Play Aloud, Stop Voice, or Replay briefings at any time."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "4. 🤖 \"Hey Maid\" Hands-Free Voice Wake-Up",
+  "text": "▪ Continuous Wake-Word Detection: Maid listens for customizable wake phrases: \"Hey Maid\" , \"Maid\" , or \"Ok Maid\" . ▪ Automatic Activation: Instantly wakes the assistant, presents your current plan, and opens the voice command console for hands-free task entry while working or cooking."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "5. ⚙️ Customization Card & Colombo Routine Brain",
+  "text": "▪ Personalized User Name: Set your preferred name (default: \"Likhith\") so Maid addresses you by name across all voice and text interactions. ▪ Granular Time Pickers: Customize your morning briefing hour (default 09:00) and evening wrap-up schedule (default 20:00). ▪ Auto-Speak & Wake-Word Toggles: Enable or disable automatic voice readout and continuous wake-word listening on demand. ▪ Instant Test Buttons: Preview morning and evening voice briefings anytime with 1-tap ☀️ Test Morning and 🌙 Test Evening triggers. ▪ \"Colombo\" Cognitive Scheduling Brain: Analyzes historical task completion velocities, flags habit drop-offs, and recommends optimal scheduling adjustments with zero cloud data sharing."
+ },
+ {
+  "url": "/projects/maid",
+  "page": "Maid — Personal AI Assistant & Obsidian Mindmap",
+  "heading": "6. Summary in 30 Seconds",
+  "text": "\"Maid is a private, all-in-one Flutter mobile assistant combining Obsidian-style bidirectional linked notes, an interactive force-directed mindmap graph with live spring physics, natural spoken voice briefings, hands-free 'Hey Maid' wake-word activation, and the Colombo routine engine for total daily productivity.\" ← Back to Projects View on GitHub →"
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "text": "Cross-platform mobile and desktop AI workspace combining iLovePDF, ChatGPT, and NotebookLM with an offline on-device LLM brain built in Flutter by Likhith Kumar Mankala. Cross-Platform Desktop & Mobile App • Flutter & Dart • On-Device LLM Brain (Ollama/GGUF) • Privacy-First RAG Serea is a cross-platform, all-in-one AI document workspace built with Flutter for both Laptop (Windows / macOS / Linux) and Mobile (Android / iOS) . It unifies the document manipulation capabilities of iLovePDF, the conversational intelligence of ChatGPT, the knowledge synthesis of NotebookLM, and modern OCR into a single private ecosystem powered by an embedded on-device LLM brain ."
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "1. Core Philosophy: Why Serea?",
+  "text": "Students, researchers, and developers constantly juggle fragmented tools: one website to merge or compress PDFs, another browser tab for cloud AI chat, a third tool for OCR, and separate apps for study notes. This creates severe privacy concerns, subscription fatigue, and file disorganization. Serea solves this by placing a complete document workstation with an offline AI brain directly on your device . Whether you are working on a flight without Wi-Fi, reviewing confidential institutional records, or studying dense textbooks on your phone, Serea processes everything locally with zero cloud dependencies. Serea Unified Dashboard — Quick Actions, OCR Scanner, PDF Organize, Convert & Recent Documents"
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "1. Local AI Brain & Multi-Doc Chat (ChatGPT + NotebookLM)",
+  "text": "On-Device LLM Inference: Runs high-performance local models (including qwen3.5:4b , llama3.2:1b , and nomic-embed-text ) natively via Ollama and GGUF runtimes without internet access. DocChat & Semantic Vector Search: Upload PDFs, DOCX, or textbooks to ask questions, extract specific clauses, and get factual answers with exact page citations. Concept-Based Document Search: Search your entire library by meaning and concepts rather than rigid filename matching. 100% Offline Privacy: Confidential legal briefs, financial reports, and study notes never leave your personal computer or phone."
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "2. Academic & Study Superpowers",
+  "text": "Question Paper Generator: Upload university syllabus documents or textbook chapters to automatically generate balanced exam papers with customizable marks, bloom's taxonomy levels, and instant PDF/Word export. Study Book Generator: Synthesize fragmented lecture slides, articles, and class notes into formatted, printable A4 offline study booklets. Smart Study Guides & Quizzes: Auto-generate flashcards, multiple-choice quizzes, key takeaway summaries, and concept cheat sheets from any lecture PDF. Meeting & Lecture Minutes: Upload voice transcripts or raw class notes to generate structured executive summaries and action items. Serea AI Assistant — Local LLMs, Semantic DocChat, Question Paper Generator & Study Guides"
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "3. Full Document Utility Suite (iLovePDF Supercharged)",
+  "text": "PDF Page Organizer: Visual drag-and-drop thumbnail grid to merge multiple documents, split chapters, reorder pages, rotate orientations, or delete redundant sheets. Scanned OCR Extractor: Neural OCR pipeline that extracts crisp, editable text and mathematical equations from historical scans, handwritten notes, and camera snapshots. Multi-Format Conversion: Seamlessly converts between 9+ document formats: PDF, DOCX, Markdown, CSV, JSON, TXT, PPTX, XLSX, and images. PDF Editor & Annotator: In-place text highlighting, signature stamping, sticky notes, and redacting sensitive data."
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "3. Technical Architecture",
+  "text": "Serea is engineered with a high-performance modular pipeline: 1. Frontend & Client Layer (Flutter & Dart): Cross-platform native interface delivering 60+ FPS animations, glassmorphic themes, keyboard shortcuts ( Ctrl + K document search), and unified responsive layout across mobile and desktop. 2. Cognitive AI Engine (Python FastAPI / Llama.cpp): Local embedding generation using nomic-embed-text , multi-turn vector similarity search with ChromaDB/Faiss, and quantized LLM inference for sub-2-second retrieval latency. 3. Document & OCR Core (PyMuPDF & Tesseract): Robust parsing, text extraction, page manipulation, and PDF compilation without external cloud services."
+ },
+ {
+  "url": "/projects/serea",
+  "page": "Serea — Unified AI Document Workspace & Local LLM Suite",
+  "heading": "4. Summary in 30 Seconds",
+  "text": "\"Serea is the ultimate personal document workspace for mobile and laptop. It merges the full PDF utility toolkit of iLovePDF with the local AI intelligence of ChatGPT and NotebookLM. From chatting with 500-page textbooks to generating exam papers and organizing PDFs completely offline, Serea gives you total productivity without compromising your privacy.\" ← Back to Projects View on GitHub →"
+ },
+ {
+  "url": "/skills",
+  "page": "Technical Skills & Tech Stack",
+  "heading": "Technical Skills",
+  "text": "Core technical stack of Likhith Kumar Mankala: LLMs, Agentic AI, LangChain, RAG pipelines, PyTorch, Python, TypeScript, FastAPI, Next.js, and PostgreSQL. Core Competencies & Technologies Programming Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C LLMs & Generative AI: OpenAI API, Gemini API, Claude Code, Grok API, Ollama, OpenRouter, Local & Cloud LLM Deployment, Prompt Engineering, Function Calling, Structured Outputs, Fine-tuning, LoRA/QLoRA, MCP (Model Context Protocol), AI SDKs AI Agents & Automation: LangChain, LangGraph, CrewAI, OpenClaw, Hermes, Zapier AI, n8n, Multi-Agent Systems, AI Workflows, Tool Calling, Browser Agents, Autonomous AI Systems RAG & AI Infrastructure: Retrieval-Augmented Generation (RAG), Hybrid Search, Semantic Search, Embeddings, Pinecone, ChromaDB, FAISS, pgvector, Redis, Elasticsearch, Document Processing, Knowledge Retrieval Pipelines Machine Learning & Deep Learning: PyTorch, TensorFlow, Keras, Scikit-learn, CNN, RNN, LSTM, BiLSTM, Transformers, Multi-Head Attention, Transfer Learning, Model Optimization, Quantization, Pruning Computer Vision: OpenCV, YOLOv8, MediaPipe, DeepFace, OCR, Image Processing, Object Detection, Pose Estimation, Face Recognition Web Development: React, Next.js, NestJS, FastAPI, Flask, Django, Express.js, REST APIs, WebSockets, SSR, Tailwind CSS, Shadcn/UI, TanStack Query, Framer Motion Mobile Development: Flutter, React Native, Capacitor, Android (Java/Kotlin), Firebase, SQLite Desktop Development: Electron.js, Flutter Desktop, Python (Tkinter/PyQt), Llama.cpp Desktop Applications 3D & Interactive Web: Three.js, React Three Fiber, GSAP, CesiumJS, WebGL, Canvas API Databases & ORMs: PostgreSQL, Neon, MySQL, MongoDB, SQLite, Supabase, Redis, Drizzle ORM, Prisma, pgvector Cloud, DevOps & Infrastructure: Docker, Docker Compose, Ubuntu Server, Hostinger VPS, AWS, Nginx, PM2, SSH, Linux Administration, Git, GitHub Actions, Jenkins, CI/CD, Vercel Tools & Technologies: Figma, Jupyter Notebook, Kaggle, Postman, Qiskit, Agile/Scrum, System Design"
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Why I Chose AI",
+  "text": "Insights on Artificial Intelligence, LLM architectures, Autonomous Agents, and why AI is transforming software engineering by Likhith Kumar Mankala. From building websites to building intelligent systems. There was a time when I thought I'd spend my entire career as a web developer. When I first started learning software development, my world revolved around HTML, CSS, JavaScript, React, and Next.js. Every new project made me a little more confident, and every completed website felt like a small achievement. I enjoyed building interfaces, connecting APIs, and watching ideas come to life in the browser. At that point, I believed web development was where my journey would stay."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "The Question That Changed Everything",
+  "text": "Around that time, AI coding tools like v0, Lovable, and similar platforms started appearing. For the first time, I watched complete websites and applications being generated in just a few minutes. My first reaction wasn't excitement. It was uncertainty. \"If AI could already build websites this quickly, what would software development look like five years from now? Would writing frontend code alone still be enough?\" Instead of ignoring those questions, I decided to understand the technology behind them. That curiosity became the beginning of my AI journey."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Starting From the Fundamentals",
+  "text": "The biggest challenge was that I had absolutely no idea where to begin. Machine Learning. Neural Networks. Deep Learning. Large Language Models. Everything felt like a completely different world. Rather than jumping directly into AI tools, I decided to start from the fundamentals. I enrolled in Scaler's Machine Learning course covering supervised and unsupervised learning. The course itself lasted around fifteen hours—it took me more than a year to complete. Not because it was difficult, but because I wasn't just watching lectures—I was trying to understand every concept before moving forward. Learning became something I fit around everything else happening in my life."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Learning Never Followed a Straight Path",
+  "text": "While I was studying Machine Learning, I was also working on internships, building production websites, participating in hackathons, and improving my full-stack development skills. During that period, I worked on projects ranging from university websites to production-ready applications, including platforms for DSNLU, portfolio websites, and several client projects. Some days I was building React components. The next day I was reading about gradient descent. Then deploying APIs. Then debugging production applications. Then returning to machine learning again. Looking back, none of it happened in order. And I think that's how engineering really works. You don't master one topic before starting the next. You learn by constantly moving between them."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Discovering Large Language Models",
+  "text": "Another turning point came through Professor G. Jaya Suma. She encouraged me to start exploring Large Language Models. Honestly, I wasn't very interested at first. Machine Learning already felt like a huge field, and LLMs looked even more complicated. But once I started experimenting with them, everything changed. I began learning about prompt engineering, embeddings, vector databases, Retrieval-Augmented Generation (RAG), inference, fine-tuning, local models, and AI system design. The deeper I went, the more fascinated I became. For the first time, I wasn't just building software—I was building software that could reason, retrieve information, and interact with users in completely new ways."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Going Beyond AI",
+  "text": "As my interest in AI grew, so did my curiosity about everything surrounding it. With guidance from Joel, I explored technologies that supported modern AI systems—from Three.js and CesiumJS to browser automation, GPU optimization, navigation systems, local inference, and developer tooling. I wasn't interested in learning a single framework. I wanted to understand the entire ecosystem: how models run, how agents communicate, how applications scale, and how intelligent software is actually built. That mindset pushed me far beyond tutorials and into building complete systems."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Building My Own Tools",
+  "text": "Over time, something unexpected happened. Whenever I needed a tool, I stopped searching for one—I started building it. A document workspace became Serea. A repetitive task became an automation. A YouTube downloader became a weekend project. Personal AI assistants replaced manual workflows. Cron jobs handled repetitive work. Small utilities slowly grew into products I used every day. Instead of depending on dozens of separate applications, I found myself creating software designed specifically for the way I work. That completely changed my perspective. Today, I don't build projects simply to learn a technology—I build tools because I genuinely want to use them."
+ },
+ {
+  "url": "/why-ai",
+  "page": "Why I Chose AI — Engineering Philosophy",
+  "heading": "Looking Back",
+  "text": "Looking back, I don't think I chose AI because it was the next trend. I chose it because it challenged the way I thought about software. Web development taught me how to build applications. Artificial Intelligence taught me how to build systems that can learn, assist, and adapt. Today, my work combines both worlds. I still enjoy designing great software and full-stack development, but what excites me most is building intelligent products that solve real problems. And I have a feeling that this is only the beginning."
+ }
+]
