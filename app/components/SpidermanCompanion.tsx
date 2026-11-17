@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
@@ -6,11 +6,14 @@ import { usePathname } from 'next/navigation';
 interface SpidermanCompanionProps {
   spriteUrl?: string;
   enabled?: boolean;
+  /** Speech bubble shown when the companion is clicked. */
+  greeting?: string;
 }
 
 export default function SpidermanCompanion({
-  spriteUrl = '/spiderman/spiderman.png',
+  spriteUrl = '/spiderman/spidergwen.png',
   enabled = true,
+  greeting = "Hi, I'm Gwen! 👋",
 }: SpidermanCompanionProps) {
   const pathname = usePathname();
   const prevPathnameRef = useRef<string | null>(null);
@@ -83,7 +86,9 @@ export default function SpidermanCompanion({
     spideyEl.style.width = `${SPRITE_SIZE}px`;
     spideyEl.style.height = `${SPRITE_SIZE}px`;
     spideyEl.style.position = 'fixed';
-    spideyEl.style.pointerEvents = 'none';
+    spideyEl.style.pointerEvents = 'auto'; // clickable: says hi
+    spideyEl.style.cursor = 'pointer';
+    spideyEl.title = 'Spider-Gwen';
     spideyEl.style.imageRendering = 'pixelated';
     spideyEl.style.left = `${posX - SPRITE_SIZE / 2}px`;
     spideyEl.style.top = `${posY - SPRITE_SIZE / 2}px`;
@@ -92,6 +97,45 @@ export default function SpidermanCompanion({
     spideyEl.style.backgroundSize = `${SPRITE_SIZE * 8}px ${SPRITE_SIZE * 4}px`;
     spideyEl.style.backgroundRepeat = 'no-repeat';
     spideyEl.style.transformOrigin = '50% 60%';
+
+    // 1b. Speech bubble shown when he's clicked
+    const bubbleEl = document.createElement('div');
+    bubbleEl.id = 'spiderman-bubble';
+    bubbleEl.setAttribute('role', 'status');
+    Object.assign(bubbleEl.style, {
+      position: 'fixed',
+      zIndex: '2147483647',
+      pointerEvents: 'none',
+      whiteSpace: 'nowrap',
+      font: '600 14px/1.2 system-ui, sans-serif',
+      color: '#111',
+      background: '#fff',
+      border: '2px solid #111',
+      borderRadius: '12px',
+      padding: '5px 11px',
+      boxShadow: '0 6px 16px -6px rgba(0,0,0,.45)',
+      transform: 'translate(-50%, -100%) scale(.6)',
+      opacity: '0',
+      transition: 'opacity .2s, transform .3s cubic-bezier(.34,1.5,.5,1)',
+    });
+    const bubbleTail = document.createElement('span');
+    Object.assign(bubbleTail.style, {
+      position: 'absolute',
+      left: '50%',
+      bottom: '-7px',
+      width: '10px',
+      height: '10px',
+      marginLeft: '-5px',
+      background: '#fff',
+      borderRight: '2px solid #111',
+      borderBottom: '2px solid #111',
+      transform: 'rotate(45deg)',
+    });
+    const bubbleText = document.createElement('span');
+    bubbleText.textContent = greeting;
+    bubbleEl.append(bubbleText, bubbleTail);
+    let bubbleVisible = false;
+    let bubbleTimer: ReturnType<typeof setTimeout> | null = null;
 
     // 2. SVG Web Canvas for Dynamic Web Strands & Web Splats
     const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -109,7 +153,7 @@ export default function SpidermanCompanion({
     webLine.setAttribute('stroke', '#ffffff');
     webLine.setAttribute('stroke-width', '2');
     webLine.setAttribute('stroke-linecap', 'round');
-    webLine.style.filter = 'drop-shadow(0 0 3px rgba(255,255,255,0.95)) drop-shadow(0 0 6px rgba(56,189,248,0.7))';
+    webLine.style.filter = 'drop-shadow(0 0 3px rgba(255,255,255,0.95)) drop-shadow(0 0 6px rgba(244,63,94,0.75)) drop-shadow(0 0 8px rgba(56,189,248,0.5))';
     webLine.style.display = 'none';
     svgEl.appendChild(webLine);
 
@@ -117,7 +161,7 @@ export default function SpidermanCompanion({
     const anchorPoint = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
     anchorPoint.setAttribute('r', '3.5');
     anchorPoint.setAttribute('fill', '#ffffff');
-    anchorPoint.style.filter = 'drop-shadow(0 0 4px rgba(255,255,255,1))';
+    anchorPoint.style.filter = 'drop-shadow(0 0 4px rgba(255,255,255,1)) drop-shadow(0 0 6px rgba(244,63,94,0.8))';
     anchorPoint.style.display = 'none';
     svgEl.appendChild(anchorPoint);
 
@@ -297,6 +341,30 @@ export default function SpidermanCompanion({
       startDynamicWebSwing(targetX, targetY);
     }
     triggerEntranceRef.current = triggerPageEntranceStunt;
+
+    // Keep the bubble above his head, but never off-screen
+    function placeBubble() {
+      const half = bubbleEl.offsetWidth / 2 + 8;
+      bubbleEl.style.left = `${Math.min(Math.max(posX, half), window.innerWidth - half)}px`;
+      bubbleEl.style.top = `${Math.max(posY - SPRITE_SIZE / 2 - 10, bubbleEl.offsetHeight + 16)}px`;
+    }
+
+    function sayHi() {
+      bubbleVisible = true;
+      placeBubble();
+      bubbleEl.style.opacity = '1';
+      bubbleEl.style.transform = 'translate(-50%, -100%) scale(1)';
+      isWebShooting = false;
+      idleAnimation = null;
+      idleTime = 0;
+      setSprite('alert', 0, isFacingLeft, 0);
+      if (bubbleTimer) clearTimeout(bubbleTimer);
+      bubbleTimer = setTimeout(() => {
+        bubbleVisible = false;
+        bubbleEl.style.opacity = '0';
+        bubbleEl.style.transform = 'translate(-50%, -100%) scale(.6)';
+      }, 2600);
+    }
 
     function resetIdleAnimation() {
       idleAnimation = null;
@@ -545,6 +613,7 @@ export default function SpidermanCompanion({
       if (timestamp - lastFrameTimestamp > 75) {
         lastFrameTimestamp = timestamp;
         frame();
+        if (bubbleVisible) placeBubble(); // bubble follows him
       }
       animationFrameId = window.requestAnimationFrame(onAnimationFrame);
     }
@@ -573,7 +642,14 @@ export default function SpidermanCompanion({
     };
 
     // Double-Click anywhere triggers Dynamic Multi-Angle Web Swing
+    // Clicking Spider-Man himself says hi instead of shooting a web
+    const onSpideyClick = (event: MouseEvent) => {
+      event.stopPropagation();
+      sayHi();
+    };
+
     const onMouseDown = (event: MouseEvent) => {
+      if (event.target === spideyEl) return;
       clickCount += 1;
       const targetX = event.clientX;
       const targetY = event.clientY;
@@ -591,6 +667,7 @@ export default function SpidermanCompanion({
     };
 
     const onDblClick = (event: MouseEvent) => {
+      if (event.target === spideyEl) return;
       if (clickTimer) clearTimeout(clickTimer);
       clickCount = 0;
       startDynamicWebSwing(event.clientX, event.clientY);
@@ -603,6 +680,8 @@ export default function SpidermanCompanion({
     setSprite('idle', 0, false, 0);
     document.body.appendChild(svgEl);
     document.body.appendChild(spideyEl);
+    document.body.appendChild(bubbleEl);
+    spideyEl.addEventListener('click', onSpideyClick);
 
     // Initial page load dynamic entrance stunt
     triggerPageEntranceStunt();
@@ -616,6 +695,8 @@ export default function SpidermanCompanion({
 
     return () => {
       if (clickTimer) clearTimeout(clickTimer);
+      if (bubbleTimer) clearTimeout(bubbleTimer);
+      spideyEl.removeEventListener('click', onSpideyClick);
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);
       window.removeEventListener('mousedown', onMouseDown);
@@ -624,8 +705,9 @@ export default function SpidermanCompanion({
       if (animationFrameId) window.cancelAnimationFrame(animationFrameId);
       if (spideyEl.parentNode) spideyEl.parentNode.removeChild(spideyEl);
       if (svgEl.parentNode) svgEl.parentNode.removeChild(svgEl);
+      if (bubbleEl.parentNode) bubbleEl.parentNode.removeChild(bubbleEl);
     };
-  }, [enabled, spriteUrl]);
+  }, [enabled, spriteUrl, greeting]);
 
   return null;
 }
