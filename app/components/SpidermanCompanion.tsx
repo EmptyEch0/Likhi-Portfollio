@@ -10,21 +10,46 @@ interface SpidermanCompanionProps {
   greeting?: string;
 }
 
+// What Peter says when you open a page (exact path first, then its first segment)
+const PAGE_LINES: Record<string, string> = {
+  '/': 'back at HQ 🕸️',
+  about: 'the guy behind the mask 🎭',
+  projects: 'spidey-sense says: cool builds 🕷️',
+  '/projects/echo': 'Echo replies faster than my web 💬',
+  '/projects/serea': 'Serea talks to your PDFs 📚',
+  '/projects/itantra': 'iTantra — no towers needed 📡',
+  '/projects/awefill': 'forms filled… thwip! ⚡',
+  '/projects/maid': 'Maid plans his whole day 🗓️',
+  '/projects/jntugvcev': 'he built the college site 🏛️',
+  experience: 'internships > patrol shifts 💼',
+  skills: 'with great skills… 🕸️',
+  blog: 'the trophy wall 🏆',
+  contact: 'send up a signal 📨',
+  life: 'origin story 📖',
+  'beyond-classroom': 'the college arc 🎓',
+  'why-ai': 'how he found AI 🤖',
+  n: 'pocket dev tricks 🧰',
+};
+const lineFor = (path: string) => PAGE_LINES[path] ?? PAGE_LINES[path.split('/')[1]];
+
+const PATROL_AFTER_MS = 10_000; // no mouse movement this long -> he drops to the floor and runs around
+
 export default function SpidermanCompanion({
-  spriteUrl = '/spiderman/spidergwen.png',
+  spriteUrl = '/spiderman/spiderman.png',
   enabled = true,
-  greeting = "Hi, I'm Gwen! 👋",
+  greeting = 'Hi, this is Peter! 👋',
 }: SpidermanCompanionProps) {
   const pathname = usePathname();
   const prevPathnameRef = useRef<string | null>(null);
   const triggerEntranceRef = useRef<(() => void) | null>(null);
+  const sayRef = useRef<((text: string) => void) | null>(null);
 
-  // Trigger acrobatic entrance swing on page/route change
+  // Trigger acrobatic entrance swing on page/route change, and comment on the new page
   useEffect(() => {
     if (prevPathnameRef.current !== null && prevPathnameRef.current !== pathname) {
-      if (triggerEntranceRef.current) {
-        triggerEntranceRef.current();
-      }
+      triggerEntranceRef.current?.();
+      const line = lineFor(pathname);
+      if (line) sayRef.current?.(line);
     }
     prevPathnameRef.current = pathname;
   }, [pathname]);
@@ -88,7 +113,7 @@ export default function SpidermanCompanion({
     spideyEl.style.position = 'fixed';
     spideyEl.style.pointerEvents = 'auto'; // clickable: says hi
     spideyEl.style.cursor = 'pointer';
-    spideyEl.title = 'Spider-Gwen';
+    spideyEl.title = 'Spider-Man';
     spideyEl.style.imageRendering = 'pixelated';
     spideyEl.style.left = `${posX - SPRITE_SIZE / 2}px`;
     spideyEl.style.top = `${posY - SPRITE_SIZE / 2}px`;
@@ -349,7 +374,8 @@ export default function SpidermanCompanion({
       bubbleEl.style.top = `${Math.max(posY - SPRITE_SIZE / 2 - 10, bubbleEl.offsetHeight + 16)}px`;
     }
 
-    function sayHi() {
+    function say(text: string) {
+      bubbleText.textContent = text;
       bubbleVisible = true;
       placeBubble();
       bubbleEl.style.opacity = '1';
@@ -364,6 +390,64 @@ export default function SpidermanCompanion({
         bubbleEl.style.opacity = '0';
         bubbleEl.style.transform = 'translate(-50%, -100%) scale(.6)';
       }, 2600);
+    }
+    sayRef.current = say;
+
+    // Idle patrol: slide down the web to the floor, then run back and forth, hopping now and then
+    let lastActivity = performance.now();
+    let patrolling = false;
+    let descending = false;
+    let patrolVx = 0;
+    let patrolVy = 0;
+    let landFrames = 0;
+
+    function patrol() {
+      const half = SPRITE_SIZE / 2;
+      const ground = window.innerHeight - half;
+      if (!patrolling) {
+        patrolling = true;
+        descending = posY < ground - 4;
+        patrolVx = posX < window.innerWidth / 2 ? 9 : -9;
+        patrolVy = 0;
+        landFrames = 0;
+        idleAnimation = null;
+        isLanding = false;
+      }
+
+      if (descending) {
+        posY = Math.min(posY + 14, ground);
+        setSprite('S', frameCount, isFacingLeft, 0);
+        showWebLine(posX, 0, posX, posY - 12);
+        if (posY >= ground) {
+          descending = false;
+          landFrames = 4;
+          hideWebLine();
+        }
+      } else if (landFrames > 0) {
+        landFrames -= 1;
+        setSprite('crouch', 0, isFacingLeft, 0);
+      } else {
+        posX += patrolVx;
+        if (posX < half + 8 || posX > window.innerWidth - half - 8) {
+          patrolVx = -patrolVx; // turn around at the screen edge
+          posX = Math.min(Math.max(half + 8, posX), window.innerWidth - half - 8);
+        }
+        const left = patrolVx < 0;
+        if (patrolVy === 0 && Math.random() < 0.08) patrolVy = -20; // hop (~once a second)
+        if (patrolVy !== 0) {
+          patrolVy += 3.5;
+          posY = Math.min(posY + patrolVy, ground);
+          setSprite(patrolVy < 0 ? (left ? 'NW' : 'NE') : left ? 'SW' : 'SE', frameCount, left, 0);
+          if (posY >= ground) {
+            patrolVy = 0;
+            landFrames = 2;
+          }
+        } else {
+          setSprite(left ? 'W' : 'E', frameCount, left, 0);
+        }
+      }
+      spideyEl.style.left = `${posX - half}px`;
+      spideyEl.style.top = `${posY - half}px`;
     }
 
     function resetIdleAnimation() {
@@ -543,7 +627,13 @@ export default function SpidermanCompanion({
         return;
       }
 
-      // 3. Normal Movement / Chasing Target
+      // 3. Nobody's moved the mouse for a while: run around the floor
+      if (performance.now() - lastActivity > PATROL_AFTER_MS) {
+        patrol();
+        return;
+      }
+
+      // 4. Normal Movement / Chasing Target
       let destX = mousePosX;
       let destY = mousePosY;
 
@@ -621,7 +711,17 @@ export default function SpidermanCompanion({
     let clickTimer: NodeJS.Timeout | null = null;
     let clickCount = 0;
 
+    const wake = () => {
+      lastActivity = performance.now();
+      if (patrolling) {
+        patrolling = false;
+        hideWebLine();
+        idleTime = 5; // spider-sense tingle, then chase the cursor again
+      }
+    };
+
     const onMouseMove = (event: MouseEvent) => {
+      wake();
       if (!mouseInside) {
         mouseInside = true;
         idleTime = 5;
@@ -645,10 +745,11 @@ export default function SpidermanCompanion({
     // Clicking Spider-Man himself says hi instead of shooting a web
     const onSpideyClick = (event: MouseEvent) => {
       event.stopPropagation();
-      sayHi();
+      say(greeting);
     };
 
     const onMouseDown = (event: MouseEvent) => {
+      wake();
       if (event.target === spideyEl) return;
       clickCount += 1;
       const targetX = event.clientX;
@@ -696,6 +797,7 @@ export default function SpidermanCompanion({
     return () => {
       if (clickTimer) clearTimeout(clickTimer);
       if (bubbleTimer) clearTimeout(bubbleTimer);
+      sayRef.current = null;
       spideyEl.removeEventListener('click', onSpideyClick);
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);
