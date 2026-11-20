@@ -393,7 +393,9 @@ export default function SpidermanCompanion({
     }
     sayRef.current = say;
 
-    // Idle patrol: slide down the web to the floor, then run back and forth, hopping now and then
+    // Idle patrol: slide down the web to the floor, then run back and forth, hopping now and then.
+    // Phones have no cursor to chase, so there he goes back to running soon after a tap.
+    const patrolAfterMs = window.matchMedia('(pointer: coarse)').matches ? 3000 : PATROL_AFTER_MS;
     let lastActivity = performance.now();
     let patrolling = false;
     let descending = false;
@@ -628,7 +630,7 @@ export default function SpidermanCompanion({
       }
 
       // 3. Nobody's moved the mouse for a while: run around the floor
-      if (performance.now() - lastActivity > PATROL_AFTER_MS) {
+      if (performance.now() - lastActivity > patrolAfterMs) {
         patrol();
         return;
       }
