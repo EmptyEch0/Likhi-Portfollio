@@ -111,7 +111,10 @@ export default function SpidermanCompanion({
     spideyEl.style.width = `${SPRITE_SIZE}px`;
     spideyEl.style.height = `${SPRITE_SIZE}px`;
     spideyEl.style.position = 'fixed';
-    spideyEl.style.pointerEvents = 'auto'; // clickable: says hi
+    // Desktop: clickable, says hi. Touch screens: taps go through him to whatever is underneath,
+    // so he never blocks a button while running along the bottom.
+    const isTouch = window.matchMedia('(pointer: coarse)').matches;
+    spideyEl.style.pointerEvents = isTouch ? 'none' : 'auto';
     spideyEl.style.cursor = 'pointer';
     spideyEl.title = 'Spider-Man';
     spideyEl.style.imageRendering = 'pixelated';
@@ -395,7 +398,7 @@ export default function SpidermanCompanion({
 
     // Idle patrol: slide down the web to the floor, then run back and forth, hopping now and then.
     // Phones have no cursor to chase, so there he goes back to running soon after a tap.
-    const patrolAfterMs = window.matchMedia('(pointer: coarse)').matches ? 3000 : PATROL_AFTER_MS;
+    const patrolAfterMs = isTouch ? 3000 : PATROL_AFTER_MS;
     let lastActivity = performance.now();
     let patrolling = false;
     let descending = false;
