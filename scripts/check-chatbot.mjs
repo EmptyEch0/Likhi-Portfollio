@@ -63,7 +63,23 @@ const cases = [
   ['is he open to work', 'Open to Roles'],
   ['favourite movie', 'Life Outside'],
   ['summarize this page', 'Echo', '/projects/echo'],
+  // detail questions: the right section of the right project, not a neighbour's
+  ['echo tech stack', 'Echo — AI Communication Copilot › 4. Technical'],
+  ['what is the tech stack of the jntu website', 'JNTU-GV CEV'],
+  ['how does caching work on jntu website', 'JNTU-GV Official College Website'],
+  ['what is hey maid', 'Maid'],
+  ['medical assistant project', 'University Medical Assistant'],
+  ['tech lead role', 'TECH LEAD'],
+  ['when will he graduate', 'JNTU-GV Vizianagaram'],
 ];
+
+// focused answers: only the line that answers the question
+const line = (q) => performSemanticSearch(q).answer;
+assert.match(line('does he know react'), /React/);
+assert.doesNotMatch(line('does he know react'), /Docker/);
+assert.equal(line('what is his phone number').split('\n').length, 2);
+assert.match(line('how much ram does itantra use'), /RAM/);
+assert.match(line('when will he graduate'), /2027/);
 
 let fails = 0;
 for (const [q, want, path] of cases) {

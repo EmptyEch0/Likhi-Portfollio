@@ -26,6 +26,14 @@ const STARTERS = [
   'How can I contact him?'
 ];
 
+// The search code + site index load on first hover/open (not on page load), so answers are instant
+let searchModule: Promise<typeof import('../lib/semanticSearch')> | null = null;
+const loadSearch = () => {
+  searchModule ??= import('../lib/semanticSearch');
+  searchModule.catch(() => (searchModule = null)); // retry next time if offline
+  return searchModule;
+};
+
 // URLs, emails and phone numbers inside answers become clickable
 const LINK_RE = /(https?:\/\/[^\s)]*[^\s).,]|(?:github\.com|linkedin\.com)\/[^\s)]*[^\s).,]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+|\+91 ?\d{10})/g;
 
@@ -110,11 +118,7 @@ export default function FloatingContactWidget() {
 
     let reply: Message;
     try {
-      // The search code + site index only load once someone actually chats
-      const [{ performSemanticSearch }] = await Promise.all([
-        import('../lib/semanticSearch'),
-        new Promise((resolve) => setTimeout(resolve, 350))
-      ]);
+      const { performSemanticSearch } = await loadSearch();
       const res = performSemanticSearch(query, pathname);
       reply = {
         role: 'assistant',
@@ -150,7 +154,11 @@ export default function FloatingContactWidget() {
     <div
       ref={containerRef}
       className="fixed bottom-16 sm:bottom-20 right-8 sm:right-12 z-[9990] flex items-center justify-end font-sans select-none"
-      onMouseEnter={() => setIsHovered(true)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+        loadSearch();
+      }}
+      onTouchStart={() => loadSearch()}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Right-to-Left Slide Hover Tooltip Pill */}

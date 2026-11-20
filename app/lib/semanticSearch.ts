@@ -39,7 +39,7 @@ const WEAK = new Set(['who', 'what', 'where', 'name', 'person', 'likhith', 'mank
 // Say nothing about *what* is asked; ignored when matching page text (already normalized/stemmed)
 const GENERIC = new Set([
   ...WEAK,
-  ...'how why when which whose whom kind type use used using get got make made much many thing like explain work project app application feature build built did doe really exactly attend go went join know want need say think good best'.split(' ')
+  ...'how why when which whose whom kind type use used using get got make made much many thing like explain work project app application feature build built did doe really exactly attend go went join know want need say think good best now current currently role'.split(' ')
 ]);
 
 const MIN_SCORE = 0.3; // any hit
@@ -59,6 +59,8 @@ function normalize(text: string): string {
     .toLowerCase()
     .replace(/favourite/g, 'favorite')
     .replace(/\bgpa\b/g, 'cgpa')
+    .replace(/\bgraduat\w*/g, 'graduation')
+    .replace(/\btechnical\b/g, 'tech')
     .replace(/\bmovies?\b/g, 'film')
     .replace(/[^a-z0-9]+/g, ' ')
     .split(' ')
@@ -141,14 +143,17 @@ const shortName = (title: string) => title.split(' — ')[0].trim();
 const sentencesOf = (text: string) =>
   text.split(/(?<=[.!?])\s+|\s*[▪•]\s*/).map(t => t.trim()).filter(t => t.length > 2);
 
-// Best section anywhere on the site (or on one page). Must contain most of the question's words,
+// Best section anywhere on the site. Must contain most of the question's words,
 // so "favourite food" doesn't match a page that only says "favourite".
-function searchSite(terms: string[], url?: string): SearchResponse | null {
+// `must`: the topic named in the question ("echo") — section must mention one of these,
+// so "echo tech stack" can't land on another project's tech stack.
+function searchSite(terms: string[], must: string[] = [], url?: string): SearchResponse | null {
   if (!terms.length) return null;
   const need = Math.ceil(terms.length * 0.6);
   let best: { x: (typeof site)[number]; s: number } | null = null;
   for (const x of site) {
     if (url && x.s.url !== url) continue;
+    if (must.length && !must.some(t => x.tf.has(t))) continue;
     const r = bm25(x, terms);
     if (r.hits >= need && (!best || r.s > best.s)) best = { x, s: r.s };
   }
@@ -223,9 +228,19 @@ const LISTS = [
 
 const ask = (doc: KnowledgeDoc) => `Tell me about ${shortName(doc.title).replace(/\s*\(.*\)$/, '')}`;
 
-function docAnswer(doc: KnowledgeDoc, related: KnowledgeDoc[] = []): SearchResponse {
+// "does he know python" -> only the lines of the skills answer that mention python
+function focusText(text: string, focus: string[]): string {
+  if (!focus.length) return text;
+  const parts = text.includes('\n') ? text.split('\n') : sentencesOf(text);
+  const fs = new Set(focus);
+  const keep = parts.slice(1).filter(p => normalize(p).split(' ').some(w => fs.has(w)));
+  if (!keep.length || keep.length >= parts.length - 1) return text;
+  return [parts[0], ...keep].join(text.includes('\n') ? '\n' : ' ');
+}
+
+function docAnswer(doc: KnowledgeDoc, related: KnowledgeDoc[] = [], focus: string[] = []): SearchResponse {
   return {
-    answer: doc.text,
+    answer: focusText(doc.text, focus),
     actionUrl: doc.actionUrl,
     actionLabel: doc.actionLabel,
     matchedTitle: doc.title,
@@ -313,8 +328,13 @@ export function performSemanticSearch(query: string, pathname = '/'): SearchResp
   let listAction: (typeof LISTS)[number] | undefined;
   for (const l of fired) {
     const inList = scored.filter(s => l.ids.includes(s.doc.id) && s.score >= MIN_SCORE);
-    // "how does Echo work" -> asked about one specific thing outside this group, not a list
-    if (!inList.length && best.score >= STRONG_SCORE && !l.ids.includes(best.doc.id)) continue;
+    // "how does Echo work" / "how does caching work on jntu website" -> asked about one specific thing outside this group, not a list
+    if (best.score >= STRONG_SCORE && !l.ids.includes(best.doc.id) && (!inList.length || best.score >= 2 * inList[0].score)) continue;
+    // "medical assistant project" -> that project's section on the site, not the whole list
+    if (!inList.length && fired.length === 1) {
+      const hit = searchSite(terms.filter(w => !l.re.test(w)));
+      if (hit) return hit;
+    }
     // "tell me about the Serea project" -> just that one
     if (fired.length === 1 && inList.length === 1) return docAnswer(inList[0].doc, related);
     const list = inList.length ? inList.map(s => s.doc) : docs.filter(d => l.ids.includes(d.id));
@@ -334,7 +354,14 @@ export function performSemanticSearch(query: string, pathname = '/'): SearchResp
   // ("how many students did he mentor" -> the page section that actually says it)
   const extra = terms.filter(w => !best.known.has(w));
   if (best.score >= STRONG_SCORE) {
-    return (extra.length && searchSite(terms)) || docAnswer(best.doc, related);
+    // topic words the question used ("echo", "jntu"), to keep page search on the same topic
+    const topic = [...new Set(best.keys.filter(k => ` ${q} `.includes(` ${k} `)).flatMap(k => k.split(' ')))].filter(w => terms.includes(w));
+    // detail words beyond the answer's title ("python", "ram", "phone") -> show just those lines
+    const focus = terms.filter(w => !best.titleWords.has(w));
+    // the project's own page first ("jntu website tech stack" -> /projects/jntugvcev), then any page on that topic
+    const own = best.doc.actionUrl.startsWith('/projects/') ? searchSite(terms, [], best.doc.actionUrl) : null;
+    const hit = extra.length ? own || searchSite(terms, topic) : null;
+    return hit || docAnswer(best.doc, related, focus);
   }
 
   // Anything else written anywhere on the site
