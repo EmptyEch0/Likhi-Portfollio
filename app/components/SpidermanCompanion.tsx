@@ -395,6 +395,9 @@ export default function SpidermanCompanion({
       }, 2600);
     }
     sayRef.current = say;
+    // other components can make him talk: window.dispatchEvent(new CustomEvent('spidey:say', { detail: 'hi' }))
+    const onSayEvent = (event: Event) => say((event as CustomEvent<string>).detail);
+    window.addEventListener('spidey:say', onSayEvent);
 
     // Idle patrol: slide down the web to the floor, then run back and forth, hopping now and then.
     // Phones have no cursor to chase, so there he goes back to running soon after a tap.
@@ -860,6 +863,7 @@ export default function SpidermanCompanion({
       if (clickTimer) clearTimeout(clickTimer);
       if (bubbleTimer) clearTimeout(bubbleTimer);
       sayRef.current = null;
+      window.removeEventListener('spidey:say', onSayEvent);
       spideyEl.removeEventListener('click', onSpideyClick);
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);

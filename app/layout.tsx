@@ -135,6 +135,7 @@ const FloatingContactWidget = dynamic(() => import('./components/FloatingContact
 const OfflineDetector = dynamic(() => import('./components/OfflineDetector'));
 const SignatureIntro = dynamic(() => import('./components/SignatureIntro'));
 const SpidermanCompanion = dynamic(() => import('./components/SpidermanCompanion'));
+const BackToTop = dynamic(() => import('./components/BackToTop'));
 import BackButton from './components/BackButton';
 
 export default function RootLayout({
@@ -361,6 +362,7 @@ export default function RootLayout({
           </main>
         </div>
         <SpidermanCompanion />
+        <BackToTop />
         <FloatingContactWidget />
         <OfflineDetector />
         <Analytics />
