@@ -404,14 +404,31 @@ export default function SpidermanCompanion({
     let descending = false;
     let patrolVx = 0;
     let patrolVy = 0;
+    let airVx = 0;
     let landFrames = 0;
+    const GRAVITY = 3.5;
+
+    // Elements marked data-spidey-perch (the chat button) are platforms he can stand on
+    const perchRects = () =>
+      Array.from(document.querySelectorAll<HTMLElement>('[data-spidey-perch]'), (el) => el.getBoundingClientRect()).filter(
+        (r) => r.width > 0
+      );
+    // Heights (his centre y) he can stand at for a given x: the floor, plus the top of any perch under x
+    function surfacesAt(x: number, rects: DOMRect[]) {
+      const half = SPRITE_SIZE / 2;
+      const ys = [window.innerHeight - half];
+      for (const r of rects) if (x > r.left + 6 && x < r.right - 6) ys.push(r.top - half);
+      return ys;
+    }
 
     function patrol() {
       const half = SPRITE_SIZE / 2;
-      const ground = window.innerHeight - half;
+      const minX = half + 8;
+      const maxX = window.innerWidth - half - 8;
+      const rects = perchRects();
       if (!patrolling) {
         patrolling = true;
-        descending = posY < ground - 4;
+        descending = true;
         patrolVx = posX < window.innerWidth / 2 ? 9 : -9;
         patrolVy = 0;
         landFrames = 0;
@@ -420,10 +437,12 @@ export default function SpidermanCompanion({
       }
 
       if (descending) {
-        posY = Math.min(posY + 14, ground);
+        // slide down his web onto whatever is below him (the floor, or the chat button)
+        const target = Math.min(...surfacesAt(posX, rects).filter((s) => s >= posY - 2));
+        posY = Math.min(posY + 14, target);
         setSprite('S', frameCount, isFacingLeft, 0);
         showWebLine(posX, 0, posX, posY - 12);
-        if (posY >= ground) {
+        if (posY >= target) {
           descending = false;
           landFrames = 4;
           hideWebLine();
@@ -432,22 +451,60 @@ export default function SpidermanCompanion({
         landFrames -= 1;
         setSprite('crouch', 0, isFacingLeft, 0);
       } else {
-        posX += patrolVx;
-        if (posX < half + 8 || posX > window.innerWidth - half - 8) {
-          patrolVx = -patrolVx; // turn around at the screen edge
-          posX = Math.min(Math.max(half + 8, posX), window.innerWidth - half - 8);
+        if (patrolVy === 0) {
+          // on his feet: run
+          posX += patrolVx;
+          if (posX < minX || posX > maxX) {
+            patrolVx = -patrolVx; // turn around at the screen edge
+            posX = Math.min(Math.max(minX, posX), maxX);
+          }
+          if (!surfacesAt(posX, rects).some((y) => Math.abs(y - posY) < 2)) {
+            patrolVy = 0.1; // ran off the edge of the chat button: fall
+            airVx = patrolVx;
+          } else {
+            // a perch a little way ahead and higher up: leap onto its middle
+            const perch = rects.find((r) => {
+              const ahead = ((r.left + r.right) / 2 - posX) * Math.sign(patrolVx);
+              return ahead > 20 && ahead < 140 && r.top - half < posY - 10;
+            });
+            if (perch) {
+              const top = perch.top - half;
+              // launch speed that clears the top by ~14px with this frame-by-frame gravity
+              const rise = posY - top + 14;
+              patrolVy = -(GRAVITY / 2 + Math.sqrt((GRAVITY * GRAVITY) / 4 + 2 * GRAVITY * rise));
+              // count the frames until he comes back down onto the top, so he lands on its middle
+              let vy = patrolVy;
+              let y = posY;
+              let frames = 0;
+              do {
+                vy += GRAVITY;
+                y += vy;
+                frames += 1;
+              } while (!(vy > 0 && y >= top) && frames < 60);
+              airVx = ((perch.left + perch.right) / 2 - posX) / frames;
+            } else if (Math.random() < 0.08) {
+              patrolVy = -20; // little hop (~once a second)
+              airVx = patrolVx;
+            }
+          }
         }
-        const left = patrolVx < 0;
-        if (patrolVy === 0 && Math.random() < 0.08) patrolVy = -20; // hop (~once a second)
+
         if (patrolVy !== 0) {
-          patrolVy += 3.5;
-          posY = Math.min(posY + patrolVy, ground);
-          setSprite(patrolVy < 0 ? (left ? 'NW' : 'NE') : left ? 'SW' : 'SE', frameCount, left, 0);
-          if (posY >= ground) {
+          // in the air: gravity, then land on the first surface he drops onto from above
+          const prevY = posY;
+          posX = Math.min(Math.max(minX, posX + airVx), maxX);
+          patrolVy += GRAVITY;
+          posY += patrolVy;
+          const landing = surfacesAt(posX, rects).filter((s) => prevY <= s + 1 && posY >= s);
+          if (patrolVy > 0 && landing.length) {
+            posY = Math.min(...landing);
             patrolVy = 0;
             landFrames = 2;
           }
-        } else {
+          const left = airVx < 0;
+          setSprite(patrolVy < 0 ? (left ? 'NW' : 'NE') : left ? 'SW' : 'SE', frameCount, left, 0);
+        } else if (landFrames === 0) {
+          const left = patrolVx < 0;
           setSprite(left ? 'W' : 'E', frameCount, left, 0);
         }
       }

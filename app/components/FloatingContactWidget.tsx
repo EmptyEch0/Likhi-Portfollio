@@ -305,6 +305,7 @@ export default function FloatingContactWidget() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Ask about Likhith"
         aria-expanded={isOpen}
+        data-spidey-perch // Spider-Man jumps up and runs across the top of this button
         className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-zinc-700/80 bg-zinc-950 shadow-2xl cursor-pointer overflow-hidden flex items-center justify-center shrink-0 group transition-colors hover:border-zinc-400"
       >
         <img
