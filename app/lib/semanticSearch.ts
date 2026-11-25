@@ -45,7 +45,14 @@ const GENERIC = new Set([
 const MIN_SCORE = 0.3; // any hit
 const STRONG_SCORE = 0.5; // a real topic word, not just "who"/"likhith"
 
+// Words ending in 's' that must NOT have their trailing 's' stripped by stem()
+const KEEP_S = new Set([
+  'nextjs', 'nestjs', 'reactjs', 'vuejs', 'threejs', 'cesiumjs', 'expressjs', 'electronjs',
+  'vlms', 'ulms', 'lms', 'cms', 'devops', 'pandas', 'keras', 'aws', 'css', 'scss', 'saas', 'ios', 'macos'
+]);
+
 function stem(w: string): string {
+  if (KEEP_S.has(w)) return w;
   if (w.length > 4 && w.endsWith('ies')) return w.slice(0, -3) + 'y';
   if (w.length > 3 && w.endsWith('s') && !w.endsWith('ss')) return w.slice(0, -1);
   if (w.length > 5 && w.endsWith('ing')) return w.slice(0, -3); // learning -> learn
@@ -62,6 +69,19 @@ function normalize(text: string): string {
     .replace(/\bgraduat\w*/g, 'graduation')
     .replace(/\btechnical\b/g, 'tech')
     .replace(/\bmovies?\b/g, 'film')
+    .replace(/\bcurriculum vitae\b|\bcv\b/g, 'resume')
+    .replace(/\bjntu[\s-]*gv\b/g, 'jntu gv')
+    .replace(/\bpostgres(?:ql)?\b/g, 'postgresql')
+    .replace(/\bnext\.?js\b/g, 'nextjs')
+    .replace(/\bnest\.?js\b/g, 'nestjs')
+    .replace(/\breact\.?js\b/g, 'react')
+    .replace(/\bthree\.?js\b/g, 'threejs')
+    .replace(/\bcesium\.?js\b/g, 'cesiumjs')
+    .replace(/\bexpress\.?js\b/g, 'expressjs')
+    .replace(/\belectron\.?js\b/g, 'electronjs')
+    .replace(/\bqubit\s+edge\b/g, 'qubitedge')
+    .replace(/\balp\.jntugv\.edu\.in\b|\bjntu-college-fee-portal\b/g, 'alp jntu gv')
+    .replace(/\bu?lms\.qubitedge\.in\b/g, 'lms qubitedge')
     .replace(/[^a-z0-9]+/g, ' ')
     .split(' ')
     .filter(w => w.length > 1 && !STOP.has(w))
@@ -71,21 +91,71 @@ function normalize(text: string): string {
 
 const index = docs.map(doc => {
   const keys = [...new Set(doc.keywords.map(normalize).filter(Boolean))];
+  const keyWords = new Set(keys.flatMap(k => k.split(' ')));
   const titleWords = new Set(normalize(doc.title).split(' ').filter(w => w.length > 2 && !WEAK.has(w)));
   const words = normalize(`${doc.title} ${doc.summary} ${doc.text}`).split(' ');
+  const wordSet = new Set(words);
   return {
     doc,
     keys,
+    keyWords,
     titleWords,
     words,
+    wordSet,
     // every word this doc covers — used to tell if a question asks something beyond it
-    known: new Set([...keys.flatMap(k => k.split(' ')), ...words])
+    known: new Set([...keyWords, ...words])
   };
 });
 
 // Keywords shared by many docs (e.g. "flutter") count less than unique ones (e.g. "serea")
 const df = new Map<string, number>();
 index.forEach(({ keys }) => keys.forEach(k => df.set(k, (df.get(k) || 0) + 1)));
+
+// Damerau-Levenshtein <= 1 check (fast O(n) for single typo / transposition)
+function editDist1(a: string, b: string): boolean {
+  if (Math.abs(a.length - b.length) > 1) return false;
+  if (a === b) return true;
+  if (a.length === b.length) {
+    let diff = 0;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) {
+        if (i + 1 < a.length && a[i] === b[i + 1] && a[i + 1] === b[i]) {
+          i++;
+          diff++;
+        } else {
+          diff++;
+        }
+        if (diff > 1) return false;
+      }
+    }
+    return diff === 1;
+  }
+  const [short, long] = a.length < b.length ? [a, b] : [b, a];
+  let i = 0, j = 0, skipped = false;
+  while (i < short.length && j < long.length) {
+    if (short[i] === long[j]) {
+      i++;
+      j++;
+    } else if (!skipped) {
+      skipped = true;
+      j++;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
+const CAT_PRIORITY: Record<string, number> = {
+  Contact: 5,
+  About: 4,
+  Experience: 3,
+  Education: 2,
+  Skills: 2,
+  Certifications: 2,
+  'Achievements & Journey': 2,
+  Projects: 1
+};
 
 function score(entry: (typeof index)[number], q: string, qWords: Set<string>): number {
   const padded = ` ${q} `;
@@ -102,12 +172,11 @@ function score(entry: (typeof index)[number], q: string, qWords: Set<string>): n
 }
 
 // Last-resort word overlap against full doc text (stopwords already removed)
-function overlap(qWords: Set<string>, words: string[]): number {
+function overlap(qWords: Set<string>, wordSet: Set<string>): number {
   if (!qWords.size) return 0;
-  const set = new Set(words);
   let hits = 0;
   qWords.forEach(w => {
-    if (set.has(w)) hits++;
+    if (wordSet.has(w)) hits++;
   });
   return hits / qWords.size;
 }
@@ -262,7 +331,7 @@ const fallbackOptions: SearchResponse[] = [
     actionLabel: 'Contact Likhith Directly'
   },
   {
-    answer: "Hmm, I searched every page of the site and couldn't find that. Here are topics I know inside out:\n• Peddamadi village childhood & family\n• JNTU-GV college & Amazon clone\n• Serea, Echo, AweFill, iTantra & Maid\n• SIH 2K26 Student SPOC, RTIH Future Founders & Research",
+    answer: "Hmm, I searched every page of the site and couldn't find that. Here are topics I know inside out:\n• Peddamadi village childhood & family\n• JNTU-GV college, CEV CMS & Academic Ledger Portal (ALP)\n• Serea, Echo, AweFill, iTantra & Maid\n• SIH 2K26 Student SPOC, RTIH Future Founders & Research",
     actionUrl: '/projects',
     actionLabel: 'Explore Key Projects'
   },
@@ -285,7 +354,23 @@ function getRandomFallback(query: string): SearchResponse {
   return fallbackOptions[index];
 }
 
-export function performSemanticSearch(query: string, pathname = '/'): SearchResponse {
+const ALL_LONG_KEYS = [...new Set(index.flatMap(e => [...e.keyWords]).filter(k => k.length >= 5))];
+
+function fixTypos(words: string[]): string[] | null {
+  let changed = false;
+  const fixed = words.map(w => {
+    if (w.length < 5 || ALL_LONG_KEYS.includes(w)) return w;
+    const match = ALL_LONG_KEYS.find(k => editDist1(w, k));
+    if (match) {
+      changed = true;
+      return match;
+    }
+    return w;
+  });
+  return changed ? fixed : null;
+}
+
+export function performSemanticSearch(query: string, pathname = '/', lastTopic?: string): SearchResponse {
   const raw = query.toLowerCase().trim();
 
   if (!raw) {
@@ -315,12 +400,21 @@ export function performSemanticSearch(query: string, pathname = '/'): SearchResp
   const terms = [...qWords].filter(w => !GENERIC.has(w));
   const scored = index
     .map(entry => ({ ...entry, score: score(entry, q, qWords) }))
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => b.score - a.score || (CAT_PRIORITY[b.doc.category] || 0) - (CAT_PRIORITY[a.doc.category] || 0));
   const best = scored[0];
   const related = scored
     .slice(1, 3)
     .filter(s => s.score >= MIN_SCORE)
     .map(s => s.doc);
+
+  // Follow-up resolution for pronoun questions ("what tech stack does it use?", "tell me more about it")
+  if (lastTopic && /\b(it|its|that project|this project|that app|this app)\b/.test(raw) && !/\b(likhith|he|his|him)\b/.test(raw)) {
+    const prev = index.find(e => e.doc.title === lastTopic);
+    if (prev && (best.score < STRONG_SCORE || best.doc.category === 'Skills')) {
+      const own = prev.doc.actionUrl.startsWith('/projects/') ? searchSite(terms, [], prev.doc.actionUrl) : null;
+      return own || docAnswer(prev.doc, [], terms.filter(w => !prev.titleWords.has(w)));
+    }
+  }
 
   // Broad / list questions
   const fired = LISTS.filter(l => l.re.test(raw));
@@ -371,9 +465,22 @@ export function performSemanticSearch(query: string, pathname = '/'): SearchResp
   // Weak topic hit, as long as the question has no words we know nothing about ("likhith's favourite food")
   if (best.score >= MIN_SCORE && !extra.length) return docAnswer(best.doc, related);
 
+  // Single-typo recovery for domain/project keywords (tokens >= 5 chars)
+  const fixedWords = fixTypos([...qWords]);
+  if (fixedWords) {
+    const fq = fixedWords.join(' ');
+    const fqSet = new Set(fixedWords);
+    const typoBest = index
+      .map(entry => ({ ...entry, score: score(entry, fq, fqSet) }))
+      .sort((a, b) => b.score - a.score)[0];
+    if (typoBest.score >= MIN_SCORE) {
+      return docAnswer(typoBest.doc, related, fixedWords.filter(w => !GENERIC.has(w) && !typoBest.titleWords.has(w)));
+    }
+  }
+
   // Last resort: word overlap with full doc text
   const byOverlap = scored
-    .map(s => ({ doc: s.doc, sim: overlap(qWords, s.words) }))
+    .map(s => ({ doc: s.doc, sim: overlap(qWords, s.wordSet) }))
     .sort((a, b) => b.sim - a.sim)[0];
   if (byOverlap.sim >= 0.5) return docAnswer(byOverlap.doc);
 

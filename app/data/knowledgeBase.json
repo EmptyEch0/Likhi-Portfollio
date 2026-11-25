@@ -3,11 +3,11 @@
     "id": "bio",
     "category": "About",
     "title": "Who is Likhith Kumar Mankala",
-    "summary": "Likhith Kumar Mankala is an AI/ML Engineer and Full-Stack Developer currently studying Information Technology at JNTU-GV Vizianagaram. He specializes in building intelligent applications, RAG systems, AI agents, production web platforms, and personal AI productivity ecosystems.",
-    "text": "Likhith Kumar Mankala is an AI engineer and full-stack software developer driven by curiosity and problem-solving. Currently studying Information Technology at JNTU-GV Vizianagaram, he builds offline-first AI applications (like Serea and Echo), full-stack institutional platforms (JNTU-GV CMS, Uni-LMS, VLMS), research projects in sign language and quantum computing, and high-performance browser extensions (AweFill).",
+    "summary": "Likhith Kumar Mankala is an AI/ML Engineer and Full-Stack Developer studying Information Technology at JNTU-GV Vizianagaram. He builds production university platforms, offline-first AI applications, multi-agent systems, and developer tools.",
+    "text": "Likhith Kumar Mankala (EmptyEch0) is an AI engineer and full-stack software developer studying Information Technology at JNTU-GV Vizianagaram (Oct 2023 – Apr 2027, CGPA 8.30). He builds offline-first AI applications (iTantra, Serea, Echo, Maid), institutional platforms (JNTU-GV CEV CMS, Academic Ledger Portal ALP, DSNLU, ITYukta 2K26, Uni-LMS, VLMS), published AI & quantum research (ClimateChain in IJSREM, SignBridge Elsevier preprint), and developer extensions (AweFill).",
     "actionUrl": "/",
     "actionLabel": "View About Page",
-    "keywords": ["who", "likhith", "mankala", "name", "person", "about", "profile", "bio", "developer", "engineer", "introduce", "myself"]
+    "keywords": ["who", "likhith", "mankala", "name", "person", "about", "profile", "bio", "developer", "engineer", "introduce", "myself", "emptyech0"]
   },
   {
     "id": "birthplace",
@@ -43,8 +43,8 @@
     "id": "college-jntugv",
     "category": "Education",
     "title": "Engineering at JNTU-GV Vizianagaram",
-    "summary": "Leaving Peddamadi for JNTU-GV Vizianagaram was Likhith's first major turning point. He studied Information Technology, starting with C programming at 18.",
-    "text": "Likhith is pursuing his B.Tech in Information Technology at JNTU-GV (Jawaharlal Nehru Technological University), Vizianagaram (Oct 2023 – Apr 2027, graduating in 2027, CGPA 8.30). Starting code at age 18 with C language, he rapidly grew from debugging syntax errors to architecting university-wide platforms and leading campus dev teams.",
+    "summary": "Leaving Peddamadi for JNTU-GV Vizianagaram was Likhith's first major turning point. He studies Information Technology, starting with C programming at 18.",
+    "text": "Likhith is pursuing his B.Tech in Information Technology at JNTU-GV (Jawaharlal Nehru Technological University Gurajada Vizianagaram) from Oct 2023 – Apr 2027 (graduating in 2027, CGPA 8.30). Starting code at age 18 with C language, he grew from debugging syntax errors to architecting university-wide platforms (jntugvcev.edu.in & alp.jntugv.edu.in) and leading campus dev teams.",
     "actionUrl": "/beyond-classroom",
     "actionLabel": "Read College Story",
     "keywords": ["college", "jntu", "jntugv", "vizianagaram", "btech", "degree", "university", "education", "study", "studying", "programming", "first year", "jntu gv", "information technology", "branch", "engineering", "qualification", "graduation"]
@@ -53,18 +53,18 @@
     "id": "college-people",
     "category": "Education",
     "title": "Pravallika, Prof. Jaya Suma & Friends",
-    "summary": "In first year, Pravallika introduced Likhith to web dev and built an Amazon clone in 13 days. Prof. G. Jaya Suma mentored him in research and LLMs. Senior Mohan Pradeep and hostel friends Das & Saroj shaped his college experience.",
-    "text": "Key mentors and friends during college:\n• Pravallika: Introduced Likhith to web development in first year and co-built an Amazon clone in 13 days.\n• Prof. G. Jaya Suma: Mentored him in AI research, sign language recognition, and LLM development.\n• Mohan Pradeep: Senior mentor who guided his early development fundamentals.\n• Das & Saroj: Hostel roommates and travel companions for spontaneous trips across Araku, Puri, and Vizag.",
+    "summary": "In first year, Pravallika introduced Likhith to web dev and co-built an Amazon clone in 13 days. Prof. G. Jaya Suma mentored him in research, LLMs, and institutional platforms. Senior Mohan Pradeep and hostel friends Das & Saroj shaped his college experience.",
+    "text": "Key mentors and friends during college:\n• Pravallika: Introduced Likhith to web development in first year, co-built an Amazon clone in 13 days, and co-developed the Academic Ledger Portal (ALP).\n• Dr. G. Jaya Suma: Professor & project mentor who guided him in AI research, sign language recognition, LLMs, and the JNTU-GV Academic Ledger Portal.\n• Mohan Pradeep: Senior mentor who guided his early development fundamentals.\n• Das & Saroj: Hostel roommates and travel companions for spontaneous trips across Araku, Puri, and Vizag.",
     "actionUrl": "/beyond-classroom",
     "actionLabel": "View Mentors & Friends",
-    "keywords": ["pravallika", "amazon", "clone", "jayasuma", "jaya suma", "professor", "mentor", "mohan pradeep", "das", "saroj", "araku", "puri", "vizag", "trips", "friends", "mentors", "hostel", "roommates", "travel", "guide"]
+    "keywords": ["pravallika", "amazon", "clone", "jayasuma", "jaya suma", "professor", "mentor", "mohan pradeep", "das", "saroj", "araku", "puri", "vizag", "trips", "friends", "mentors", "hostel", "roommates", "travel", "guide", "asma"]
   },
   {
     "id": "why-ai",
     "category": "AI Journey",
     "title": "Transition from Web Dev to AI",
     "summary": "Seeing AI tools like v0 and Lovable generate websites in minutes motivated Likhith to master Machine Learning via Scaler and build advanced RAG platforms, multi-agent systems, and developer tools.",
-    "text": "Watching AI tools like v0 and Lovable construct complete user interfaces in seconds showed Likhith that static web development alone wasn't enough. He spent a year mastering machine learning fundamentals via Scaler, progressing into RAG architectures, local LLMs (Llama, Qwen), vector databases (ChromaDB, Pinecone), and agentic workflows under Prof. Jaya Suma's mentorship.",
+    "text": "Watching AI tools like v0 and Lovable construct complete user interfaces in seconds showed Likhith that static web development alone wasn't enough. He spent over a year mastering machine learning fundamentals via Scaler, progressing into RAG architectures, local LLMs (Llama, Qwen), vector databases (ChromaDB, Pinecone, FAISS, pgvector), and agentic workflows under Prof. Jaya Suma's mentorship.",
     "actionUrl": "/why-ai",
     "actionLabel": "Read Why AI Story",
     "keywords": ["why ai", "chose ai", "choose ai", "interest ai", "switch ai", "web dev ai", "v0", "lovable", "scaler", "machine learning", "journey", "llm", "rag", "agents", "vector"]
@@ -77,7 +77,7 @@
     "text": "iTantra is a zero-cloud, 100% offline multilingual voice transceiver platform designed for disaster response operations during telecom and power collapse:\n• 99.92% Bandwidth Savings: Replaces raw 112KB voice audio with an 86-byte compressed semantic binary frame for congestion-free Wi-Fi Direct P2P and BLE 5.0 RFCOMM mesh transmission.\n• 10 Indian Languages + English: Full bidirectional offline speech recognition, neural translation, and voice synthesis across Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Odia, Gujarati, and English.\n• Edge AI Pipeline: Quantized INT8 Whisper/Sherpa-ONNX STT ➔ Neural Serialization ➔ 86B Mesh Frame ➔ Offline Translation ➔ Fast Neural TTS (FastSpeech2/Piper).\n• Ultra-Low Latency: <180ms same-language and <950ms cross-language audio playback on ARM quad-core mobile processors.\n• Tactical Emergency Mode: Priority 0 SOS queue bypass with non-interruptible STREAM_ALARM override for silent/DND devices, and a 3-Stage ACK Matrix (RECEIVED, TTS_STARTED, HEARD).\n• Standalone 18.8 MB APK: Low memory footprint (<120 MB RAM) via dynamic LRU model paging with zero recurring server/satellite costs.",
     "actionUrl": "/projects/itantra",
     "actionLabel": "View iTantra Case Study",
-    "keywords": ["itantra", "voice mesh", "disaster response", "offline stt", "offline tts", "whisper", "sherpa onnx", "piper", "fastspeech2", "ble mesh", "wifi direct", "p2p", "multilingual", "10 indian languages", "zero cloud", "edge ai", "ndrf", "tactical emergency", "stream alarm", "ack matrix"]
+    "keywords": ["itantra", "voice mesh", "disaster response", "offline stt", "offline tts", "whisper", "sherpa onnx", "piper", "fastspeech2", "ble mesh", "wifi direct", "p2p", "multilingual", "10 indian languages", "zero cloud", "edge ai", "ndrf", "tactical emergency", "stream alarm", "ack matrix", "sih-2026"]
   },
   {
     "id": "persona-serea",
@@ -104,7 +104,7 @@
     "category": "Projects",
     "title": "AweFill — Zero-LLM Smart Form Autofill Extension",
     "summary": "AweFill is a 100% offline, air-gapped Chrome Extension (React 19, TypeScript) that autofills repetitive job applications and college admission forms in 1 click with zero LLM costs using a deterministic matching engine (28/28 verified tests).",
-    "text": "AweFill is a privacy-first, zero-LLM Chrome Extension (Manifest V3) built with React 19, TypeScript 5.7, and Vite 6:\n• Deterministic Matching Engine: Leverages 200+ field alias taxonomy and fuzzy string algorithms (Levenshtein, Jaro-Winkler, Sørensen-Dice) to detect form inputs in <15ms with zero token cost.\n• Isolated Shadow DOM Drawer: Shows an in-page sliding review panel (#awefill-overlay-root) with zero CSS conflicts so users can review data before applying.\n• Local Correction Memory: Learns custom manual overrides on unstandardized domains with 98%+ accuracy on subsequent visits.\n• Security Guarantee: Hardcoded blacklisting of passwords/CVVs/OTPs, strict zero auto-submit policy, and 28/28 verified unit tests.",
+    "text": "AweFill is a privacy-first, zero-LLM Chrome Extension (Manifest V3) built with React 19, TypeScript 5.7, and Vite 6:\n• Deterministic Matching Engine: Leverages 200+ field alias taxonomy and fuzzy string algorithms (Levenshtein, Jaro-Winkler, Sørensen-Dice, Jaccard coefficients) to detect form inputs in <15ms with zero token cost.\n• Isolated Shadow DOM Drawer: Shows an in-page sliding review panel (#awefill-overlay-root) with zero CSS conflicts so users can review data before applying.\n• Local Correction Memory: Learns custom manual overrides on unstandardized domains with 98%+ accuracy on subsequent visits.\n• Security Guarantee: Hardcoded blacklisting of passwords/CVVs/OTPs, strict zero auto-submit policy, and 28/28 verified unit tests.",
     "actionUrl": "/projects/awefill",
     "actionLabel": "View AweFill Case Study",
     "keywords": ["awefill", "form autofill", "chrome extension", "job application", "internship forms", "zero llm", "shadow dom", "offline", "privacy", "greenhouse", "lever", "workday", "fuzzy matching"]
@@ -130,71 +130,111 @@
     "keywords": ["jntugv", "jntu gv", "jntu", "website", "jntugvcev", "official website", "jntugvcev.edu.in", "cms", "drizzle", "tanstack", "offline rag", "college website", "team lead", "hod portal", "caching"]
   },
   {
+    "id": "project-alp",
+    "category": "Projects",
+    "title": "Academic Ledger Portal (ALP) — JNTU-GV Affiliations & Fee Ledger",
+    "summary": "ALP (alp.jntugv.edu.in) is the official Directorate of Academic Audit & Affiliations portal for JNTU-GV managing 34 affiliated engineering and pharmacy colleges, AICTE EoA records, cohort progression, and UCS/affiliation fee ledgers.",
+    "text": "Academic Ledger Portal (ALP at alp.jntugv.edu.in) was built for JNTU Gurajada Vizianagaram (Directorate of Academic Audit & Affiliations) using TanStack Start, TanStack Router, React 19, TypeScript, Tailwind CSS, PostgreSQL, xlsx, and jsPDF:\n• Affiliated College Ledger: Centralizes 34 affiliated institutions (28 Engineering & 6 Pharmacy) with quick lookup by name, code, or district.\n• Cohort Progression & Bulk Excel Pipeline: Reconciles UG (4-year) and PG (2-year) branch intakes, lateral entries, detentions, and active counts across academic years with xlsx diff previews and PostgreSQL audit logs.\n• Statutory Fee & Challan Workflow: Manages UCS per-student fees and section-wise PG affiliation fees, bank challan/UTR verification, real-time notifications, SUPER_ADMIN & COLLEGE_ADMIN RBAC, and automated Demand Notice PDF generation (jsPDF).\n• Regulatory Compliance: Hosts searchable AICTE Extension of Approval (EoA) & PCI records (/eoa).",
+    "actionUrl": "/projects",
+    "actionLabel": "View ALP Project",
+    "keywords": ["alp", "alp.jntugv.edu.in", "academic ledger portal", "jntugv", "jntu gv", "jntu-gv", "fee portal", "jntu-college-fee-portal", "ucs fee", "affiliation fee", "aicte eoa", "pci", "tanstack", "demand notice", "challan", "utr", "cohort progression", "jspdf", "xlsx"]
+  },
+  {
     "id": "project-unilms",
     "category": "Projects",
     "title": "Uni-LMS — AI-Powered Learning Management Platform",
-    "summary": "Uni-LMS (ulms.qubitedge.in) is an AI-enabled enterprise LMS and ERP platform for Qubitedge supporting internships, bootcamps, courses, and certifications with automated AI grading for 250+ students.",
-    "text": "Uni-LMS (ulms.qubitedge.in) is an AI-powered Learning Management System built with Next.js, Capacitor, PostgreSQL, and REST APIs for Qubitedge. It powers internships, bootcamps, course creation, ERP administration, and automated AI evaluation for 250+ active students.",
+    "summary": "Uni-LMS (lms.qubitedge.in) is an AI-enabled enterprise LMS and ERP platform for Qubitedge supporting internships, bootcamps, courses, and certifications with automated AI grading for 250+ students.",
+    "text": "Uni-LMS (lms.qubitedge.in) is an AI-powered Learning Management System built with Next.js, Capacitor, PostgreSQL, and REST APIs for Qubitedge. It powers internships, bootcamps, course creation, ERP administration, and automated AI grading and study recommendations for 250+ active students across web and mobile.",
     "actionUrl": "/projects",
     "actionLabel": "View Uni-LMS Project",
-    "keywords": ["uni-lms", "unilms", "lms", "qubitedge", "ulms.qubitedge.in", "ai grading", "capacitor", "bootcamp", "erp"]
+    "keywords": ["uni-lms", "unilms", "lms", "qubitedge", "lms.qubitedge.in", "ulms.qubitedge.in", "ai grading", "capacitor", "bootcamp", "erp"]
   },
   {
     "id": "project-vlms",
     "category": "Projects",
     "title": "VLMS — Virtual Lab Management System",
     "summary": "VLMS (vlms.qubitedge.in) provides interactive virtual laboratory simulations and sandboxes across 10+ domains (Python, C, Java, ML, Math, Quantum Computing) with AI tutors scaling to 1,000+ sessions.",
-    "text": "VLMS (Virtual Lab Management System at vlms.qubitedge.in) delivers hands-on sandbox environments and WebGL simulations for 10+ technical domains including AI, ML, Cloud, DBMS, Mathematics, and Quantum Computing using React, Next.js, Docker, AI tutors, and FastAPI.",
+    "text": "VLMS (Virtual Lab Management System at vlms.qubitedge.in) delivers hands-on browser sandboxes and WebGL simulations across 10+ technical domains including AI, ML, Cloud, DBMS, Web Development, Mathematics, and Quantum Computing using React, Next.js, Docker, AI tutors, Python, FastAPI, and PostgreSQL, scaling to 1,000+ student sessions.",
     "actionUrl": "/projects",
     "actionLabel": "View VLMS Project",
-    "keywords": ["vlms", "virtual lab", "fastapi", "docker", "webgl", "virtual tutor", "laboratories", "sandbox", "quantum computing", "qubitedge"]
+    "keywords": ["vlms", "vlms.qubitedge.in", "virtual lab", "fastapi", "docker", "webgl", "virtual tutor", "laboratories", "sandbox", "quantum computing", "qubitedge"]
+  },
+  {
+    "id": "project-qubitedge-web",
+    "category": "Projects",
+    "title": "Official Corporate Website & Custom CMS (qubitedge.in)",
+    "summary": "Redesigned and engineered qubitedge.in with a custom WordPress-style inline-editing CMS, reusable content blocks, and Core Web Vitals optimization achieving a 98/100 Lighthouse score.",
+    "text": "Qubitedge Official Corporate Website (qubitedge.in) was redesigned and developed with Next.js, React, Tailwind CSS, and Framer Motion, featuring a custom CMS with WordPress-style inline editing, reusable content blocks, case studies, dynamic service pages, a 98/100 Lighthouse score, and 40% faster load times.",
+    "actionUrl": "/projects",
+    "actionLabel": "View Qubitedge Website",
+    "keywords": ["qubitedge website", "qubitedge.in", "corporate website", "custom cms", "inline editing", "lighthouse", "seo", "qubitedge"]
+  },
+  {
+    "id": "project-dsnlu-ityukta",
+    "category": "Projects",
+    "title": "DSNLU Official Website & ITYukta 2K26 Tech Platforms",
+    "summary": "Lead designer and full-stack developer of the official DSNLU institutional website and ITYukta 2K26 tech symposium platform using Next.js, NestJS, TypeScript, PostgreSQL, and Drizzle ORM for 500+ participants.",
+    "text": "DSNLU Official Website & ITYukta 2K26 Tech Platforms were designed and developed by Likhith using Next.js, NestJS, TypeScript, PostgreSQL, Drizzle ORM, and Tailwind CSS. Built scalable NestJS APIs with RBAC, PostgreSQL CMS, admissions workflows, event registration flows, live notifications, schedules, and technical competitions for 500+ participants.",
+    "actionUrl": "/projects",
+    "actionLabel": "View DSNLU & ITYukta",
+    "keywords": ["dsnlu", "ityukta", "ityukta 2k26", "nestjs", "symposium", "institutional platform", "event registration", "codecrack", "rbac"]
+  },
+  {
+    "id": "project-medical-assistant",
+    "category": "Projects",
+    "title": "University Medical Assistant (LLM-Powered RAG Portal)",
+    "summary": "An LLM-powered RAG medical triage and symptom classification portal built with Python, FastAPI/Flask, LangChain, PostgreSQL, OpenAI, and ChromaDB delivering 85% accuracy for 5,000+ students.",
+    "text": "University Medical Assistant is an AI-powered medical assistance platform built with Python, FastAPI/Flask, LangChain, PostgreSQL, OpenAI, and ChromaDB. It uses Retrieval-Augmented Generation (RAG) to provide university medical triage, sub-second document retrieval latency, 85% symptom classification accuracy, and instant emergency guidance for 5,000+ students.",
+    "actionUrl": "/projects",
+    "actionLabel": "View Medical Assistant",
+    "keywords": ["medical assistant", "healthcare", "symptom classification", "triage", "chromadb", "rag portal", "health guidance", "medical"]
   },
   {
     "id": "project-climatechain",
     "category": "Projects",
     "title": "ClimateChain — Quantum-Secured Climate Platform & IJSREM Research Paper",
     "summary": "ClimateChain (aqvh-2025.vercel.app) integrates AI, Blockchain, and Quantum Computing (Qiskit) for climate data security, predicting drought with 89% accuracy (Top 5 Finalist). Published in IJSREM journal.",
-    "text": "ClimateChain is a quantum-secured climate intelligence platform integrating AI, Blockchain, and Quantum Computing (Qiskit) for tamper-proof data verification and 89% accurate drought prediction. Named Top 5 Finalist at the AP Quantum Valley Hackathon. Authored and published 'ClimateChain: A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring' in IJSREM.",
+    "text": "ClimateChain (aqvh-2025.vercel.app) is a quantum-secured climate intelligence platform integrating Next.js, Python, TensorFlow, Blockchain, and Quantum Computing (Qiskit) for tamper-proof data verification and 89% accurate drought prediction across 10,000+ climate transactions. Named Top 5 Finalist at the AP Quantum Valley Hackathon. Authored and published 'ClimateChain: A Quantum-Secured Blockchain Architecture for Immutable Environmental Monitoring' in IJSREM.",
     "actionUrl": "https://ijsrem.com/download/climatechain-a-quantum-secured-blockchain-architecture-for-immutable-environmental-monitoring",
     "actionLabel": "Download Published Paper (PDF)",
-    "keywords": ["climatechain", "quantum", "qiskit", "drought", "hackathon", "top 5", "research paper", "publication", "ijsrem", "blockchain"]
+    "keywords": ["climatechain", "quantum", "qiskit", "drought", "hackathon", "top 5", "research paper", "publication", "ijsrem", "blockchain", "aqvh"]
   },
   {
     "id": "project-signbridge",
     "category": "Projects",
     "title": "SignBridge — Continuous Sign Language Recognition (Elsevier Preprint)",
     "summary": "SignBridge is an Elsevier Preprint research project achieving 94.7% word accuracy on ISL-50 dataset using MediaPipe Holistic (1,662 landmarks) → CNN → BiLSTM-Attention → CTC decoding + DeepFace + local Llama 3.1 at 28ms/frame.",
-    "text": "SignBridge is a continuous sign language recognition framework (Elsevier Preprint) combining MediaPipe landmark extraction, BiLSTM-Attention temporal modeling, DeepFace emotion recognition, and local Llama 3.1 for emotionally-nuanced speech synthesis at 28ms/frame.",
+    "text": "SignBridge is a continuous sign language recognition framework (Elsevier Preprint) achieving 94.7% word accuracy and 12.3% WER on the ISL-50 dataset. It combines MediaPipe Holistic (1,662-dim landmarks), CNN spatial encoding, BiLSTM-Attention temporal modeling, CTC decoding, DeepFace emotion recognition, and local Llama 3.1 for emotionally-nuanced speech synthesis at 28ms/frame (35 FPS).",
     "actionUrl": "/projects",
     "actionLabel": "View SignBridge Research",
-    "keywords": ["signbridge", "sign language", "isl-50", "bilstm", "mediapipe", "elsevier", "preprint", "research paper"]
+    "keywords": ["signbridge", "sign language", "isl-50", "bilstm", "mediapipe", "deepface", "elsevier", "preprint", "research paper", "ctc"]
   },
   {
     "id": "milestones-achievements",
     "category": "Achievements & Journey",
     "title": "Hackathons, Leadership & Key Milestones",
-    "summary": "University Student SPOC for SIH 2K26 at JNTU-GV, Project Selected for RTIH Future Founders Program, Top 5 Finalist at AP Quantum Valley Hackathon, Smart India Hackathon 2025, Elsevier Preprint author, ITYukta Tech Coordinator.",
-    "text": "Key Achievements & Leadership:\n• University Student SPOC: Selected by university administration as Student SPOC for Smart India Hackathon (SIH 2K26) at JNTU-GV Vizianagaram.\n• RTIH Future Founders: Project selected for the prestigious Ratan Tata Innovation Hub (RTIH) Future Founders Program.\n• Top 5 Finalist: AP Quantum Valley Internal Hackathon (ClimateChain, 20+ teams).\n• SIH 2025 Participant: Built Offline Healthcare AI Assistant with localized RAG.\n• 1st Published Research Paper: ClimateChain in IJSREM Journal.\n• Elsevier Preprint Author: SignBridge Continuous Sign Language Recognition.\n• ITYukta 2K26 Tech Coordinator: Managed technical platform, 12-member dev squad, and 6+ campus websites.",
+    "summary": "University Student SPOC for SIH 2K26 at JNTU-GV (18+ teams), RTIH Future Founders Program, Top 5 Finalist at AP Quantum Valley Hackathon, Top 15 at Miracle Citizen Hackathon, Elsevier & IJSREM author, Yukta Dev Squad Tech Lead & ITYukta Tech Coordinator.",
+    "text": "Key Achievements & Leadership:\n• University Student SPOC (SIH 2K26): Appointed official Student SPOC & Lead Organizer at JNTU-GV, organizing 18+ competing teams and receiving the Coordinator Recognition Certificate at Gurajada Kalavedika.\n• RTIH Future Founders Program (2026): AI innovation project selected for startup mentorship and venture rollout.\n• Top 5 Finalist: AP Quantum Valley Internal Hackathon (ClimateChain, 20+ teams).\n• Top 15 Team: Miracle Citizen Hackathon (Dec 2025) & GenAI 24-Hour Hackathon participant.\n• SIH 2025 Participant: Built Offline Healthcare AI Assistant with localized RAG.\n• Published Research: 1st published paper (ClimateChain, IJSREM Journal) & Elsevier Preprint co-author (SignBridge).\n• ITYukta 2K26 Tech Coordinator & Yukta Dev Squad Tech Lead: Led 12-member and 8-member dev squads building 6+ campus websites, 5+ production apps, and CodeCrack (500+ participants).\n• Campus Ambassador & Quiz: Harvinn Technologies Campus Ambassador (2025); Runner-up WWF State Quiz 2018 (1,000+ participants).",
     "actionUrl": "/blog",
     "actionLabel": "View Journey & Achievements",
-    "keywords": ["hackathons", "sih", "sih 2k26", "spoc", "student spoc", "smart india", "rtih", "future founders", "ratan tata", "quantum valley", "miracle", "genai", "ityukta", "achievements", "milestones", "awards", "leadership"]
+    "keywords": ["hackathons", "sih", "sih 2k26", "spoc", "student spoc", "smart india", "rtih", "future founders", "ratan tata", "quantum valley", "miracle", "genai", "ityukta", "yukta dev squad", "harvinn", "achievements", "milestones", "awards", "leadership", "gurajada kalavedika"]
   },
   {
     "id": "certifications-learning",
     "category": "Certifications",
     "title": "Certifications & Continuous Learning",
-    "summary": "NPTEL Elite+Silver in DBMS & Python, Scaler Machine Learning & Deep Learning, Great Learning Data Science & AI, LeetCode 50 & 100-Day Badges, LinkedIn Learning, HP LIFE & edX.",
-    "text": "Professional Certifications:\n• NPTEL Elite+Silver: Database Management Systems & Python Programming (IIT Kharagpur / IIT Madras).\n• Scaler: Machine Learning & Deep Learning specializations.\n• Great Learning: Data Science, Cloud Computing, and Artificial Intelligence foundations.\n• LeetCode: 50-Day and 100-Day Problem Solving Badges.\n• LinkedIn Learning, HP LIFE, edX: Software engineering, cloud architecture, and startup management.",
+    "summary": "NPTEL Certified (Social Networks — Graph Theory & Network Algorithms), Great Learning (AI, ML, Python), Scaler Certified (Data Science, JS, React.js, ML Engineering), LeetCode 50 & 100-Day Badges (SQL, React, Python), LinkedIn Learning, HP LIFE & edX.",
+    "text": "Professional Certifications & Badges:\n• NPTEL Certified: Social Networks — Graph Theory & Network Algorithms.\n• Great Learning: Artificial Intelligence, Machine Learning, and Python.\n• Scaler Certified: Data Science, JavaScript, React.js, and ML Engineering.\n• LeetCode Achievements: SQL, React, and Python skill assessments + 50-Day and 100-Day coding streak badges.\n• LinkedIn Learning: Introduction to Career Skills in Data Analytics (by Robin Hunt).\n• HP LIFE & edX: AI for Beginners (HP LIFE) and Python Basics (edX).",
     "actionUrl": "/blog",
     "actionLabel": "View Certifications",
-    "keywords": ["certifications", "nptel", "scaler", "great learning", "leetcode", "badges", "linkedin learning", "hp life", "edx", "certificate", "certified", "courses", "online courses"]
+    "keywords": ["certifications", "nptel", "social networks", "graph theory", "scaler", "great learning", "leetcode", "badges", "linkedin learning", "hp life", "edx", "certificate", "certified", "courses", "online courses"]
   },
   {
     "id": "qubitedge-internship",
     "category": "Experience",
     "title": "Qubitedge Global Services (Paid AI Intern)",
-    "summary": "At Qubitedge (May–Jun 2026), Likhith engineered RAG document platforms, LangChain multi-agent workflows, an enterprise LMS chatbot, and mentored 250+ developers in AI bootcamps.",
-    "text": "At Qubitedge Global Services (May–Jun 2026, Paid), Likhith built RAG document intelligence platforms, multi-agent automation using LangChain, and an LMS chatbot, while leading AI bootcamps for 250+ developers.",
+    "summary": "At Qubitedge (May–Jun 2026), Likhith engineered RAG document platforms, LangChain multi-agent workflows, an enterprise LMS chatbot (lms.qubitedge.in), VLMS, and mentored 250+ developers in AI bootcamps.",
+    "text": "At Qubitedge Global Services (May–Jun 2026, Paid AI Full-Stack Intern), Likhith deployed 3 production AI products — RAG document intelligence platforms, multi-agent automation using LangChain, and an LLM chatbot integrated into Uni-LMS (lms.qubitedge.in) — while mentoring 250+ students across Applied AI & Data Science bootcamps using Next.js, FastAPI, OpenAI, Llama 3.1, and Ollama.",
     "actionUrl": "/experience",
     "actionLabel": "View Qubitedge Experience",
     "keywords": ["qubitedge", "paid intern", "bootcamp", "mentored 250", "lms chatbot", "fastapi", "langchain", "rag"]
@@ -203,18 +243,18 @@
     "id": "jntugv-internship",
     "category": "Experience",
     "title": "JNTU-GV University (Paid Full-Stack Intern)",
-    "summary": "At JNTU-GV (May–Jun 2026), Likhith contributed to a complete university web infrastructure overhaul using Next.js, Drizzle ORM, PostgreSQL, and built an AI RAG campus assistant.",
-    "text": "At Jawaharlal Nehru Technological University (May–Jun 2026, Paid), Likhith joined a 4-member dev team to redesign university web portals in Next.js and build an AI RAG campus assistant for official notices and admissions.",
+    "summary": "At JNTU-GV (May–Jun 2026), Likhith led/contributed to overhauling university web infrastructure (jntugvcev.edu.in & alp.jntugv.edu.in) using Next.js, TanStack, Drizzle ORM, PostgreSQL, and built an AI RAG campus assistant.",
+    "text": "At Jawaharlal Nehru Technological University Gurajada Vizianagaram (May–Jun 2026, Paid Full-Stack Intern), Likhith joined a 4-member engineering team to modernize university web infrastructure (jntugvcev.edu.in CMS and alp.jntugv.edu.in Academic Ledger Portal) with Next.js, TanStack Query/Start, Drizzle ORM, PostgreSQL, and an offline RAG campus assistant for notices, admissions, and exam schedules.",
     "actionUrl": "/experience",
     "actionLabel": "View JNTU-GV Internship",
-    "keywords": ["jntugv intern", "jntu", "jntugv", "university intern", "full stack intern", "redesign", "drizzle", "postgresql", "campus assistant", "university portal"]
+    "keywords": ["jntugv intern", "jntu", "jntu gv", "university intern", "full stack intern", "redesign", "drizzle", "postgresql", "campus assistant", "university portal"]
   },
   {
     "id": "other-internships",
     "category": "Experience",
     "title": "UptoSkills, Edunet, NTS Nihon & YoungBot",
     "summary": "Likhith interned at UptoSkills (TensorFlow & Flask APIs), Edunet (92% e-waste classifier & EV forecasting), NTS Nihon (12+ PostgreSQL APIs for 10K+ users), and YoungBot (100K+ ETL pipelines).",
-    "text": "Likhith's internships include UptoSkills (TensorFlow & Flask REST APIs), Edunet Foundation (92% e-waste classifier & EV forecasting), NTS Nihon Global (12+ PostgreSQL APIs for 10,000+ daily users), and YoungBot Academy (100K+ ETL data pipelines with Scrapy & Pandas).",
+    "text": "Likhith's earlier internships:\n• UptoSkills (AI/ML Intern, Feb–May 2026): TensorFlow & Scikit-learn predictive models served via Flask REST APIs.\n• Edunet Foundation – Skill4Future (AI & Data Analytics Intern, Jun–Aug 2025): 92% accuracy e-waste vision classifier, 50K+ record EV forecasting (87% acc), and 40% faster deployment via quantization & pruning.\n• NTS Nihon Global (Software Dev Intern, Jul–Aug 2025): 12+ PostgreSQL REST APIs supporting 10,000+ daily users and 45% faster load times.\n• YoungBot Academy (Python & Web Intern, Oct–Dec 2024): 100K+ ETL data pipelines with Scrapy & Pandas and 55% faster React page loads.",
     "actionUrl": "/experience",
     "actionLabel": "View All Experience",
     "keywords": ["uptoskills", "edunet", "nts nihon", "youngbot", "tensorflow", "flask", "ewaste", "ev", "postgresql", "scrapy", "pandas"]
@@ -223,11 +263,11 @@
     "id": "skills-stack",
     "category": "Skills",
     "title": "Complete Technical Skills Stack",
-    "summary": "Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C. AI/ML: PyTorch, TensorFlow, LangChain, OpenAI, Gemini, Ollama, RAG, Pinecone, ChromaDB. Web & Mobile: React, Next.js, FastAPI, Flutter, NestJS, Docker, AWS.",
-    "text": "Tech Stack:\n• Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C\n• AI/ML: PyTorch, TensorFlow, LangChain, OpenAI, Gemini, Ollama, Local GGUF LLMs (Qwen, Llama), RAG, Vector DBs (ChromaDB, Pinecone)\n• Web & Mobile: React, Next.js, Flutter, FastAPI, NestJS, Flask, Django, Tailwind CSS\n• DevOps & Databases: Docker, AWS, PostgreSQL, Supabase, Redis, Drizzle ORM",
+    "summary": "Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C. AI/ML & Agents: PyTorch, TensorFlow, LangChain, LangGraph, CrewAI, n8n, OpenAI, Gemini, Claude Code, Ollama, MCP, RAG, Pinecone, ChromaDB, FAISS, pgvector. Web/Mobile/DevOps: React, Next.js, TanStack, Flutter, FastAPI, NestJS, Three.js, PostgreSQL, Docker, Nginx, AWS.",
+    "text": "Tech Stack:\n• Languages: Python, TypeScript, JavaScript, Java, Kotlin, Dart, SQL, C\n• LLMs & Generative AI: OpenAI API, Gemini API, Claude Code, Grok API, Ollama, OpenRouter, Prompt Engineering, Function Calling, Structured Outputs, LoRA/QLoRA Fine-tuning, MCP (Model Context Protocol), AI SDKs\n• AI Agents & Automation: LangChain, LangGraph, CrewAI, OpenClaw, Hermes, Zapier AI, n8n, Multi-Agent Systems, Tool Calling, Browser Agents\n• RAG & AI Infrastructure: Retrieval-Augmented Generation (RAG), Hybrid Search, Semantic Search, Embeddings, Pinecone, ChromaDB, FAISS, pgvector, Redis, Elasticsearch\n• ML, DL & Computer Vision: PyTorch, TensorFlow, Keras, Scikit-learn, CNN, RNN, LSTM, BiLSTM, Transformers, Multi-Head Attention, Quantization, Pruning, OpenCV, YOLOv8, MediaPipe, DeepFace, OCR\n• Web, Mobile & Desktop: React, Next.js, NestJS, FastAPI, Flask, Django, Express.js, Tailwind CSS, Shadcn/UI, TanStack Query/Start, Framer Motion, Flutter, React Native, Capacitor, Android (Java/Kotlin), Electron.js, Flutter Desktop, Llama.cpp\n• 3D & Interactive Web: Three.js, React Three Fiber, GSAP, CesiumJS, WebGL, Canvas API\n• Databases, Cloud & DevOps: PostgreSQL, Neon, MySQL, MongoDB, SQLite, Supabase, Drizzle ORM, Prisma, Docker, Docker Compose, Ubuntu Server, Hostinger VPS, AWS, Nginx, PM2, SSH, Linux, Git, GitHub Actions, Jenkins, Vercel, Qiskit, Figma, Postman",
     "actionUrl": "/skills",
     "actionLabel": "View Skills Page",
-    "keywords": ["skills", "tech stack", "languages", "frameworks", "python", "typescript", "react", "nextjs", "flutter", "pytorch", "fastapi", "technologies", "tools", "dart", "java", "kotlin", "sql", "docker", "aws", "postgresql", "redis", "supabase", "langchain", "tensorflow", "django", "flask", "nestjs", "tailwind", "ollama", "pinecone", "chromadb", "drizzle"]
+    "keywords": ["skills", "tech stack", "languages", "frameworks", "python", "typescript", "javascript", "react", "nextjs", "flutter", "pytorch", "fastapi", "technologies", "tools", "dart", "java", "kotlin", "sql", "docker", "aws", "postgresql", "redis", "supabase", "langchain", "langgraph", "crewai", "n8n", "mcp", "claude code", "grok", "ollama", "tensorflow", "django", "flask", "nestjs", "expressjs", "tailwind", "tanstack", "threejs", "webgl", "gsap", "cesiumjs", "pinecone", "chromadb", "faiss", "pgvector", "elasticsearch", "drizzle", "prisma", "nginx", "pm2", "ubuntu", "jenkins", "qiskit", "electronjs", "yolov8", "mediapipe", "opencv"]
   },
   {
     "id": "availability",

@@ -22,6 +22,12 @@ const projects = [
     tech: 'Next.js • Drizzle ORM • AI RAG'
   },
   {
+    id: 'alp-jntugv',
+    title: 'Academic Ledger Portal (ALP) — JNTU-GV',
+    image: '/projects/ALP_JNTUGV.jpg',
+    tech: 'TanStack Start • React 19 • PostgreSQL • jsPDF'
+  },
+  {
     id: 'ityukta',
     title: 'ITYukta 2K26 Tech Platform',
     image: '/projects/ITYUKTA.png',

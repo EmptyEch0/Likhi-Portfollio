@@ -10,6 +10,7 @@ interface Message {
   text: string;
   actionUrl?: string;
   actionLabel?: string;
+  matchedTitle?: string;
   suggestions?: string[];
 }
 
@@ -17,10 +18,10 @@ const PAGE_QUESTION = "What's on this page?";
 const STARTERS = [
   'Who is Likhith?',
   'What projects has he built?',
+  'Tell me about ALP',
   'Work experience?',
   'What are his skills?',
   'Achievements?',
-  'Where was he born?',
   'Research papers?',
   'Is he open to work?',
   'How can I contact him?'
@@ -119,12 +120,14 @@ export default function FloatingContactWidget() {
     let reply: Message;
     try {
       const { performSemanticSearch } = await loadSearch();
-      const res = performSemanticSearch(query, pathname);
+      const lastTopic = [...messages].reverse().find((m) => m.role === 'assistant' && m.matchedTitle)?.matchedTitle;
+      const res = performSemanticSearch(query, pathname, lastTopic);
       reply = {
         role: 'assistant',
         text: res.answer,
         actionUrl: res.actionUrl,
         actionLabel: res.actionLabel ? `${res.actionLabel} ↗` : undefined,
+        matchedTitle: res.matchedTitle,
         suggestions: res.suggestions
       };
     } catch {
@@ -201,6 +204,15 @@ export default function FloatingContactWidget() {
                 <h4 className="text-sm font-semibold text-zinc-100 tracking-tight">Ask About Likhith</h4>
                 <p className="text-[10.5px] text-zinc-500 leading-tight">Answers from every page of this site</p>
               </div>
+              {messages.length > 1 && (
+                <button
+                  onClick={() => setMessages([messages[0]])}
+                  className="text-[10.5px] text-zinc-400 hover:text-zinc-200 px-2 py-1 rounded-md hover:bg-zinc-900 transition-colors cursor-pointer"
+                  aria-label="Clear chat"
+                >
+                  Clear
+                </button>
+              )}
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-zinc-500 hover:text-zinc-200 transition-colors text-lg leading-none cursor-pointer p-1"
@@ -232,13 +244,24 @@ export default function FloatingContactWidget() {
 
                   {/* Dynamic Action Button */}
                   {msg.role === 'assistant' && msg.actionUrl && msg.actionLabel && (
-                    <Link
-                      href={msg.actionUrl}
-                      onClick={() => setIsOpen(false)}
-                      className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-medium text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 px-3 py-1 rounded-full transition-all cursor-pointer shadow-xs"
-                    >
-                      <span>{msg.actionLabel}</span>
-                    </Link>
+                    msg.actionUrl.startsWith('http') ? (
+                      <a
+                        href={msg.actionUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-medium text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 px-3 py-1 rounded-full transition-all cursor-pointer shadow-xs"
+                      >
+                        <span>{msg.actionLabel}</span>
+                      </a>
+                    ) : (
+                      <Link
+                        href={msg.actionUrl}
+                        onClick={() => setIsOpen(false)}
+                        className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-medium text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 px-3 py-1 rounded-full transition-all cursor-pointer shadow-xs"
+                      >
+                        <span>{msg.actionLabel}</span>
+                      </Link>
+                    )
                   )}
                 </div>
               ))}

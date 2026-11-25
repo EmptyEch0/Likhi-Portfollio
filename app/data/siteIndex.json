@@ -452,8 +452,14 @@
  {
   "url": "/projects",
   "page": "Projects — AI, Full-Stack & Research Work",
+  "heading": "Academic Ledger Portal (ALP) — JNTU-GV Affiliations & Fee Ledger",
+  "text": "TanStack Start • React 19 • PostgreSQL • xlsx • jsPDF • RBAC ▪ Co-engineered the official Academic Ledger Portal ( alp.jntugv.edu.in ) for the Directorate of Academic Audit & Affiliations at JNTU-GV, centralizing approved intakes, AICTE Extension of Approval (EoA) & PCI records, and statutory fee ledgers across 34 affiliated institutions (28 Engineering & 6 Pharmacy). ▪ Built a multi-year cohort progression engine and bulk Excel import/export pipeline ( xlsx ) to reconcile UG (4-year) and PG (2-year) branch intakes, lateral entries, detentions, and active student counts with diff previews and PostgreSQL audit logs. ▪ Implemented University Common Services (UCS) and section-wise PG affiliation fee accounting with role-based access ( SUPER_ADMIN & COLLEGE_ADMIN ), bank challan/UTR verification workflows, real-time notifications, and automated Demand Notice PDF generation ( jsPDF ). Live Portal (alp.jntugv.edu.in) ↗"
+ },
+ {
+  "url": "/projects",
+  "page": "Projects — AI, Full-Stack & Research Work",
   "heading": "Uni-LMS — AI-Powered Learning Management Platform",
-  "text": "Next.js • Capacitor • PostgreSQL • Tailwind CSS • REST APIs • AI Grading ▪ Architected and built a complete AI-enabled enterprise Learning Management System ( ulms.qubitedge.in ) for Qubitedge, supporting end-to-end management of internships, workshops, bootcamps, certifications, assessments, structured learning paths, and course cohorts. ▪ Built cross-platform responsive web and mobile applications using Next.js and Capacitor; deployed across live bootcamps powering automated AI grading, submission evaluation, and personalized study recommendations for 250+ active students . ▪ Implemented complete ERP capabilities: instructor course creation, bulk student onboarding, interactive assignments, analytics dashboards, and automated certificate generation."
+  "text": "Next.js • Capacitor • PostgreSQL • Tailwind CSS • REST APIs • AI Grading ▪ Architected and built a complete AI-enabled enterprise Learning Management System ( lms.qubitedge.in ) for Qubitedge, supporting end-to-end management of internships, workshops, bootcamps, certifications, assessments, structured learning paths, and course cohorts. ▪ Built cross-platform responsive web and mobile applications using Next.js and Capacitor; deployed across live bootcamps powering automated AI grading, submission evaluation, and personalized study recommendations for 250+ active students . ▪ Implemented complete ERP capabilities: instructor course creation, bulk student onboarding, interactive assignments, analytics dashboards, and automated certificate generation."
  },
  {
   "url": "/projects",

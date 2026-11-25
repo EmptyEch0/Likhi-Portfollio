@@ -71,15 +71,37 @@ const cases = [
   ['medical assistant project', 'University Medical Assistant'],
   ['tech lead role', 'TECH LEAD'],
   ['when will he graduate', 'JNTU-GV Vizianagaram'],
+  // recent updates: ALP, lms.qubitedge.in, new projects, skills, certifications & typos
+  ['tell me about ALP', 'Academic Ledger Portal'],
+  ['alp.jntugv.edu.in', 'Academic Ledger Portal'],
+  ['how many colleges are on ALP', 'Academic Ledger Portal'],
+  ['lms.qubitedge.in', 'Uni-LMS'],
+  ['vlms', 'VLMS'],
+  ['dsnlu website', 'DSNLU'],
+  ['qubitedge corporate website', 'qubitedge.in'],
+  ['does he know n8n', 'Skills'],
+  ['does he know next.js', 'Skills'],
+  ['does he know three.js', 'Skills'],
+  ['nptel certification', 'Certifications'],
+  ['sereaa', 'Serea'],
+  ['itantraa', 'iTantra'],
 ];
 
 // focused answers: only the line that answers the question
-const line = (q) => performSemanticSearch(q).answer;
+const line = (q, path, lastTopic) => performSemanticSearch(q, path, lastTopic).answer;
 assert.match(line('does he know react'), /React/);
 assert.doesNotMatch(line('does he know react'), /Docker/);
+assert.match(line('does he know n8n'), /n8n/);
+assert.match(line('what is lms.qubitedge.in'), /lms\.qubitedge\.in/);
+assert.doesNotMatch(line('what is lms.qubitedge.in'), /ulms\.qubitedge\.in/);
 assert.equal(line('what is his phone number').split('\n').length, 2);
 assert.match(line('how much ram does itantra use'), /RAM/);
 assert.match(line('when will he graduate'), /2027/);
+// multi-turn follow-up pronoun resolution
+const alpTitle = performSemanticSearch('tell me about ALP').matchedTitle;
+assert.match(line('what tech stack does it use?', '/', alpTitle), /TanStack Start/);
+// all-projects list includes ALP
+assert.match(line('What projects has he built?'), /Academic Ledger Portal/);
 
 let fails = 0;
 for (const [q, want, path] of cases) {
